@@ -1,0 +1,46 @@
+/* ************** Variables ********** */
+$color1: #ffecd6;
+$color2: #ccb59b;
+$color3: #997a56;
+$color4: #664825;
+$color5: #331f08;
+$color6: #3D8A6C;
+$color7: #8CAFA2;
+$color8: #E7E7E7;
+
+@font-face {
+  font-family: DeliusSwashCaps-Regular;
+  src: url("../../font/DeliusSwashCaps-Regular.ttf");
+}
+@font-face {
+  font-family: Butterfly-kids;
+  src: url("../../font/ButterflyKids-Regular.ttf");
+}
+@font-face {
+  font-family: dandelion;
+  src: url('../../font/Dandelion.otf');
+}
+@font-face {
+  font-family: mali;
+  src: url('../../font/Mali-Regular.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DeliusSwashCaps-Regular;
+  color: $color4;
+}
+@mixin defaultspacing{
+  width: 100%;
+  padding: 0 10%;
+  background: $color1;
+}
+@mixin defaultpadding{
+  padding: 0 25px;
+}
+
+h2{
+  font-family: mali;
+  font-size: 2.5rem;
+}
