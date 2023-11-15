@@ -15,6 +15,7 @@ class Accueil extends BaseController
         return view('./template-parts/header', $data)
         .view('./template-parts/navbar')
         .view('./template-parts/mainimage')
+        .view('./template-parts/bannerhome')
         .view('./template-parts/footer');
     }
 }

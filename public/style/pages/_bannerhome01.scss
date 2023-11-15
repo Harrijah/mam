@@ -1,0 +1,43 @@
+.banner01 {
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  background: url("../../images/mam.png") center/cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  p {
+    text-align: center;
+    padding: 50px;
+    font-family: Butterfly-kids;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: $color9;
+    span {
+      font-family: Butterfly-kids;
+      font-size: 3rem;
+      color: $color6;
+    }
+  }
+}
+
+.teamcontainer{
+    display: flex;
+    background: $color1;
+    // background: url("../../images/arc.png") center/cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // overflow-y: visible;
+
+    .ourteam {
+        margin: 50px auto;
+        h2 {
+            font-family: Butterfly-kids;
+            font-size: 3rem;
+        }
+    }
+    .mamcontainer {
+        min-height: 400px;
+        z-index: 1;
+    }
+}
