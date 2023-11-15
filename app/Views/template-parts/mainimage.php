@@ -48,7 +48,7 @@
     <div class="bandeau01">
         <div class="imagepart">            
             <div class="svg-container02">
-                <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+                <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 390">
                 
                     <defs>
                         <!-- Création d'un chemin pour le découpage -->
@@ -57,7 +57,7 @@
                         </clipPath>
                     </defs>
                     <!-- Utilisation du clipPath pour découper l'image -->
-                    <image href="<?php echo base_url('./images/pere_enfant.jpg'); ?>" width="100%" height="auto" clip-path="url(#clip-path2)" />
+                    <image href="<?php echo base_url('./images/pere_enfant.jpg'); ?>" width="100%" height="100%" clip-path="url(#clip-path2)" />
                 </svg>
             </div>
         </div>

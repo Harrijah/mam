@@ -78,17 +78,6 @@
       }
     }
 
-    img {
-      position: relative;
-      width: 100%;
-      height: auto;
-      margin: 25px auto 0;
-      clip-path: path(
-        "M490 130c3.59 -7.12 5.61 -14.9 5.61 -23.02c0 -35.25 -37.69 -63.86 -84.15 -63.86c-17.27 0 -33.40 3.99 -46.72 10.78c-24.28 -31.93 -69.60 -53.35 -121.58 -53.35c-77.49 0 -140.25 47.63 -140.25 106.43c0 1.80 0.09 3.59 0.18 5.39c-49.09 13.10 -84.33 48.62 -84.33 90.40c0 52.88 56.54 95.79 126.23 95.79l322.57 0c61.97 0 112.20 -38.11 112.20 -85.14c0 -41.17 -38.57 -75.56 -89.76 -83.41z"
-      );
-      z-index: 3;
-      // box-shadow: rgba(0, 0, 0, 0.9) 0px 20px 30px;
-    }
   }
 }
 // *********** section 01
@@ -180,12 +169,18 @@
     .imagepart {
       position: relative;
       width: 100%;
-      min-height: 300px;
       .svg-container02{
         position: relative;
-        filter: drop-shadow(
-          10px 10px 10px rgba(0, 0, 0, 0.5)
-        );
+        margin: auto;
+        svg {
+          position: relative;
+          width: 100%;
+          height: auto;
+          z-index: 2;
+          filter: drop-shadow(
+            10px 10px 10px rgba(0, 0, 0, 0.5)
+          );
+        }
       }
     }
 
