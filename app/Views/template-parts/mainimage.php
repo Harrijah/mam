@@ -46,23 +46,20 @@
     </div>
 
     <div class="bandeau01">
-        <div class="imagepart">
-            <!-- <img src="<?php //echo base_url('./images/family-spend-time-summer-garden.jpg') ?>" alt=""> -->
-            <!-- <img src="<?php echo base_url('./images/family-spend-time-summer-garden.jpg') ?>" alt=""> -->
-
-            
-        <div class="svg-container">
-            <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 465">
-                <defs>
-                    <!-- Création d'un chemin pour le découpage -->
-                    <clipPath id="clip-path2">
-                        <path d="M505.686 127.701C552.843 165.423 600 228.457 600 299.432C600 370.905 552.38 450.813 471.936 514.849C391.493 578.884 278.843 626.04 188.994 587.803C99.1455 549.567 33.1922 436.209 9.6136 312.834C-13.8657 189.363 5.45332 59.7042 72.0271 17.5161C138.6 -24.672 315.333 19.9974 398.316 48.7853C481.299 77.5731 508.529 89.9811 505.686 127.701Z"/>
-                    </clipPath>
-                </defs>
-                <!-- Utilisation du clipPath pour découper l'image -->
-                <image href="<?php echo base_url('./images/family-spend-time-summer-garden.jpg'); ?>" width="100%" height="100%" clip-path="url(#clip-path2)" />
-            </svg>
-        </div>
+        <div class="imagepart">            
+            <div class="svg-container02">
+                <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+                
+                    <defs>
+                        <!-- Création d'un chemin pour le découpage -->
+                        <clipPath id="clip-path2">
+                            <path transform="translate(0.000000,373.000000) scale(0.100000,-0.100000)" d="M762 3619 c-254 -32 -500 -217 -582 -436 -52 -140 -51 -128 -50 -753 0 -395 -5 -679 -15 -875 -31 -598 -14 -797 83 -995 52 -108 157 -211 277 -272 158 -81 310 -122 570 -157 308 -41 401 -43 1375 -40 514 2 1072 0 1240 -5 422 -12 552 3 729 85 124 58 198 121 280 239 73 105 118 209 150 350 43 187 46 266 46 1275 l0 960 -23 75 c-93 299 -365 520 -677 549 -94 9 -351 1 -640 -20 -246 -19 -923 -17 -1395 3 -456 19 -1272 30 -1368 17z"/>
+                        </clipPath>
+                    </defs>
+                    <!-- Utilisation du clipPath pour découper l'image -->
+                    <image href="<?php echo base_url('./images/pere_enfant.jpg'); ?>" width="100%" height="auto" clip-path="url(#clip-path2)" />
+                </svg>
+            </div>
         </div>
         <div class="textpart">
             <h2>Bienvenue à la MAM Tiazaza</h2>

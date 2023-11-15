@@ -63,7 +63,7 @@
   .pplimage {
     grid-area: mi;
     position: relative;
-    .svg-container{
+    .svg-container {
       position: relative;
       margin-top: 50px;
       svg {
@@ -72,10 +72,11 @@
         width: 100%;
         height: auto;
         z-index: 2;
-        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); /* Ajustez les valeurs selon vos besoins */
+        filter: drop-shadow(
+          10px 10px 10px rgba(0, 0, 0, 0.5)
+        );
       }
     }
-
 
     img {
       position: relative;
@@ -97,7 +98,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  .anim01{
+  .anim01 {
     display: block;
     position: absolute;
     top: 35%;
@@ -108,7 +109,7 @@
     border-radius: 100%;
     z-index: 0;
   }
-  .anim02{
+  .anim02 {
     display: block;
     position: absolute;
     top: 5%;
@@ -173,22 +174,24 @@
 
   // **************** Bandeau 01
   .bandeau01 {
+    position: relative;
     display: flex;
     margin: 25px auto;
     .imagepart {
-      width: 50%;
-      // clip-path: path(
-      //   "M505.686 127.701C552.843 165.423 600 228.457 600 299.432C600 370.905 552.38 450.813 471.936 514.849C391.493 578.884 278.843 626.04 188.994 587.803C99.1455 549.567 33.1922 436.209 9.6136 312.834C-13.8657 189.363 5.45332 59.7042 72.0271 17.5161C138.6 -24.672 315.333 19.9974 398.316 48.7853C481.299 77.5731 508.529 89.9811 505.686 127.701Z"
-      // );
-
-      // img {
-        // width: 90%;
-        // border-radius: 45px;
-      // }
+      position: relative;
+      width: 100%;
+      min-height: 300px;
+      .svg-container02{
+        position: relative;
+        filter: drop-shadow(
+          10px 10px 10px rgba(0, 0, 0, 0.5)
+        );
+      }
     }
+
     .textpart {
       position: relative;
-      width: 50%;
+      width: 100%;
       @include defaultpadding;
       h2 {
         position: relative;
@@ -246,7 +249,6 @@
         height: 300px;
         background: url("../../images/child3.jpeg");
         border-radius: 300px;
-       
       }
     }
 
