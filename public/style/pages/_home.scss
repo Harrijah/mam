@@ -14,17 +14,18 @@
 
     .titles {
       position: relative;
-      top: 25%;
+      top: 20%;
       left: 0;
-      transform: translate(-25% 0);
+      transform: translate(-20% 0);
       h1 {
         position: relative;
-        font-size: 3.5rem;
-        font-family: Butterfly-kids;
+        font-size: 2.5rem;
+        font-family: mali;
+        line-height: 50px;
         margin-bottom: 20px;
         span {
-          font-size: 3.5rem;
-          font-family: Butterfly-kids;
+          font-size: 2.5rem;
+          font-family: mali;
           margin-bottom: 20px;
           color: $color6;
         }
@@ -92,7 +93,10 @@
 // *********** section 01
 .normalcontainer {
   @include defaultspacing;
+  display: block;
   position: relative;
+  width: 100%;
+  overflow: hidden;
   .anim01{
     display: block;
     position: absolute;
@@ -100,6 +104,18 @@
     left: -50%;
     width: 150vh;
     height: 150vh;
+    background: $color2;
+    border-radius: 100%;
+    z-index: 0;
+  }
+  .anim02{
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    overflow: hidden;
+    width: 160vh;
+    height: 160vh;
     background: $color9;
     border-radius: 100%;
     z-index: 0;
@@ -110,7 +126,9 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
+    // border: solid 2px $color2;
+    // border-radius: 15px;
     .pictobox {
       display: block;
       position: relative;
@@ -174,7 +192,7 @@
       @include defaultpadding;
       h2 {
         position: relative;
-        font-family: Butterfly-kids;
+        font-family: mali;
         margin-bottom: 20px;
         &::after {
           content: "";
@@ -205,8 +223,7 @@
         content: "";
         position: absolute;
         top: 100%;
-        left: 100%;
-
+        left: 110%;
         width: 300px;
         height: 300px;
         background: url("../../images/kid.jpg");
@@ -223,7 +240,7 @@
         content: "";
         position: absolute;
         top: 200px;
-        left: -60%;
+        left: -70%;
 
         width: 300px;
         height: 300px;
@@ -235,7 +252,7 @@
 
     h2 {
       position: relative;
-      font-family: Butterfly-kids;
+      font-family: mali;
       margin-bottom: 15px;
       &::after {
         content: "";
