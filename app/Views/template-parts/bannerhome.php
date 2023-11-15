@@ -1,5 +1,5 @@
 <div class="banner01">
-    <p><span>Tiazaza</span> représente la sincère affection et l'attachement profond que nous pouvons éprouver envers les enfants.</p>
+    <p><span>Découvrez</span> la sincère affection et l'attachement profond que nous pouvons éprouver envers les enfants.</p>
 </div>
 
 <div class="teamcontainer">

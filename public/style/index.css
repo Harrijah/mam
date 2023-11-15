@@ -62,8 +62,8 @@ nav ul li a:hover {
   padding: 0 10%;
   background: #ffecd6;
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  grid-template-columns: 40% auto;
   grid-template-areas: "mt mi";
 }
 .fullwidth .ppltitle {
@@ -74,9 +74,9 @@ nav ul li a:hover {
 }
 .fullwidth .ppltitle .titles {
   position: relative;
-  top: 20%;
+  top: 30%;
   left: 0;
-  transform: translate(-20% 0);
+  transform: translate(-30% 0);
 }
 .fullwidth .ppltitle .titles h1 {
   position: relative;
@@ -105,20 +105,6 @@ nav ul li a:hover {
   font-size: 1rem;
   color: #997a56;
 }
-.fullwidth .ppltitle .titles h2::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../images/733740.png");
-  background-repeat: no-repeat;
-  z-index: 0;
-}
-.fullwidth .ppltitle .titles img {
-  width: 30%;
-  height: auto;
-}
 .fullwidth .pplimage {
   grid-area: mi;
   position: relative;
@@ -126,6 +112,17 @@ nav ul li a:hover {
 .fullwidth .pplimage .svg-container {
   position: relative;
   margin-top: 50px;
+}
+.fullwidth .pplimage .svg-container::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: -35px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/733740.png");
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 .fullwidth .pplimage .svg-container svg {
   position: relative;
@@ -287,8 +284,8 @@ nav ul li a:hover {
   left: -70%;
   width: 300px;
   height: 300px;
-  background: url("../../images/child3.jpeg");
-  border-radius: 300px;
+  background: url("../../images/logo.png");
+  background-repeat: no-repeat;
 }
 .normalcontainer .ourobjective h2 {
   position: relative;
@@ -346,7 +343,7 @@ nav ul li a:hover {
 }
 .banner01 p span {
   font-family: mali;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #3D8A6C;
 }
 
