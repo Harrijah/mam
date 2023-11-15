@@ -4,7 +4,7 @@
 
 <div class="teamcontainer">
     <div class="ourteam">
-        <h2>Notre équipe</h2>
+        <h2>Les assistantes maternelles </h2>
         <p>Nous sommes ravis de vous accueillir dans notre communauté dévouée d'assistantes maternelles agréées. Chez nous, votre enfant trouvera un environnement chaleureux, sûr et stimulant pour grandir et s'épanouir.
         <br /><br />
         Notre engagement envers le bien-être de chaque enfant est notre priorité absolue. 
