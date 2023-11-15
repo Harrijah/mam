@@ -21,23 +21,42 @@
   }
 }
 
-.teamcontainer{
-    display: flex;
-    background: $color1;
-    // background: url("../../images/arc.png") center/cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // overflow-y: visible;
+.teamcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 5% 10%;
+  background: $color1;
 
-    .ourteam {
-        margin: 50px auto;
-        h2 {
-            font-family: mali;
-            font-size: 3rem;
-        }
+  .ourteam {
+    width: 50%;
+    height: auto;
+    padding: 25px;
+    margin: 50px auto;
+    h2 {
+      font-family: mali;
+      font-size: 2rem;
     }
-    .mamcontainer {
-        min-height: 400px;
-        z-index: 1;
+  }
+  .mamcontainer {
+    position: relative;
+    width: 50%;
+    padding: 25px;
+    min-height: 400px;
+    z-index: 1;
+    img {
+      position: relative;
+      width: auto;
+      max-height: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 25px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
+    p{
+      position: relative;
+      text-align: center;
+    }
+  }
 }
