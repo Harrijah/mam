@@ -43,6 +43,9 @@ $color9: #faefe3;
   padding: 1% 10%;
 }
 @mixin divideflex{
+  position: relative;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }

@@ -233,6 +233,9 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 .normalcontainer .pictocontainer {
+  position: relative;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -278,6 +281,9 @@ nav ul li a:hover {
   fill: #ccb59b;
 }
 .normalcontainer .ourobjective {
+  position: relative;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,6 +391,9 @@ nav ul li a:hover {
   background: #ffecd6;
   margin: auto;
   padding: 1% 10%;
+  position: relative;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -423,12 +432,16 @@ nav ul li a:hover {
   background: #ffecd6;
   margin: auto;
   padding: 1% 10%;
+  padding-bottom: 50px;
 }
 .banner02 h2 {
   text-align: center;
   margin-bottom: 25px;
 }
 .banner02 .mapform {
+  position: relative;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   height: auto;
@@ -458,4 +471,91 @@ nav ul li a:hover {
 }
 .banner02 .mapform .homeform input[type=submit] {
   background: #ccb59b;
+}
+
+.mamfooter {
+  position: relative;
+  background: #ccb59b;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.mamfooter .footercontainer {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 4% 5%;
+}
+.mamfooter .footercontainer .footcol01 {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.mamfooter .footercontainer .footcol01 svg {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+.mamfooter .footercontainer .footcol02 {
+  position: relative;
+  width: 25%;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+.mamfooter .footercontainer .footcol02 h3 {
+  position: relative;
+}
+.mamfooter .footercontainer .footcol02 h3::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 120%;
+  left: 0;
+}
+.mamfooter .footercontainer .footcol02 ul {
+  position: relative;
+}
+.mamfooter .footercontainer .footcol02 ul li {
+  list-style: none;
+  line-height: 30px;
+}
+.mamfooter .footercontainer .footcol02 ul li a {
+  color: #664825;
+}
+.mamfooter .footercontainer .footcol02 ul li a:hover {
+  color: #ffecd6;
+}
+.mamfooter .footercontainer .footcol02 ul li a .fontawe {
+  color: #ffecd6;
+}
+.mamfooter .footercontainer .footcol02 ul li a .fontawe:hover {
+  color: #ffecd6;
+}
+.mamfooter .footercontainer .footcol03 {
+  width: 25%;
+}
+.mamfooter .footercontainer .footcol03 h3 {
+  position: relative;
+  margin-bottom: 20px;
+}
+.mamfooter .footercontainer .footcol03 h3::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 120%;
+  left: 0;
+}
+.mamfooter .footercontainer .footcol03 ul li {
+  list-style: none;
+  line-height: 30px;
 }/*# sourceMappingURL=index.css.map */

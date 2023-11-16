@@ -1,0 +1,78 @@
+.mamfooter{
+    position: relative;
+    background: $color2;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    .footercontainer{
+        @include divideflex;
+        height: 100%;
+        padding: 4% 5%;
+
+        .footcol01{
+            position: relative;
+            width: 40%;
+            height: 100%;
+            svg{
+                position: relative;
+                width: 100%;
+                border-radius: 15px;
+                filter: drop-shadow(
+                  10px 10px 10px rgba(0, 0, 0, 0.5)
+                );
+            }
+        }
+        .footcol02{
+            position: relative;
+            width: 25%;
+            padding-left: 25px;
+            margin-bottom: 20px;
+            h3{
+                position: relative;
+                &::after{
+                    @include afterparam(70px, 5px, $color1);
+                    top: 120%;
+                    left: 0;
+                }
+            }
+            ul{
+                position: relative;
+                li{
+                    list-style: none;
+                    line-height: 30px;
+                    a{
+                        color: $color4;
+                        &:hover{
+                            color: $color1;
+                        }
+                        .fontawe{
+                            color: $color1;
+                            &:hover{
+                                color: $color1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footcol03{
+            width: 25%;
+            h3{
+                position: relative;
+                margin-bottom: 20px;
+                &::after{
+                    @include afterparam(70px, 5px, $color1);
+                    top: 120%;
+                    left: 0;
+                }
+            }
+            ul{
+                li{
+                    list-style: none;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+}
