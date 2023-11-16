@@ -22,10 +22,19 @@
   font-family: Delius Swash Caps;
   color: #664825;
 }
+*::-moz-selection {
+  background-color: #664825;
+  color: #ffecd6;
+}
+*::selection {
+  background-color: #664825;
+  color: #ffecd6;
+}
 
 h2 {
+  position: relative;
   font-family: mali;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .carousel-control {
@@ -64,6 +73,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
+  font-size: 1.5rem;
   color: #664825;
 }
 nav ul li a:hover {
@@ -108,12 +118,12 @@ nav ul li a:hover {
 .fullwidth .ppltitle .titles h1::after {
   content: "";
   position: absolute;
-  top: 105%;
-  left: 0;
   width: 100px;
   height: 5px;
   background-color: #3D8A6C;
   border-radius: 10px;
+  top: 105%;
+  left: 0;
 }
 .fullwidth .ppltitle .titles h2 {
   font-size: 2rem;
@@ -205,9 +215,6 @@ nav ul li a:hover {
   padding: 0 25px;
 }
 .normalcontainer .bandeau01 .textpart h2 {
-  position: relative;
-  font-family: mali;
-  font-size: 4rem;
   margin-bottom: 20px;
 }
 .normalcontainer .bandeau01 .textpart h2 span {
@@ -272,6 +279,7 @@ nav ul li a:hover {
 }
 .normalcontainer .ourobjective {
   display: flex;
+  justify-content: center;
   align-items: center;
   min-width: 400px;
   width: 50%;
@@ -308,9 +316,6 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 .normalcontainer .ourobjective h2 {
-  position: relative;
-  font-family: mali;
-  font-size: 4rem;
   margin-bottom: 15px;
 }
 .normalcontainer .ourobjective h2::after {
@@ -376,12 +381,12 @@ nav ul li a:hover {
 }
 
 .teamcontainer {
+  width: 100%;
+  background: #ffecd6;
+  margin: auto;
+  padding: 1% 10%;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: auto;
-  padding: 5% 10%;
-  background: #ffecd6;
 }
 .teamcontainer .ourteam {
   width: 50%;
@@ -411,4 +416,46 @@ nav ul li a:hover {
 .teamcontainer .mamcontainer p {
   position: relative;
   text-align: center;
+}
+
+.banner02 {
+  width: 100%;
+  background: #ffecd6;
+  margin: auto;
+  padding: 1% 10%;
+}
+.banner02 h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.banner02 .mapform {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.banner02 .mapform .googlemap {
+  width: 60%;
+}
+.banner02 .mapform .googlemap iframe {
+  width: 95%;
+  border: solid 3px #664825;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.banner02 .mapform .homeform {
+  width: 40%;
+}
+.banner02 .mapform .homeform input, .banner02 .mapform .homeform textarea {
+  min-width: 250px;
+  width: 80%;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  border-radius: 20px;
+  background-color: #faefe3;
+}
+.banner02 .mapform .homeform input[type=submit] {
+  background: #ccb59b;
 }/*# sourceMappingURL=index.css.map */

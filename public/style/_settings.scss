@@ -31,6 +31,20 @@ $color9: #faefe3;
   box-sizing: border-box;
   font-family: Delius Swash Caps;
   color: $color4;
+  &::selection{
+    background-color: $color4;
+    color: $color1;
+  }
+}
+@mixin standardbanner{
+  width: 100%;
+  background: $color1;
+  margin: auto;
+  padding: 1% 10%;
+}
+@mixin divideflex{
+  display: flex;
+  justify-content: center;
 }
 @mixin defaultspacing{
   width: 100%;
@@ -40,10 +54,19 @@ $color9: #faefe3;
 @mixin defaultpadding{
   padding: 0 25px;
 }
+@mixin afterparam($width, $height, $color){
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border-radius: 10px;
+}
 
 h2{
+  position: relative;
   font-family: mali;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .carousel-control{

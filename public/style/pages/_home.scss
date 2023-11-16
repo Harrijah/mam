@@ -30,14 +30,9 @@
           color: $color6;
         }
         &::after {
-          content: "";
-          position: absolute;
+          @include afterparam(100px, 5px, $color6);
           top: 105%;
           left: 0;
-          width: 100px;
-          height: 5px;
-          background-color: $color6;
-          border-radius: 10px;
         }
       }
       h2 {
@@ -137,9 +132,6 @@
       width: 100%;
       @include defaultpadding;
       h2 {
-        position: relative;
-        font-family: mali;
-        font-size: 4rem;
         margin-bottom: 20px;
         span{
           font-family: mali;
@@ -163,8 +155,7 @@
   
   // *********** Picto section
   .pictocontainer {
-    display: flex;
-    justify-content: center;
+    @include divideflex;
     margin: auto;
     margin-bottom: 25px;
     // border: solid 2px $color2;
@@ -214,7 +205,7 @@
 
   // *************** Notre objectif
   .ourobjective {
-    display: flex;
+    @include divideflex;
     align-items: center;
     min-width: 400px;
     width: 50%;
@@ -254,9 +245,6 @@
     }
 
     h2 {
-      position: relative;
-      font-family: mali;
-      font-size: 4rem;
       margin-bottom: 15px;
       &::after {
         content: "";

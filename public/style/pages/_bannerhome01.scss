@@ -29,12 +29,8 @@
 }
 
 .teamcontainer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: auto;
-  padding: 5% 10%;
-  background: $color1;
+  @include standardbanner;
+  @include divideflex;
 
   .ourteam {
     width: 50%;
@@ -63,6 +59,47 @@
     p{
       position: relative;
       text-align: center;
+    }
+  }
+}
+.banner02{
+  @include standardbanner;
+  // background: url('../../images/arc.png') center center/cover;
+  // background-position: top;
+  // background-repeat: no-repeat;
+  
+  h2{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .mapform{
+    @include divideflex;
+    height: auto;
+    .googlemap{
+      width: 60%;
+      iframe{
+        width: 95%;
+        border: solid 3px $color4;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .homeform{
+      width: 40%;
+      input, textarea{
+        min-width: 250px;
+        width: 80%;
+        max-width: 400px;
+        min-height: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: solid 1px $color4;
+        border-radius: 20px;
+        background-color: $color9;
+      }
+      input[type="submit"]{
+        background: $color2;
+      }
     }
   }
 }
