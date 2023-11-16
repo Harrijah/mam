@@ -3,7 +3,7 @@
         <div class="footercontainer">
             <div class="footcol01">
                 <!-- <img src="<?php echo base_url('./images/sleeping.jpg'); ?>" alt=""> -->            
-                <div class="svg-container02">
+                <div class="svg-container03">
                     <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 370">
                     
                         <defs>

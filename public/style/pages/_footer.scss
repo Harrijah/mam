@@ -13,12 +13,44 @@
             position: relative;
             width: 40%;
             height: 100%;
+            .svg-container03{
+                position: relative;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -30px;
+                  left: -30px;
+                  width: 100px;
+                  height: 100px;
+                  background: url("../../images/logo.png") center/cover;
+                  background-repeat: no-repeat;
+                  z-index: 2;
+                  animation: dodo 8s infinite linear;
+                }
+                @keyframes dodo{
+                    0%{
+                        rotate: -35deg;
+                    }
+                    30%{
+                        rotate: -30deg;
+                    }
+                    60%{
+                        rotate: -35deg;
+                    }
+                    80%{
+                        rotate: -30deg;
+                    }
+                    100%{
+                        rotate: -35deg;
+                    }
+                }
+            }
             svg{
                 position: relative;
                 width: 100%;
                 border-radius: 15px;
                 filter: drop-shadow(
-                  10px 10px 10px rgba(0, 0, 0, 0.5)
+                  3px 3px 3px rgba(0, 0, 0, 0.5)
                 );
             }
         }

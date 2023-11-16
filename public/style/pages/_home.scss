@@ -5,6 +5,9 @@
   grid-template-rows: auto;
   grid-template-columns: 40% auto;
   grid-template-areas: "mt mi";
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 
   .ppltitle {
     grid-area: mt;
@@ -57,6 +60,24 @@
         background-image: url("../../images/733740.png");
         background-repeat: no-repeat;
         z-index: 0;
+        animation: mysun 5s infinite linear;
+      }
+      @keyframes mysun{
+        0%{
+          rotate: 1deg;
+        }
+        25%{
+          rotate: -1deg;
+        }
+        50%{
+          rotate: 1deg;
+        }
+        75%{
+          rotate: -1deg;
+        }
+        100%{
+          rotate: 1deg;
+        }
       }
       svg {
         position: relative;
@@ -71,6 +92,25 @@
     }
 
   }
+  .mybird{
+    position: absolute;
+    top: 80%;
+    height: 80px;
+    width: auto;
+    animation: birdy 15s infinite linear;
+    //  duration timing-function delay iteration-count direction fill-mode;
+  }
+  @keyframes birdy{
+    0%{
+      left: 100%;
+    }
+    50%{
+      left: 25%;
+    }
+    100%{
+      left: -50%;
+    }
+  }
 }
 // *********** section 01
 .normalcontainer {
@@ -82,13 +122,26 @@
   .anim01 {
     display: block;
     position: absolute;
-    top: 35%;
-    left: -50%;
     width: 150vh;
     height: 150vh;
     background: $color2;
     border-radius: 100%;
     z-index: 0;
+    animation: 20s anim01 infinite linear;
+  }
+  @keyframes anim01{
+    0%{
+      top: 35%;
+      left: -50%;
+    }
+    50%{  
+    top: 30%;
+    left: -45%;
+    }
+    100%{
+      top: 35%;
+      left: -50%;
+    }
   }
   .anim02 {
     display: block;
@@ -101,6 +154,21 @@
     background: $color9;
     border-radius: 100%;
     z-index: 0;
+    animation: 20s anim02 infinite linear;
+  }
+  @keyframes anim02{
+    0%{
+      top: 5%;
+      left: 80%;
+    }
+    50%{  
+    top: 10%;
+    left: 75%;
+    }
+    100%{
+      top: 5%;
+      left: 80%;
+    }
   }
 
 
@@ -236,7 +304,6 @@
         position: absolute;
         top: 200px;
         left: -70%;
-
         width: 300px;
         height: 300px;
         background: url("../../images/logo.png");

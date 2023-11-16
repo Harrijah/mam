@@ -18,10 +18,9 @@
                 <image href="<?php echo base_url('./images/cuddly.jpg'); ?>" width="100%" height="100%" clip-path="url(#clip-path)" />
             </svg>
         </div>
-
-
-
     </div>
+    <img src="<?php echo base_url('./images/bird2.gif'); ?>" alt="oiseau qui vole" class="mybird">
+    
 </div>
 
 <section class="normalcontainer">
