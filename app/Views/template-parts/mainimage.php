@@ -1,8 +1,8 @@
 <div class="fullwidth">
     <div class="ppltitle">
         <div class="titles">
-            <h1>Maison d'Assistants Maternels - <span> Tiazaza </span></h1>
-            <h2>Bien grandir, naturellement</h2>
+            <h1><span> Tiazaza </span>Maison d' Assistants Maternels</h1>
+            <h2>"Bien grandir, naturellement"</h2>
         </div>
     </div>
     <div class="pplimage">
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="textpart">
-            <h2>Bienvenue à la MAM Tiazaza</h2>
+            <h2>Bienvenue à la MAM <span>Tiazaza</span></h2>
             <p>
             Nous comprenons à quel point il est important de trouver un environnement chaleureux et sécurisé pour votre enfant, où il peut grandir, apprendre et s'épanouir. Chez Tiazaza, nous mettons tout en œuvre pour offrir à votre enfant une deuxième maison, où il se sentira aimé, encouragé et entouré de soins attentionnés.
             <br /><br />

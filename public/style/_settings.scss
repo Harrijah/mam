@@ -49,3 +49,10 @@ h2{
 .carousel-control{
   border-radius: 25px;
 }
+.carousel-caption{
+  background: rgba(0, 0, 0, 0.29);
+  border-radius: 15px;
+  p{
+    color: $color2;
+  }
+}

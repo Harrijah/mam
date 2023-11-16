@@ -1,5 +1,6 @@
 <div class="banner01">
     <p><span>Découvrez</span> la sincère affection et l'attachement profond que nous pouvons éprouver envers les enfants.</p>
+    <img src="<?php echo base_url('./images/logo.png'); ?>" alt="logo MAM">
 </div>
 
 <div class="teamcontainer">
@@ -16,13 +17,25 @@
            
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="<?php echo base_url('./images/Claudie1.png'); ?>" alt="Christine Lacroix">
+                    <img src="<?php echo base_url('./images/Claudie1.png'); ?>" alt="Christine Lacroix"> 
+                    <div class="carousel-caption custom-caption-background">
+                        <h3 class="">Claudie DAFFE</h3>
+                        <p class="">Assistante maternelle agréée</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="<?php echo base_url('./images/YenDecottignies.jpg'); ?>" alt="Yen Decottignies">
+                    <img src="<?php echo base_url('./images/YenDecottignies.jpg'); ?>" alt="Yen Decottignies"> 
+                    <div class="carousel-caption custom-caption-background">
+                        <h3 class="">Yen Decottignies</h3>
+                        <p class="">Assistante maternelle agréée</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <img src="<?php echo base_url('./images/ChristineLacroix.jpg'); ?>" alt="Christine Lacroix">
+                    <img src="<?php echo base_url('./images/ChristineLacroix.jpg'); ?>" alt="Christine Lacroix"> 
+                    <div class="carousel-caption custom-caption-background">
+                        <h3 class="">Christine Lacroix</h3>
+                        <p class="">Assistante maternelle agréée</p>
+                    </div>
                 </div>
             </div>
             <!-- Carousel commands -->

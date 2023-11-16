@@ -32,6 +32,14 @@ h2 {
   border-radius: 25px;
 }
 
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.29);
+  border-radius: 15px;
+}
+.carousel-caption p {
+  color: #ccb59b;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -86,13 +94,13 @@ nav ul li a:hover {
 }
 .fullwidth .ppltitle .titles h1 {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-family: mali;
   line-height: 50px;
   margin-bottom: 20px;
 }
 .fullwidth .ppltitle .titles h1 span {
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-family: mali;
   margin-bottom: 20px;
   color: #3D8A6C;
@@ -100,7 +108,7 @@ nav ul li a:hover {
 .fullwidth .ppltitle .titles h1::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 105%;
   left: 0;
   width: 100px;
   height: 5px;
@@ -108,7 +116,7 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 .fullwidth .ppltitle .titles h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #997a56;
 }
 .fullwidth .pplimage {
@@ -171,51 +179,6 @@ nav ul li a:hover {
   border-radius: 100%;
   z-index: 0;
 }
-.normalcontainer .pictocontainer {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 25px;
-}
-.normalcontainer .pictocontainer .pictobox {
-  display: block;
-  position: relative;
-  min-width: 250px;
-  max-width: 400px;
-  width: 20%;
-  text-align: center;
-  margin: 25px;
-  padding: 2%;
-  border-radius: 25px;
-  background-color: #faefe3;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-.normalcontainer .pictocontainer .pictobox h3 {
-  display: block;
-  text-align: center;
-  position: relative;
-  font-family: mali;
-  font-size: 2rem;
-  font-weight: bolder;
-  color: #3D8A6C;
-  margin-bottom: 20px;
-}
-.normalcontainer .pictocontainer .pictobox h3::after {
-  content: "";
-  position: absolute;
-  top: 45px;
-  left: 50%;
-  width: 30px;
-  height: 5px;
-  background-color: #8CAFA2;
-  border-radius: 10px;
-  transform: translateX(-50%);
-}
-.normalcontainer .pictocontainer .pictobox svg {
-  width: 50%;
-  height: auto;
-  fill: #ccb59b;
-}
 .normalcontainer .bandeau01 {
   position: relative;
   display: flex;
@@ -244,7 +207,13 @@ nav ul li a:hover {
 .normalcontainer .bandeau01 .textpart h2 {
   position: relative;
   font-family: mali;
+  font-size: 4rem;
   margin-bottom: 20px;
+}
+.normalcontainer .bandeau01 .textpart h2 span {
+  font-family: mali;
+  font-size: 4rem;
+  color: #3D8A6C;
 }
 .normalcontainer .bandeau01 .textpart h2::after {
   content: "";
@@ -255,6 +224,51 @@ nav ul li a:hover {
   height: 5px;
   background-color: #ccb59b;
   border-radius: 10px;
+}
+.normalcontainer .pictocontainer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.normalcontainer .pictocontainer .pictobox {
+  display: block;
+  position: relative;
+  min-width: 250px;
+  max-width: 400px;
+  width: 20%;
+  text-align: center;
+  margin: 25px;
+  padding: 2%;
+  border-radius: 25px;
+  background-color: #faefe3;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.normalcontainer .pictocontainer .pictobox h3 {
+  display: block;
+  text-align: center;
+  position: relative;
+  font-family: mali;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #3D8A6C;
+  margin-bottom: 20px;
+}
+.normalcontainer .pictocontainer .pictobox h3::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  width: 30px;
+  height: 5px;
+  background-color: #8CAFA2;
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+.normalcontainer .pictocontainer .pictobox svg {
+  width: 50%;
+  height: auto;
+  fill: #ccb59b;
 }
 .normalcontainer .ourobjective {
   display: flex;
@@ -296,6 +310,7 @@ nav ul li a:hover {
 .normalcontainer .ourobjective h2 {
   position: relative;
   font-family: mali;
+  font-size: 4rem;
   margin-bottom: 15px;
 }
 .normalcontainer .ourobjective h2::after {
@@ -341,16 +356,23 @@ nav ul li a:hover {
 }
 .banner01 p {
   text-align: center;
+  width: 70%;
+  margin: auto;
   padding: 50px;
   font-family: mali;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bolder;
   color: #faefe3;
 }
 .banner01 p span {
   font-family: mali;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #3D8A6C;
+}
+.banner01 img {
+  display: block;
+  max-width: 150px;
+  margin: auto;
 }
 
 .teamcontainer {
@@ -369,7 +391,7 @@ nav ul li a:hover {
 }
 .teamcontainer .ourteam h2 {
   font-family: mali;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .teamcontainer .mamcontainer {
   position: relative;

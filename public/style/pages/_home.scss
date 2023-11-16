@@ -19,12 +19,12 @@
       transform: translate(-30% 0);
       h1 {
         position: relative;
-        font-size: 2.5rem;
+        font-size: 5rem;
         font-family: mali;
         line-height: 50px;
         margin-bottom: 20px;
         span {
-          font-size: 2.5rem;
+          font-size: 5rem;
           font-family: mali;
           margin-bottom: 20px;
           color: $color6;
@@ -32,7 +32,7 @@
         &::after {
           content: "";
           position: absolute;
-          top: 100%;
+          top: 105%;
           left: 0;
           width: 100px;
           height: 5px;
@@ -41,7 +41,7 @@
         }
       }
       h2 {
-        font-size: 1rem;
+        font-size: 2rem;
         color: $color3;
       }
     }
@@ -108,55 +108,6 @@
     z-index: 0;
   }
 
-  // *********** Picto section
-  .pictocontainer {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 25px;
-    // border: solid 2px $color2;
-    // border-radius: 15px;
-    .pictobox {
-      display: block;
-      position: relative;
-      min-width: 250px;
-      max-width: 400px;
-      width: 20%;
-      text-align: center;
-      margin: 25px;
-      padding: 2%;
-      // border: solid 3px $color7;
-      border-radius: 25px;
-      background-color: $color9;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-      h3 {
-        display: block;
-        text-align: center;
-        position: relative;
-        font-family: mali;
-        font-size: 2rem;
-        font-weight: bolder;
-        color: $color6;
-        margin-bottom: 20px;
-        &::after {
-          content: "";
-          position: absolute;
-          top: 45px;
-          left: 50%;
-          width: 30px;
-          height: 5px;
-          background-color: $color7;
-          border-radius: 10px;
-          transform: translateX(-50%);
-        }
-      }
-      svg {
-        width: 50%;
-        height: auto;
-        fill: $color2;
-      }
-    }
-  }
 
   // **************** Bandeau 01
   .bandeau01 {
@@ -188,7 +139,13 @@
       h2 {
         position: relative;
         font-family: mali;
+        font-size: 4rem;
         margin-bottom: 20px;
+        span{
+          font-family: mali;
+          font-size: 4rem;
+          color: $color6;
+        }
         &::after {
           content: "";
           position: absolute;
@@ -202,6 +159,58 @@
       }
     }
   }
+
+  
+  // *********** Picto section
+  .pictocontainer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 25px;
+    // border: solid 2px $color2;
+    // border-radius: 15px;
+    .pictobox {
+      display: block;
+      position: relative;
+      min-width: 250px;
+      max-width: 400px;
+      width: 20%;
+      text-align: center;
+      margin: 25px;
+      padding: 2%;
+      // border: solid 3px $color7;
+      border-radius: 25px;
+      background-color: $color9;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      h3 {
+        display: block;
+        text-align: center;
+        position: relative;
+        font-family: mali;
+        font-size: 4rem;
+        font-weight: bolder;
+        color: $color6;
+        margin-bottom: 20px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 45px;
+          left: 50%;
+          width: 30px;
+          height: 5px;
+          background-color: $color7;
+          border-radius: 10px;
+          transform: translateX(-50%);
+        }
+      }
+      svg {
+        width: 50%;
+        height: auto;
+        fill: $color2;
+      }
+    }
+  }
+
 
   // *************** Notre objectif
   .ourobjective {
@@ -247,6 +256,7 @@
     h2 {
       position: relative;
       font-family: mali;
+      font-size: 4rem;
       margin-bottom: 15px;
       &::after {
         content: "";

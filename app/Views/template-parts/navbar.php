@@ -1,6 +1,6 @@
 <nav>
     <div class="logo">
-        <a href=""><img src="<?php echo base_url('./images/logo.png'); ?>" alt=""></a>
+        <a href=""><img src="<?php echo base_url('./images/logo.png'); ?>" alt="logo"></a>
     </div>
     <ul>
         <li><a href="">Accueil</a></li>

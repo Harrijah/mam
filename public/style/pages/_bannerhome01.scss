@@ -8,16 +8,23 @@
   background-repeat: no-repeat;
   p {
     text-align: center;
+    width: 70%;
+    margin: auto;
     padding: 50px;
     font-family: mali;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bolder;
     color: $color9;
     span {
       font-family: mali;
-      font-size: 2rem;
+      font-size: 3rem;
       color: $color6;
     }
+  }
+  img{
+    display: block;
+    max-width: 150px;
+    margin: auto;
   }
 }
 
@@ -36,7 +43,7 @@
     margin: 50px auto;
     h2 {
       font-family: mali;
-      font-size: 2rem;
+      font-size: 4rem;
     }
   }
   .mamcontainer {
@@ -51,10 +58,7 @@
       height: auto;
       overflow: hidden;
       max-height: 350px;
-      // left: 50%;
-      // transform: translateX(-50%);
       border-radius: 25px;
-      // box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     p{
       position: relative;
