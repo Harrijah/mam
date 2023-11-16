@@ -1,6 +1,6 @@
 /* ************** Variables ********** */
 @font-face {
-  font-family: DeliusSwashCaps-Regular;
+  font-family: Delius Swash Caps;
   src: url("../../font/DeliusSwashCaps-Regular.ttf");
 }
 @font-face {
@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: DeliusSwashCaps-Regular;
+  font-family: Delius Swash Caps;
   color: #664825;
 }
 

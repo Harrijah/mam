@@ -10,7 +10,7 @@ $color8: #E7E7E7;
 $color9: #faefe3;
 
 @font-face {
-  font-family: DeliusSwashCaps-Regular;
+  font-family: Delius Swash Caps;
   src: url("../../font/DeliusSwashCaps-Regular.ttf");
 }
 @font-face {
@@ -29,7 +29,7 @@ $color9: #faefe3;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: DeliusSwashCaps-Regular;
+  font-family: Delius Swash Caps;
   color: $color4;
 }
 @mixin defaultspacing{
