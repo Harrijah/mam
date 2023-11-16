@@ -28,6 +28,10 @@ h2 {
   font-size: 2rem;
 }
 
+.carousel-control {
+  border-radius: 25px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -52,9 +56,11 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
+  color: #664825;
 }
 nav ul li a:hover {
   color: #ffecd6;
+  text-decoration: none;
 }
 
 .fullwidth {
@@ -367,19 +373,18 @@ nav ul li a:hover {
 }
 .teamcontainer .mamcontainer {
   position: relative;
-  width: 50%;
+  width: 40%;
   padding: 25px;
   min-height: 400px;
   z-index: 1;
 }
 .teamcontainer .mamcontainer img {
   position: relative;
-  width: auto;
-  max-height: 300px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-height: 350px;
   border-radius: 25px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .teamcontainer .mamcontainer p {
   position: relative;

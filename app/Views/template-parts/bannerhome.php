@@ -12,7 +12,26 @@
         Rejoignez notre famille de parents et d'enfants, et découvrez la tranquillité d'esprit que nous pouvons vous offrir.</p>
     </div>
     <div class="mamcontainer">
-        <img src="<?php echo base_url('./images/Claudie1.png'); ?>" alt="breeeef">
-        <p>Claudie Daffe</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="<?php echo base_url('./images/Claudie1.png'); ?>" alt="Christine Lacroix">
+                </div>
+                <div class="item">
+                    <img src="<?php echo base_url('./images/YenDecottignies.jpg'); ?>" alt="Yen Decottignies">
+                </div>
+                <div class="item">
+                    <img src="<?php echo base_url('./images/ChristineLacroix.jpg'); ?>" alt="Christine Lacroix">
+                </div>
+            </div>
+            <!-- Carousel commands -->
+            <a class="left carousel-control carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="right carousel-control carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
     </div>
 </div>
