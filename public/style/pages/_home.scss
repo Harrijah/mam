@@ -8,109 +8,40 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('../../images/baby4.jpg') ;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 
   .ppltitle {
     grid-area: mt;
     position: relative;
-    height: 100%;
-    display: flex;
 
     .titles {
       position: relative;
-      top: 30%;
+      padding: 15px 0;
       left: 0;
-      transform: translate(-30% 0);
-      h1 {
+      img{
         position: relative;
-        font-size: 5rem;
-        font-family: mali;
-        line-height: 50px;
-        margin-bottom: 20px;
-        span {
-          font-size: 5rem;
-          font-family: mali;
-          margin-bottom: 20px;
-          color: $color6;
-        }
-        &::after {
-          @include afterparam(100px, 5px, $color6);
-          top: 105%;
-          left: 0;
-        }
+        height: 250px;
       }
-      h2 {
+      h1{
+        font-family: mali;
+        color: $color1;
+        font-size: 3rem;
+      }
+      h2{
+        font-family: mali;
+        color: $color2;
         font-size: 2rem;
-        color: $color3;
       }
     }
   }
   .pplimage {
     grid-area: mi;
     position: relative;
-    .svg-container {
-      position: relative;
-      margin-top: 50px;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 5%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("../../images/733740.png");
-        background-repeat: no-repeat;
-        z-index: 0;
-        animation: mysun 5s infinite linear;
-      }
-      @keyframes mysun{
-        0%{
-          rotate: 1deg;
-        }
-        25%{
-          rotate: -1deg;
-        }
-        50%{
-          rotate: 1deg;
-        }
-        75%{
-          rotate: -1deg;
-        }
-        100%{
-          rotate: 1deg;
-        }
-      }
-      svg {
-        position: relative;
-        margin-top: 50px;
-        width: 100%;
-        height: auto;
-        z-index: 2;
-        filter: drop-shadow(
-          10px 10px 10px rgba(0, 0, 0, 0.5)
-        );
-      }
-    }
-
   }
-  .mybird{
-    position: absolute;
-    top: 80%;
-    height: 80px;
-    width: auto;
-    animation: birdy 15s infinite linear;
-    //  duration timing-function delay iteration-count direction fill-mode;
-  }
-  @keyframes birdy{
-    0%{
-      left: 100%;
-    }
-    50%{
-      left: 25%;
-    }
-    100%{
-      left: -50%;
-    }
-  }
+ 
 }
 // *********** section 01
 .normalcontainer {
@@ -119,11 +50,28 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  h2 {
+    position: relative;
+    margin: 15px auto;
+    text-align: center;
+    margin-bottom: 20px;
+    span{
+      font-family: mali;
+      font-size: 4rem;
+      color: $color6;
+    }
+    &::after {
+      @include afterparam(100px, 5px, $color2);
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
   .anim01 {
     display: block;
     position: absolute;
-    width: 150vh;
-    height: 150vh;
+    width: 100vw;
+    height: 100vw;
     background: $color2;
     border-radius: 100%;
     z-index: 0;
@@ -132,15 +80,15 @@
   @keyframes anim01{
     0%{
       top: 35%;
-      left: -50%;
+      left: -85%;
     }
     50%{  
     top: 30%;
-    left: -45%;
+    left: -80%;
     }
     100%{
       top: 35%;
-      left: -50%;
+      left: -85%;
     }
   }
   .anim02 {
@@ -149,8 +97,8 @@
     top: 5%;
     left: 80%;
     overflow: hidden;
-    width: 160vh;
-    height: 160vh;
+    width: 100vw;
+    height: 100vw;
     background: $color9;
     border-radius: 100%;
     z-index: 0;
@@ -176,47 +124,37 @@
   .bandeau01 {
     position: relative;
     display: flex;
-    margin: 25px auto;
+    margin: 25px 10%;
     .imagepart {
       position: relative;
-      width: 100%;
-      .svg-container02{
-        position: relative;
-        margin: auto;
-        svg {
-          position: relative;
-          width: 100%;
-          height: auto;
-          z-index: 2;
-          filter: drop-shadow(
-            10px 10px 10px rgba(0, 0, 0, 0.5)
-          );
+      width: 50%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      img{
+        width: 100%;
+        animation: 10s imgzoom infinite linear;
+      }
+      @keyframes imgzoom{
+        0%{
+          transform: scale(1.1);
+        }
+        30%{
+          transform: scale(1);
+        }
+        70%{
+          transform: scale(1.1);
+        }
+        100%{
+          transform: scale(1.2);
         }
       }
     }
 
     .textpart {
       position: relative;
-      width: 100%;
+      width: 50%;
       @include defaultpadding;
-      h2 {
-        margin-bottom: 20px;
-        span{
-          font-family: mali;
-          font-size: 4rem;
-          color: $color6;
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100px;
-          height: 5px;
-          background-color: $color2;
-          border-radius: 10px;
-        }
-      }
     }
   }
 
@@ -240,7 +178,7 @@
       // border: solid 3px $color7;
       border-radius: 25px;
       background-color: $color9;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
       h3 {
         display: block;
         text-align: center;
@@ -248,7 +186,7 @@
         font-family: mali;
         font-size: 4rem;
         font-weight: bolder;
-        color: $color6;
+        color: $color4;
         margin-bottom: 20px;
         &::after {
           content: "";
@@ -257,15 +195,13 @@
           left: 50%;
           width: 30px;
           height: 5px;
-          background-color: $color7;
+          background-color: $color2;
           border-radius: 10px;
           transform: translateX(-50%);
         }
       }
-      svg {
-        width: 50%;
-        height: auto;
-        fill: $color2;
+      img{
+        height: 70px;
       }
     }
   }
@@ -278,14 +214,14 @@
     min-width: 400px;
     width: 50%;
     max-width: 500px;
-    margin: 50px auto 0;
+    margin: 0 auto;
     text-align: center;
     .part1 {
       position: relative;
       &::after {
         content: "";
         position: absolute;
-        top: 100%;
+        top: 70%;
         left: 110%;
         width: 300px;
         height: 300px;
@@ -302,12 +238,13 @@
       &::before {
         content: "";
         position: absolute;
-        top: 200px;
+        top: 150px;
         left: -70%;
         width: 300px;
         height: 300px;
-        background: url("../../images/logo.png");
+        background: url("../../images/family.jpg");
         background-repeat: no-repeat;
+        border-radius: 100%;
       }
     }
 

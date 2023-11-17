@@ -92,108 +92,37 @@ nav ul li a:hover {
   position: relative;
   width: 100%;
   overflow: hidden;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../../images/baby4.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 .fullwidth .ppltitle {
   grid-area: mt;
   position: relative;
-  height: 100%;
-  display: flex;
 }
 .fullwidth .ppltitle .titles {
   position: relative;
-  top: 30%;
+  padding: 15px 0;
   left: 0;
-  transform: translate(-30% 0);
+}
+.fullwidth .ppltitle .titles img {
+  position: relative;
+  height: 250px;
 }
 .fullwidth .ppltitle .titles h1 {
-  position: relative;
-  font-size: 5rem;
   font-family: mali;
-  line-height: 50px;
-  margin-bottom: 20px;
-}
-.fullwidth .ppltitle .titles h1 span {
-  font-size: 5rem;
-  font-family: mali;
-  margin-bottom: 20px;
-  color: #3D8A6C;
-}
-.fullwidth .ppltitle .titles h1::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 5px;
-  background-color: #3D8A6C;
-  border-radius: 10px;
-  top: 105%;
-  left: 0;
+  color: #ffecd6;
+  font-size: 3rem;
 }
 .fullwidth .ppltitle .titles h2 {
+  font-family: mali;
+  color: #ccb59b;
   font-size: 2rem;
-  color: #997a56;
 }
 .fullwidth .pplimage {
   grid-area: mi;
   position: relative;
-}
-.fullwidth .pplimage .svg-container {
-  position: relative;
-  margin-top: 50px;
-}
-.fullwidth .pplimage .svg-container::before {
-  content: "";
-  position: absolute;
-  top: 5%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../images/733740.png");
-  background-repeat: no-repeat;
-  z-index: 0;
-  animation: mysun 5s infinite linear;
-}
-@keyframes mysun {
-  0% {
-    rotate: 1deg;
-  }
-  25% {
-    rotate: -1deg;
-  }
-  50% {
-    rotate: 1deg;
-  }
-  75% {
-    rotate: -1deg;
-  }
-  100% {
-    rotate: 1deg;
-  }
-}
-.fullwidth .pplimage .svg-container svg {
-  position: relative;
-  margin-top: 50px;
-  width: 100%;
-  height: auto;
-  z-index: 2;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-}
-.fullwidth .mybird {
-  position: absolute;
-  top: 80%;
-  height: 80px;
-  width: auto;
-  animation: birdy 15s infinite linear;
-}
-@keyframes birdy {
-  0% {
-    left: 100%;
-  }
-  50% {
-    left: 25%;
-  }
-  100% {
-    left: -50%;
-  }
 }
 
 .normalcontainer {
@@ -205,11 +134,33 @@ nav ul li a:hover {
   width: 100%;
   overflow: hidden;
 }
+.normalcontainer h2 {
+  position: relative;
+  margin: 15px auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.normalcontainer h2 span {
+  font-family: mali;
+  font-size: 4rem;
+  color: #3D8A6C;
+}
+.normalcontainer h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .normalcontainer .anim01 {
   display: block;
   position: absolute;
-  width: 150vh;
-  height: 150vh;
+  width: 100vw;
+  height: 100vw;
   background: #ccb59b;
   border-radius: 100%;
   z-index: 0;
@@ -218,15 +169,15 @@ nav ul li a:hover {
 @keyframes anim01 {
   0% {
     top: 35%;
-    left: -50%;
+    left: -85%;
   }
   50% {
     top: 30%;
-    left: -45%;
+    left: -80%;
   }
   100% {
     top: 35%;
-    left: -50%;
+    left: -85%;
   }
 }
 .normalcontainer .anim02 {
@@ -235,8 +186,8 @@ nav ul li a:hover {
   top: 5%;
   left: 80%;
   overflow: hidden;
-  width: 160vh;
-  height: 160vh;
+  width: 100vw;
+  height: 100vw;
   background: #faefe3;
   border-radius: 100%;
   z-index: 0;
@@ -259,45 +210,37 @@ nav ul li a:hover {
 .normalcontainer .bandeau01 {
   position: relative;
   display: flex;
-  margin: 25px auto;
+  margin: 25px 10%;
 }
 .normalcontainer .bandeau01 .imagepart {
   position: relative;
-  width: 100%;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.normalcontainer .bandeau01 .imagepart .svg-container02 {
-  position: relative;
-  margin: auto;
-}
-.normalcontainer .bandeau01 .imagepart .svg-container02 svg {
-  position: relative;
+.normalcontainer .bandeau01 .imagepart img {
   width: 100%;
-  height: auto;
-  z-index: 2;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  animation: 10s imgzoom infinite linear;
+}
+@keyframes imgzoom {
+  0% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 .normalcontainer .bandeau01 .textpart {
   position: relative;
-  width: 100%;
+  width: 50%;
   padding: 0 25px;
-}
-.normalcontainer .bandeau01 .textpart h2 {
-  margin-bottom: 20px;
-}
-.normalcontainer .bandeau01 .textpart h2 span {
-  font-family: mali;
-  font-size: 4rem;
-  color: #3D8A6C;
-}
-.normalcontainer .bandeau01 .textpart h2::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100px;
-  height: 5px;
-  background-color: #ccb59b;
-  border-radius: 10px;
 }
 .normalcontainer .pictocontainer {
   position: relative;
@@ -319,7 +262,7 @@ nav ul li a:hover {
   padding: 2%;
   border-radius: 25px;
   background-color: #faefe3;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .normalcontainer .pictocontainer .pictobox h3 {
   display: block;
@@ -328,7 +271,7 @@ nav ul li a:hover {
   font-family: mali;
   font-size: 4rem;
   font-weight: bolder;
-  color: #3D8A6C;
+  color: #664825;
   margin-bottom: 20px;
 }
 .normalcontainer .pictocontainer .pictobox h3::after {
@@ -338,14 +281,12 @@ nav ul li a:hover {
   left: 50%;
   width: 30px;
   height: 5px;
-  background-color: #8CAFA2;
+  background-color: #ccb59b;
   border-radius: 10px;
   transform: translateX(-50%);
 }
-.normalcontainer .pictocontainer .pictobox svg {
-  width: 50%;
-  height: auto;
-  fill: #ccb59b;
+.normalcontainer .pictocontainer .pictobox img {
+  height: 70px;
 }
 .normalcontainer .ourobjective {
   position: relative;
@@ -357,7 +298,7 @@ nav ul li a:hover {
   min-width: 400px;
   width: 50%;
   max-width: 500px;
-  margin: 50px auto 0;
+  margin: 0 auto;
   text-align: center;
 }
 .normalcontainer .ourobjective .part1 {
@@ -366,7 +307,7 @@ nav ul li a:hover {
 .normalcontainer .ourobjective .part1::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 110%;
   width: 300px;
   height: 300px;
@@ -381,12 +322,13 @@ nav ul li a:hover {
 .normalcontainer .ourobjective .part2::before {
   content: "";
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: -70%;
   width: 300px;
   height: 300px;
-  background: url("../../images/logo.png");
+  background: url("../../images/family.jpg");
   background-repeat: no-repeat;
+  border-radius: 100%;
 }
 .normalcontainer .ourobjective h2 {
   margin-bottom: 15px;
