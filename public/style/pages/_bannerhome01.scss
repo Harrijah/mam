@@ -21,7 +21,7 @@
       color: $color6;
     }
   }
-  img{
+  img {
     display: block;
     max-width: 150px;
     margin: auto;
@@ -31,6 +31,7 @@
 .teamcontainer {
   @include standardbanner;
   @include divideflex;
+  }
 
   .ourteam {
     width: 50%;
@@ -40,6 +41,21 @@
     h2 {
       font-family: mali;
       font-size: 4rem;
+    }
+    p{
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 127px;
+        top: 28%;
+        left: -20%;
+        background: url("../../images/abc.png") center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(
+          -5px 3px 5px rgba(0, 0, 0, 0.4)
+        );
     }
   }
   .mamcontainer {
@@ -56,35 +72,36 @@
       max-height: 350px;
       border-radius: 25px;
     }
-    p{
+    p {
       position: relative;
       text-align: center;
     }
   }
 }
-.banner02{
+.banner02 {
   @include standardbanner;
   padding-bottom: 50px;
-  
-  h2{
+
+  h2 {
     text-align: center;
     margin-bottom: 25px;
   }
-  .mapform{
+  .mapform {
     @include divideflex;
     height: auto;
-    .googlemap{
+    .googlemap {
       width: 60%;
-      iframe{
+      iframe {
         width: 95%;
         border: solid 3px $color4;
         border-radius: 10px;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       }
     }
-    .homeform{
+    .homeform {
       width: 40%;
-      input, textarea{
+      input,
+      textarea {
         min-width: 250px;
         width: 80%;
         max-width: 400px;
@@ -95,7 +112,7 @@
         border-radius: 20px;
         background-color: $color9;
       }
-      input[type="submit"]{
+      input[type="submit"] {
         background: $color2;
       }
     }

@@ -464,24 +464,39 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
 }
-.teamcontainer .ourteam {
+
+.ourteam {
   width: 50%;
   height: auto;
   padding: 25px;
   margin: 50px auto;
 }
-.teamcontainer .ourteam h2 {
+.ourteam h2 {
   font-family: mali;
   font-size: 4rem;
 }
-.teamcontainer .mamcontainer {
+.ourteam p {
+  position: relative;
+}
+.ourteam p::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 127px;
+  top: 28%;
+  left: -20%;
+  background: url("../../images/abc.png") center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(-5px 3px 5px rgba(0, 0, 0, 0.4));
+}
+.ourteam .mamcontainer {
   position: relative;
   width: 40%;
   padding: 25px;
   min-height: 400px;
   z-index: 1;
 }
-.teamcontainer .mamcontainer img {
+.ourteam .mamcontainer img {
   position: relative;
   width: 100%;
   height: auto;
@@ -489,7 +504,7 @@ nav ul li a:hover {
   max-height: 350px;
   border-radius: 25px;
 }
-.teamcontainer .mamcontainer p {
+.ourteam .mamcontainer p {
   position: relative;
   text-align: center;
 }
@@ -525,7 +540,8 @@ nav ul li a:hover {
 .banner02 .mapform .homeform {
   width: 40%;
 }
-.banner02 .mapform .homeform input, .banner02 .mapform .homeform textarea {
+.banner02 .mapform .homeform input,
+.banner02 .mapform .homeform textarea {
   min-width: 250px;
   width: 80%;
   max-width: 400px;
