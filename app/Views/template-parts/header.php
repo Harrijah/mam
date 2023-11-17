@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo base_url('./font-awesome/font-awesome5/css/all.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('./font-awesome/font-awesome5/css/all.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('./style/index.css'); ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('./images/logo.png'); ?>" type="image/x-icon">
 
     
 

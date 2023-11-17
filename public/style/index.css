@@ -49,34 +49,51 @@ h2 {
   color: #ccb59b;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu {
   padding: 0 10%;
   background: #ccb59b;
 }
-nav .logo {
-  width: 70px;
+.menu .adress {
+  display: inline-block;
+  margin-left: 10%;
+  padding: 5px 20px;
+  -webkit-clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
+          clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
+  background: #997a56;
 }
-nav .logo img {
+.menu .adress span {
+  color: #ffecd6;
+}
+.menu .adress span i {
+  z-index: 3;
+}
+.menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu nav .logo {
+  width: 70px;
+  padding: 5px;
+}
+.menu nav .logo img {
   width: 100%;
 }
-nav ul {
+.menu nav ul {
   vertical-align: middle;
 }
-nav ul li {
+.menu nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 15px;
 }
-nav ul li a {
+.menu nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
   font-size: 1.5rem;
   color: #664825;
 }
-nav ul li a:hover {
+.menu nav ul li a:hover {
   color: #ffecd6;
   text-decoration: none;
 }
