@@ -63,7 +63,7 @@
                 au <input type="date" name="" id="">
                 <input type="email" name="" id="" placeholder="Votremail@mail.com">
                 <textarea name="" id="" cols="30" rows="3" placeholder="Votre message, ici."></textarea>
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Réserver">
             </form>
         </div>
     </div>
