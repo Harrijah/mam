@@ -1,4 +1,5 @@
 <div class="banner01">
+    <img src="<?php echo base_url('./images/bird2.gif'); ?>" alt="oiseau qui vole" class="mybird">
     <p><span>Découvrez</span> la sincère affection et l'attachement profond que nous pouvons éprouver envers les enfants.</p>
     <img src="<?php echo base_url('./images/logo.png'); ?>" alt="logo MAM">
 </div>

@@ -1,4 +1,5 @@
 .banner01 {
+  position: relative;
   display: block;
   width: 100%;
   min-height: 400px;
@@ -6,6 +7,26 @@
   background-position: bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  overflow: hidden;
+  .mybird{
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    width: auto;
+    animation: birdy 15s infinite linear;
+    z-index: 0;
+  }
+  @keyframes birdy{
+    0%{
+      left: 100%;
+    }
+    50%{
+      left: 25%;
+    }
+    100%{
+      left: -50%;
+    }
+  }
   p {
     text-align: center;
     width: 70%;
