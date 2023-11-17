@@ -464,20 +464,19 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
 }
-
-.ourteam {
+.teamcontainer .ourteam {
   width: 50%;
   height: auto;
   padding: 25px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
-.ourteam h2 {
+.teamcontainer .ourteam h2 {
   font-family: mali;
   font-size: 4rem;
   position: relative;
   margin-bottom: 20px;
 }
-.ourteam h2::after {
+.teamcontainer .ourteam h2::after {
   content: "";
   position: absolute;
   width: 100px;
@@ -487,10 +486,10 @@ nav ul li a:hover {
   top: 105%;
   left: 0;
 }
-.ourteam p {
+.teamcontainer .ourteam p {
   position: relative;
 }
-.ourteam p::before {
+.teamcontainer .ourteam p::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -501,22 +500,21 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   filter: drop-shadow(-5px 3px 5px rgba(0, 0, 0, 0.4));
 }
-.ourteam .mamcontainer {
+.teamcontainer .mamcontainer {
   position: relative;
   width: 40%;
   padding: 25px;
   min-height: 400px;
   z-index: 1;
 }
-.ourteam .mamcontainer img {
+.teamcontainer .mamcontainer #myCarousel .carousel-inner img {
   position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  max-height: 350px;
   border-radius: 25px;
 }
-.ourteam .mamcontainer p {
+.teamcontainer .mamcontainer #myCarousel .carousel-inner p {
   position: relative;
   text-align: center;
 }

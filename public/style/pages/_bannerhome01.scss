@@ -31,13 +31,12 @@
 .teamcontainer {
   @include standardbanner;
   @include divideflex;
-  }
 
   .ourteam {
     width: 50%;
     height: auto;
     padding: 25px;
-    margin: 50px auto;
+    margin: 0 auto;
     h2 {
       font-family: mali;
       font-size: 4rem;
@@ -63,6 +62,7 @@
         filter: drop-shadow(
           -5px 3px 5px rgba(0, 0, 0, 0.4)
         );
+      }
     }
   }
   .mamcontainer {
@@ -71,17 +71,21 @@
     padding: 25px;
     min-height: 400px;
     z-index: 1;
-    img {
-      position: relative;
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-      max-height: 350px;
-      border-radius: 25px;
-    }
-    p {
-      position: relative;
-      text-align: center;
+    #myCarousel{
+      .carousel-inner{
+        img {
+          position: relative;
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          // max-height: 350px;
+          border-radius: 25px;
+        }
+        p {
+          position: relative;
+          text-align: center;
+        }
+      }
     }
   }
 }
