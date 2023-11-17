@@ -151,6 +151,9 @@
         border-radius: 20px;
         background-color: $color9;
       }
+      input[type="date"]{
+        width: 75%;
+      }
       input[type="submit"] {
         background: $color2;
       }

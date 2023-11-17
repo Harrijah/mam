@@ -232,12 +232,13 @@ h2 {
 .normalcontainer .bandeau01 .imagepart {
   position: relative;
   width: 50%;
+  max-height: 325px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 .normalcontainer .bandeau01 .imagepart img {
-  width: 100%;
+  height: 100%;
   animation: 10s imgzoom infinite linear;
 }
 @keyframes imgzoom {
@@ -553,6 +554,9 @@ h2 {
   border: solid 1px #664825;
   border-radius: 20px;
   background-color: #faefe3;
+}
+.banner02 .mapform .homeform input[type=date] {
+  width: 75%;
 }
 .banner02 .mapform .homeform input[type=submit] {
   background: #ccb59b;

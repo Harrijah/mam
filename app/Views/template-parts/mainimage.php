@@ -20,9 +20,9 @@
         </div>
         <div class="textpart">
             <p>
-            Nous comprenons à quel point il est important de trouver un environnement chaleureux et sécurisé pour votre enfant, où il peut grandir, apprendre et s'épanouir. Chez Tiazaza, nous mettons tout en œuvre pour offrir à votre enfant une deuxième maison, où il se sentira aimé, encouragé et entouré de soins attentionnés.
+            Nous comprenons à quel point il est important de trouver <b>un environnement chaleureux et sécurisé pour votre enfant</b>, où il peut grandir, apprendre et s'épanouir. Chez Tiazaza, nous mettons tout en œuvre pour offrir à votre enfant une deuxième maison, où <b>il se sentira aimé, encouragé et entouré de soins attentionnés</b>.
             <br /><br />
-            Explorez notre site pour en apprendre davantage sur nos programmes, notre équipe et nos installations. Nous serons ravis de vous rencontrer en personne, de répondre à vos questions et de discuter de la façon dont nous pouvons répondre aux besoins uniques de votre enfant. 
+            Explorez notre site pour en apprendre davantage sur nos programmes, notre équipe et nos installations. Nous serons ravis de vous rencontrer en personne, de répondre à vos questions et de discuter de la façon dont nous pouvons répondre <b>aux besoins uniques de votre enfant</b>. 
             </p>
         </div>
     </div>
