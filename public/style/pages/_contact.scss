@@ -1,0 +1,62 @@
+#contactback{
+    width: 100%;
+    background: url('../../images/cuddly.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 5% 0;
+    .formcontainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        margin: auto;
+        background: $color10;
+        padding: 5% 0;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        .formtext{
+            width: 50%;
+            padding: 0 5%;
+
+            h1{
+                color: $color1;
+            }
+            p, ul li{
+                color: $color1;
+            }
+            ul{
+                padding: 0 15px;
+            }
+        }
+        .formform{
+            width: 50%;
+            form{
+                label{
+                    color: $color1;
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+                input[type="text"], input[type="email"], input[type="submit"]{
+                    @include defaultinput;
+                }
+                input[type="checkbox"]{
+                    display: inline-block;
+                    &:checked{
+                    color: yellow;
+                    padding: 10px;
+                    }
+                }
+                textarea{
+                    @include defaultinput;
+                }
+                input[type="submit"] {
+                  background: $color2;
+                }
+              }
+            }
+        }
+    }
+}

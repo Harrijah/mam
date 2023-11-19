@@ -19,16 +19,21 @@ window.addEventListener('scroll', () => {
         menu.style.top = 0;
     }
 
-    if (scrollValue > 0.40 && scrollValue < 0.54) {
-        part1.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
-    } else {
-        part1.style.setProperty('--defaultpath', "5px");
+    if (part1) {
+        
+        if (scrollValue > 0.40 && scrollValue < 0.54) {
+            part1.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
+        } else {
+            part1.style.setProperty('--defaultpath', "5px");
+        }   
     }
-
-    if (scrollValue > 0.42 && scrollValue < 0.6) {
-        part2.style.setProperty('--defaultscale', "1");
-    } else {
-        part2.style.setProperty('--defaultscale', "0");
+    if (part2) {
+        
+        if (scrollValue > 0.42 && scrollValue < 0.6) {
+            part2.style.setProperty('--defaultscale', "1");
+        } else {
+            part2.style.setProperty('--defaultscale', "0");
+        }
     }
     
     if (scrollValue > 0.92) {

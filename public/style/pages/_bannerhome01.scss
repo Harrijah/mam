@@ -141,15 +141,7 @@
       width: 40%;
       input,
       textarea {
-        min-width: 250px;
-        width: 80%;
-        max-width: 400px;
-        min-height: 40px;
-        margin-bottom: 10px;
-        padding: 10px;
-        border: solid 1px $color4;
-        border-radius: 20px;
-        background-color: $color9;
+        @include defaultinput;
       }
       input[type="date"]{
         width: 75%;

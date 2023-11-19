@@ -558,6 +558,7 @@ h2 {
 }
 .banner02 .mapform .homeform input,
 .banner02 .mapform .homeform textarea {
+  display: block;
   min-width: 250px;
   width: 80%;
   max-width: 400px;
@@ -699,4 +700,78 @@ h2 {
 .mamfooter .footercontainer .footcol03 ul li {
   list-style: none;
   line-height: 30px;
+}
+
+#contactback {
+  width: 100%;
+  background: url("../../images/cuddly.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5% 0;
+}
+#contactback .formcontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+  background: rgba(51, 31, 8, 0.8117647059);
+  padding: 5% 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#contactback .formcontainer .formtext {
+  width: 50%;
+  padding: 0 5%;
+}
+#contactback .formcontainer .formtext h1 {
+  color: #ffecd6;
+}
+#contactback .formcontainer .formtext p, #contactback .formcontainer .formtext ul li {
+  color: #ffecd6;
+}
+#contactback .formcontainer .formtext ul {
+  padding: 0 15px;
+}
+#contactback .formcontainer .formform {
+  width: 50%;
+}
+#contactback .formcontainer .formform form label {
+  color: #ffecd6;
+  display: inline-block;
+  margin-top: 10px;
+}
+#contactback .formcontainer .formform form input[type=text], #contactback .formcontainer .formform form input[type=email] {
+  display: block;
+  min-width: 250px;
+  width: 80%;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  border-radius: 20px;
+  background-color: #faefe3;
+}
+#contactback .formcontainer .formform form input[type=checkbox] {
+  display: inline-block;
+}
+#contactback .formcontainer .formform form input[type=checkbox]:checked {
+  color: yellow;
+  padding: 10px;
+}
+#contactback .formcontainer .formform form textarea {
+  display: block;
+  min-width: 250px;
+  width: 80%;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  border-radius: 20px;
+  background-color: #faefe3;
 }/*# sourceMappingURL=index.css.map */

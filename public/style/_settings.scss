@@ -13,6 +13,7 @@ $color6: #3D8A6C;
 $color7: #8CAFA2;
 $color8: #E7E7E7;
 $color9: #faefe3;
+$color10: #331f08cf;
 
 @font-face {
   font-family: Delius Swash Caps;
@@ -69,6 +70,18 @@ $color9: #faefe3;
   height: $height;
   background-color: $color;
   border-radius: 10px;
+}
+@mixin defaultinput{
+  display: block;
+  min-width: 250px;
+  width: 80%;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px $color4;
+  border-radius: 20px;
+  background-color: $color9;
 }
 
 h2{
