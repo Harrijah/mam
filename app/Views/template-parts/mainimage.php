@@ -15,7 +15,7 @@
     <span class="anim02"></span>
 
     <div class="bandeau01">
-        <div class="imagepart">
+        <div class="imagepart" id="pereenfant">
             <img src="<?php echo base_url('./images/pere_enfant.jpg'); ?>" alt="">
         </div>
         <div class="textpart">
@@ -29,17 +29,17 @@
 
     
     <div class="pictocontainer">
-        <div class="pictobox">
+        <div class="pictobox" id="pictobox01">
             <h3>Bien-être</h3>
             <img src="<?php echo base_url('./images/mere.png'); ?>" alt="">
 
         </div>
-        <div class="pictobox">
+        <div class="pictobox" id="pictobox02">
             <h3>Jeux</h3>
             <img src="<?php echo base_url('./images/toys.png'); ?>" alt="">
             
         </div>
-        <div class="pictobox">
+        <div class="pictobox" id="pictobox03">
             <h3>Soins</h3>
             <img src="<?php echo base_url('./images/landau.png'); ?>" alt="">
             
@@ -50,12 +50,12 @@
         <div class="ourobjective">
             <div class="singlecolumn">
                 <h2>Nos objectifs</h2>
-                <div class="part1">
+                <div class="part1" id="part1">
                     <h3>Développement global des enfants</h3>
                     <p>Notre objectif principal est de favoriser le développement global des enfants. Nous encourageons leur croissance physique, émotionnelle, sociale et cognitive en offrant des activités éducatives adaptées à leur âge.</p>
                 </div>
 
-                <div class="part2">
+                <div class="part2" id="part2">
                     <h3>Gestion émotionnelle et sociale</h3>
                     <p>Nous aidons les enfants à comprendre et à gérer leurs émotions, favorisant ainsi leur épanouissement émotionnel et leur capacité à établir des relations saines. Nous encourageons aussi le développement de compétences sociales en offrant aux enfants la possibilité d'interagir avec leurs pairs. Cela favorise la confiance en soi, la communication et le respect des autres.</p>
                 </div>

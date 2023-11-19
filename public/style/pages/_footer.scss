@@ -9,49 +9,54 @@
         height: 100%;
         padding: 4% 5%;
 
-        .footcol01{
+        #footcol01{
             position: relative;
             width: 40%;
             height: 100%;
-            .svg-container03{
-                position: relative;
-                &::before {
-                  content: "";
-                  position: absolute;
-                  top: -30px;
-                  left: -30px;
-                  width: 100px;
-                  height: 100px;
-                  background: url("../../images/logo.png") center/cover;
-                  background-repeat: no-repeat;
-                  z-index: 2;
-                  animation: dodo 8s infinite linear;
-                }
-                @keyframes dodo{
-                    0%{
-                        rotate: -35deg;
-                    }
-                    30%{
-                        rotate: -30deg;
-                    }
-                    60%{
-                        rotate: -35deg;
-                    }
-                    80%{
-                        rotate: -30deg;
-                    }
-                    100%{
-                        rotate: -35deg;
-                    }
-                }
-            }
-            svg{
+            img{
                 position: relative;
                 width: 100%;
-                border-radius: 15px;
-                filter: drop-shadow(
-                  3px 3px 3px rgba(0, 0, 0, 0.5)
-                );
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+                transition: 2s;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -30px;
+              width: 100px;
+              height: 100px;
+              background: url("../../images/logo.png") center/cover;
+              background-repeat: no-repeat;
+              z-index: 2;
+              animation: dodo 8s infinite linear;
+            }
+            &::after{
+                content:"Bien grandir, naturellement.";
+                position: absolute;
+                top: 100%;
+                left: 100px;
+                font-size: 2rem;
+                opacity: var(--defaultopacity);
+                transition: 5s;
+            }
+            @keyframes dodo{
+                0%{
+                    rotate: -35deg;
+                }
+                30%{
+                    rotate: -30deg;
+                }
+                60%{
+                    rotate: -35deg;
+                }
+                80%{
+                    rotate: -30deg;
+                }
+                100%{
+                    rotate: -35deg;
+                }
             }
         }
         .footcol02{

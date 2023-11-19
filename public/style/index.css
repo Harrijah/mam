@@ -1,4 +1,10 @@
 /* ************** Variables ********** */
+:root {
+  --defaultpath: 5px;
+  --defaultscale: 0;
+  --defaultopacity: 0;
+}
+
 @font-face {
   font-family: Delius Swash Caps;
   src: url("../../font/DeliusSwashCaps-Regular.ttf");
@@ -49,11 +55,16 @@ h2 {
   color: #ccb59b;
 }
 
-.menu {
+#menu {
+  position: relative;
+  width: 100%;
+  top: 0;
   padding: 0 10%;
   background: #ccb59b;
+  transition: 2s;
+  z-index: 3;
 }
-.menu .adress {
+#menu .adress {
   display: inline-block;
   margin-left: 10%;
   padding: 5px 20px;
@@ -61,39 +72,39 @@ h2 {
           clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
   background: #997a56;
 }
-.menu .adress span {
+#menu .adress span {
   color: #ffecd6;
 }
-.menu .adress span i {
+#menu .adress span i {
   z-index: 3;
 }
-.menu nav {
+#menu nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.menu nav .logo {
+#menu nav .logo {
   width: 70px;
   padding: 5px;
 }
-.menu nav .logo img {
+#menu nav .logo img {
   width: 100%;
 }
-.menu nav ul {
+#menu nav ul {
   vertical-align: middle;
 }
-.menu nav ul li {
+#menu nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 15px;
 }
-.menu nav ul li a {
+#menu nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
   font-size: 1.5rem;
   color: #664825;
 }
-.menu nav ul li a:hover {
+#menu nav ul li a:hover {
   color: #ffecd6;
   text-decoration: none;
 }
@@ -229,7 +240,7 @@ h2 {
   display: flex;
   margin: 25px 10%;
 }
-.normalcontainer .bandeau01 .imagepart {
+.normalcontainer .bandeau01 #pereenfant {
   position: relative;
   width: 50%;
   max-height: 325px;
@@ -237,7 +248,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.normalcontainer .bandeau01 .imagepart img {
+.normalcontainer .bandeau01 #pereenfant img {
   height: 100%;
   animation: 10s imgzoom infinite linear;
 }
@@ -319,10 +330,10 @@ h2 {
   margin: 0 auto;
   text-align: center;
 }
-.normalcontainer .ourobjective .part1 {
+.normalcontainer .ourobjective #part1 {
   position: relative;
 }
-.normalcontainer .ourobjective .part1::after {
+.normalcontainer .ourobjective #part1::after {
   content: "";
   position: absolute;
   top: 70%;
@@ -330,22 +341,24 @@ h2 {
   width: 300px;
   height: 300px;
   background: url("../../images/kid.jpg");
-  -webkit-clip-path: path("M252.843 64.8508C276.422 82.7115 300 114.228 300 149.716C300 185.453 276.19 225.407 235.968 256.925C195.745 288.441 139.343 311.52 94.4974 293.901C49.6518 276.281 16.596 218.209 4.80675 156.417C-5.98247 94.8715 2.72629 29.8521 36.0134 8.75804C69.3005 -12.3365 126.167 10.9989 166.158 24.3926C206.149 37.7863 229.495 44.9902 252.843 64.8508Z");
-          clip-path: path("M252.843 64.8508C276.422 82.7115 300 114.228 300 149.716C300 185.453 276.19 225.407 235.968 256.925C195.745 288.441 139.343 311.52 94.4974 293.901C49.6518 276.281 16.596 218.209 4.80675 156.417C-5.98247 94.8715 2.72629 29.8521 36.0134 8.75804C69.3005 -12.3365 126.167 10.9989 166.158 24.3926C206.149 37.7863 229.495 44.9902 252.843 64.8508Z");
+  border-radius: var(--defaultpath);
+  transition: 2s;
   z-index: 2;
 }
-.normalcontainer .ourobjective .part2 {
+.normalcontainer .ourobjective #part2 {
   position: relative;
 }
-.normalcontainer .ourobjective .part2::before {
+.normalcontainer .ourobjective #part2::before {
   content: "";
   position: absolute;
   top: 150px;
   left: -70%;
+  scale: var(--defaultscale);
   width: 300px;
   height: 300px;
   background: url("../../images/family.jpg");
   background-repeat: no-repeat;
+  transition: 1s;
   border-radius: 100%;
 }
 .normalcontainer .ourobjective h2 {
@@ -578,18 +591,22 @@ h2 {
   height: 100%;
   padding: 4% 5%;
 }
-.mamfooter .footercontainer .footcol01 {
+.mamfooter .footercontainer #footcol01 {
   position: relative;
   width: 40%;
   height: 100%;
 }
-.mamfooter .footercontainer .footcol01 .svg-container03 {
+.mamfooter .footercontainer #footcol01 img {
   position: relative;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: 2s;
 }
-.mamfooter .footercontainer .footcol01 .svg-container03::before {
+.mamfooter .footercontainer #footcol01::before {
   content: "";
   position: absolute;
-  top: -30px;
+  top: 0;
   left: -30px;
   width: 100px;
   height: 100px;
@@ -597,6 +614,15 @@ h2 {
   background-repeat: no-repeat;
   z-index: 2;
   animation: dodo 8s infinite linear;
+}
+.mamfooter .footercontainer #footcol01::after {
+  content: "Bien grandir, naturellement.";
+  position: absolute;
+  top: 100%;
+  left: 100px;
+  font-size: 2rem;
+  opacity: var(--defaultopacity);
+  transition: 5s;
 }
 @keyframes dodo {
   0% {
@@ -614,12 +640,6 @@ h2 {
   100% {
     rotate: -35deg;
   }
-}
-.mamfooter .footercontainer .footcol01 svg {
-  position: relative;
-  width: 100%;
-  border-radius: 15px;
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 .mamfooter .footercontainer .footcol02 {
   position: relative;

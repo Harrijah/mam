@@ -125,13 +125,14 @@
     position: relative;
     display: flex;
     margin: 25px 10%;
-    .imagepart {
+    #pereenfant {
       position: relative;
       width: 50%;
       max-height: 325px;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      
       img{
         height: 100%;
         animation: 10s imgzoom infinite linear;
@@ -205,6 +206,7 @@
         height: 70px;
       }
     }
+    // 
   }
 
 
@@ -217,7 +219,7 @@
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    .part1 {
+    #part1 {
       position: relative;
       &::after {
         content: "";
@@ -227,24 +229,24 @@
         width: 300px;
         height: 300px;
         background: url("../../images/kid.jpg");
-        // border-radius: 300px;
-        clip-path: path(
-          "M252.843 64.8508C276.422 82.7115 300 114.228 300 149.716C300 185.453 276.19 225.407 235.968 256.925C195.745 288.441 139.343 311.52 94.4974 293.901C49.6518 276.281 16.596 218.209 4.80675 156.417C-5.98247 94.8715 2.72629 29.8521 36.0134 8.75804C69.3005 -12.3365 126.167 10.9989 166.158 24.3926C206.149 37.7863 229.495 44.9902 252.843 64.8508Z"
-        );
+        border-radius: var(--defaultpath);
+        transition: 2s;
         z-index: 2;
       }
     }
-    .part2 {
+    #part2 {
       position: relative;
       &::before {
         content: "";
         position: absolute;
         top: 150px;
         left: -70%;
+        scale: var(--defaultscale);
         width: 300px;
         height: 300px;
         background: url("../../images/family.jpg");
         background-repeat: no-repeat;
+        transition: 1s;
         border-radius: 100%;
       }
     }

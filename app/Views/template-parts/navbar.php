@@ -1,10 +1,10 @@
-<div class="menu">
+<div class="menu" id="menu">
     <div class="adress">
         <span>
-            <i class="fas fa-map-marker-alt" style=""></i> 101, Avenue des Mourlingues 31130 Balma &nbsp; &nbsp;
+            &nbsp;<i class="fas fa-map-marker-alt" style=""></i>&nbsp; 101, Avenue des Mourlingues 31130 Balma &nbsp; &nbsp;
         </span>
         <span>
-            <i class="fa fa-phone" style="rotate:90deg;"></i> 07 81 25 56 40
+            <i class="fa fa-phone" style="rotate:90deg;"></i>&nbsp; 07 81 25 56 40&nbsp;&nbsp;
         </span>
     </div>
     <nav>
