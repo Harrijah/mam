@@ -718,7 +718,7 @@ h2 {
   align-items: flex-start;
   width: 80%;
   margin: auto;
-  background: rgba(51, 31, 8, 0.8117647059);
+  background: rgba(255, 236, 214, 0.7529411765);
   padding: 5% 0;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -728,10 +728,10 @@ h2 {
   padding: 0 5%;
 }
 #contactback .formcontainer .formtext h1 {
-  color: #ffecd6;
+  color: #664825;
 }
 #contactback .formcontainer .formtext p, #contactback .formcontainer .formtext ul li {
-  color: #ffecd6;
+  color: #664825;
 }
 #contactback .formcontainer .formtext ul {
   padding: 0 15px;
@@ -740,7 +740,7 @@ h2 {
   width: 50%;
 }
 #contactback .formcontainer .formform form label {
-  color: #ffecd6;
+  color: #664825;
   display: inline-block;
   margin-top: 10px;
 }

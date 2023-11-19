@@ -22,10 +22,10 @@
             padding: 0 5%;
 
             h1{
-                color: $color1;
+                color: $color4;
             }
             p, ul li{
-                color: $color1;
+                color: $color4;
             }
             ul{
                 padding: 0 15px;
@@ -35,11 +35,11 @@
             width: 50%;
             form{
                 label{
-                    color: $color1;
+                    color: $color4;
                     display: inline-block;
                     margin-top: 10px;
                 }
-                input[type="text"], input[type="email"], input[type="submit"]{
+                input[type="text"], input[type="email"]{
                     @include defaultinput;
                 }
                 input[type="checkbox"]{
@@ -52,10 +52,6 @@
                 textarea{
                     @include defaultinput;
                 }
-                input[type="submit"] {
-                  background: $color2;
-                }
-              }
             }
         }
     }
