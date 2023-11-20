@@ -81,7 +81,7 @@
         background: url("../../images/abc.png") center;
         background-repeat: no-repeat;
         filter: drop-shadow(
-          -5px 3px 5px rgba(0, 0, 0, 0.4)
+          -5px 3px 15px rgba(0, 0, 0, 0.3)
         );
       }
     }
@@ -98,7 +98,7 @@
           position: relative;
           width: 100%;
           height: auto;
-          overflow: hidden;
+          // overflow: hidden;
           // max-height: 350px;
           border-radius: 25px;
         }
@@ -128,6 +128,11 @@
   .mapform {
     @include divideflex;
     height: auto;
+    background-color: $color9;
+    padding: 25px;
+    border-radius: 15px;
+    border: solid 1px $color4;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
     .googlemap {
       width: 60%;
       iframe {

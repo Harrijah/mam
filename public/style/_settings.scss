@@ -81,7 +81,21 @@ $color10: #ffecd6c0;
   padding: 10px;
   border: solid 1px $color4;
   border-radius: 20px;
-  background-color: $color9;
+  background-color: whitesmoke;
+}
+
+@mixin imageaboutus{
+  display: block;
+  margin: auto;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 2px $color4;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+}
+@mixin textaboutus{
+  width: 85%;
+  text-align: center;
+  place-self: center;
 }
 
 h2{

@@ -61,7 +61,7 @@ h2 {
   top: 0;
   padding: 0 10%;
   background: #ccb59b;
-  transition: 2s;
+  transition: 1s;
   z-index: 3;
 }
 #menu .adress {
@@ -289,9 +289,10 @@ h2 {
   text-align: center;
   margin: 25px;
   padding: 2%;
-  border-radius: 25px;
+  border: solid 1px #664825;
+  border-radius: 15px;
   background-color: #faefe3;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
 }
 .normalcontainer .pictocontainer .pictobox h3 {
   display: block;
@@ -341,6 +342,7 @@ h2 {
   width: 300px;
   height: 300px;
   background: url("../../images/kid.jpg");
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
   border-radius: var(--defaultpath);
   transition: 2s;
   z-index: 2;
@@ -357,6 +359,7 @@ h2 {
   width: 300px;
   height: 300px;
   background: url("../../images/family.jpg");
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   transition: 1s;
   border-radius: 100%;
@@ -492,7 +495,7 @@ h2 {
   left: -20%;
   background: url("../../images/abc.png") center;
   background-repeat: no-repeat;
-  filter: drop-shadow(-5px 3px 5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(-5px 3px 15px rgba(0, 0, 0, 0.3));
 }
 .teamcontainer .mamcontainer {
   position: relative;
@@ -505,7 +508,6 @@ h2 {
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
   border-radius: 25px;
 }
 .teamcontainer .mamcontainer #myCarousel .carousel-inner p {
@@ -543,6 +545,11 @@ h2 {
   display: flex;
   justify-content: center;
   height: auto;
+  background-color: #faefe3;
+  padding: 25px;
+  border-radius: 15px;
+  border: solid 1px #664825;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
 }
 .banner02 .mapform .googlemap {
   width: 60%;
@@ -567,7 +574,7 @@ h2 {
   padding: 10px;
   border: solid 1px #664825;
   border-radius: 20px;
-  background-color: #faefe3;
+  background-color: whitesmoke;
 }
 .banner02 .mapform .homeform input[type=date] {
   width: 75%;
@@ -720,8 +727,9 @@ h2 {
   margin: auto;
   background: rgba(255, 236, 214, 0.7529411765);
   padding: 5% 0;
+  border: solid 1px #664825;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2);
 }
 #contactback .formcontainer .formtext {
   width: 50%;
@@ -754,7 +762,7 @@ h2 {
   padding: 10px;
   border: solid 1px #664825;
   border-radius: 20px;
-  background-color: #faefe3;
+  background-color: whitesmoke;
 }
 #contactback .formcontainer .formform form input[type=checkbox] {
   display: inline-block;
@@ -773,5 +781,124 @@ h2 {
   padding: 10px;
   border: solid 1px #664825;
   border-radius: 20px;
-  background-color: #faefe3;
+  background-color: whitesmoke;
+}
+
+.aboutus {
+  position: relative;
+  background: url("../../images/ban.png") center/cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  margin: 0;
+}
+
+.textintro {
+  width: 100%;
+  margin: 0;
+  padding: 5% 0;
+  background: #ffecd6;
+}
+.textintro .textcontainer {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.textintro .textcontainer h1 {
+  margin: 0;
+}
+
+.mamservices {
+  background: #ffecd6;
+  width: 100%;
+  padding: 0 10%;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "p1 t1" "t2 p2" "p3 t3" "t4 p4" "p5 t5";
+}
+.mamservices .photo1 {
+  grid-area: p1;
+}
+.mamservices .photo1 img {
+  display: block;
+  margin: auto;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 2px #664825;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+}
+.mamservices .text1 {
+  grid-area: t1;
+  width: 85%;
+  text-align: center;
+  place-self: center;
+}
+.mamservices .text2 {
+  grid-area: t2;
+  width: 85%;
+  text-align: center;
+  place-self: center;
+}
+.mamservices .photo2 {
+  grid-area: p2;
+}
+.mamservices .photo2 img {
+  display: block;
+  margin: auto;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 2px #664825;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+}
+.mamservices .photo3 {
+  grid-area: p3;
+}
+.mamservices .photo3 img {
+  display: block;
+  margin: auto;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 2px #664825;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+}
+.mamservices .text3 {
+  grid-area: t3;
+  width: 85%;
+  text-align: center;
+  place-self: center;
+}
+.mamservices .text4 {
+  grid-area: t4;
+  width: 85%;
+  text-align: center;
+  place-self: center;
+}
+.mamservices .photo4 {
+  grid-area: p4;
+}
+.mamservices .photo4 img {
+  display: block;
+  margin: auto;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 2px #664825;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+}
+.mamservices .photo5 {
+  grid-area: p5;
+}
+.mamservices .photo5 img {
+  display: block;
+  margin: auto;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 2px #664825;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+}
+.mamservices .text5 {
+  grid-area: t5;
+  width: 85%;
+  text-align: center;
+  place-self: center;
 }/*# sourceMappingURL=index.css.map */

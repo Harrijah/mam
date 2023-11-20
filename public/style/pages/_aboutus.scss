@@ -1,0 +1,88 @@
+.aboutus{
+    position: relative;
+    background: url('../../images/ban.png') center/cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+}
+.textintro{
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+    background: $color1;
+    .textcontainer{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        h1{
+            margin: 0;
+        }
+    }
+}
+.mamservices{
+    background: $color1;
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "p1 t1"
+        "t2 p2"
+        "p3 t3"
+        "t4 p4"
+        "p5 t5"
+    ;
+    .photo1{
+        grid-area: p1;
+        img{
+            @include imageaboutus;
+        }
+    }
+    .text1{
+        grid-area: t1;
+        @include textaboutus;
+    }
+    .text2{
+        grid-area: t2;
+        @include textaboutus;
+    }
+    .photo2{
+        grid-area: p2;
+        img{
+            @include imageaboutus;
+        }
+    }
+    .photo3{
+        grid-area: p3;
+        img{
+            @include imageaboutus;
+        }
+    }
+    .text3{
+        grid-area: t3;
+        @include textaboutus;
+    }
+    .text4{
+        grid-area: t4;
+        @include textaboutus;
+    }
+    .photo4{
+        grid-area: p4;
+        img{
+            @include imageaboutus;
+        }
+    }
+    .photo5{
+        grid-area: p5;
+        img{
+            @include imageaboutus;
+        }
+    }
+    .text5{
+        grid-area: t5;
+        @include textaboutus;
+    }
+
+}
