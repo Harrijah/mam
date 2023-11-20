@@ -15,14 +15,14 @@
     <div class="text1">
         <h2>L'alimentation</h2>
         <p>
-            ​Une alimentation saine et équilibrée, respectant l'âge et la maturité des enfants. Nous ferons appel à un prestataire de qualité, de la région, et qui n'utilise que des produits locaux et saisons et de nature biologique.
+            Une alimentation saine et équilibrée, respectant l'âge et la maturité des enfants. Nous ferons appel à un prestataire de qualité, de la région, et qui n'utilise que des produits locaux et saisons et de nature biologique.
         </p>
     </div>
 
     <div class="text2">
         <h2>Nos activités</h2>
         <p>
-            ​Notre projet pédagogique cherche à développer l'épanouissement et l'autonomie de l'enfant, principalement à travers le jeu et la motricité libre. 
+            Notre projet pédagogique cherche à développer l'épanouissement et l'autonomie de l'enfant, principalement à travers le jeu et la motricité libre. 
             Diverses activités sont proposées quotidiennement pour favoriser le bon développement de l'enfant, son épanouissement et les interactions sociales. Afin de proposer des expériences nouvelles et variées aux enfants accueillis, nous établissons de nombreux partenariats. Des ateliers et sorties pédagogiques sont ainsi mis en place tout au long de l'année.
         </p>
     </div>
@@ -36,7 +36,7 @@
     <div class="text3">
         <h2>Le local</h2>
         <p>
-            ​Une maison individuelle à proximité des grands axes et des transports, qui possède 5 places de parking, un parking vélo/moto.
+           Une maison individuelle à proximité des grands axes et des transports, qui possède 5 places de parking, un parking vélo/moto.
             Elle comprend principalement d'une zone d'accueil, une grande pièce principale ( salle d'éveil ) 4 chambres, un grand jardin clos et sécurisé, aménagé pour favoriser la motricité et le jeu libre.
         </p>
     </div>
@@ -57,7 +57,7 @@
     <div class="text5">
         <h2>La place des parents</h2>
         <p>
-            ​Les parents premiers éducateurs de leurs enfants, sont encouragés à participer activement à la vie de la MAM. Ils contribuent à la réalisation du projet d'accueil, prennent part aux ateliers, sorties ou fêtes. Toutes les familles sont accueillies à la MAM, nous créons avec elles un lien de confiance et de respect mutuel.
+            Les parents premiers éducateurs de leurs enfants, sont encouragés à participer activement à la vie de la MAM. Ils contribuent à la réalisation du projet d'accueil, prennent part aux ateliers, sorties ou fêtes. Toutes les familles sont accueillies à la MAM, nous créons avec elles un lien de confiance et de respect mutuel.
         </p>
     </div>
 </div>
