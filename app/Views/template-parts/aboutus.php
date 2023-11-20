@@ -50,7 +50,6 @@
     <div class="photo4">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
     </div>
-
     
     <div class="photo5">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
@@ -62,10 +61,6 @@
         </p>
     </div>
 </div>
-
-
-
-
 
 <div class="banner02">
     <h2>Réserver une place</h2>
