@@ -786,7 +786,7 @@ h2 {
 
 .aboutus {
   position: relative;
-  background: url("../../images/ban.png") center/cover;
+  background: url("../../images/pexels.jpg") center/cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 350px;
@@ -794,6 +794,7 @@ h2 {
 }
 
 .textintro {
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 5% 0;
@@ -808,7 +809,33 @@ h2 {
   margin: 0;
 }
 
+#svgContainer #svgPath1 {
+  position: absolute;
+  width: 100vw;
+  height: 300vh;
+  z-index: 1;
+}
+#svgContainer #svgPath2 {
+  position: absolute;
+  width: 100vw;
+  height: 300vh;
+  z-index: 1;
+}
+#svgContainer #svgPath3 {
+  position: absolute;
+  width: 100vw;
+  height: 300vh;
+  z-index: 1;
+}
+#svgContainer #svgPath4 {
+  position: absolute;
+  width: 100vw;
+  height: 300vh;
+  z-index: 1;
+}
+
 .mamservices {
+  position: relative;
   background: #ffecd6;
   width: 100%;
   padding: 0 10%;
@@ -818,14 +845,16 @@ h2 {
   grid-template-areas: "p1 t1" "t2 p2" "p3 t3" "t4 p4" "p5 t5";
 }
 .mamservices .photo1 {
+  position: relative;
   grid-area: p1;
+  z-index: 2;
 }
 .mamservices .photo1 img {
   display: block;
   margin: auto;
   height: 250px;
   border-radius: 100%;
-  border: solid 2px #664825;
+  border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
 }
 .mamservices .text1 {
@@ -841,25 +870,31 @@ h2 {
   place-self: center;
 }
 .mamservices .photo2 {
+  position: relative;
   grid-area: p2;
+  z-index: 2;
 }
 .mamservices .photo2 img {
   display: block;
   margin: auto;
   height: 250px;
   border-radius: 100%;
-  border: solid 2px #664825;
+  border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
+  position: relative;
+  left: 0;
 }
 .mamservices .photo3 {
+  position: relative;
   grid-area: p3;
+  z-index: 2;
 }
 .mamservices .photo3 img {
   display: block;
   margin: auto;
   height: 250px;
   border-radius: 100%;
-  border: solid 2px #664825;
+  border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
 }
 .mamservices .text3 {
@@ -875,25 +910,29 @@ h2 {
   place-self: center;
 }
 .mamservices .photo4 {
+  position: relative;
   grid-area: p4;
+  z-index: 2;
 }
 .mamservices .photo4 img {
   display: block;
   margin: auto;
   height: 250px;
   border-radius: 100%;
-  border: solid 2px #664825;
+  border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
 }
 .mamservices .photo5 {
+  position: relative;
   grid-area: p5;
+  z-index: 2;
 }
 .mamservices .photo5 img {
   display: block;
   margin: auto;
   height: 250px;
   border-radius: 100%;
-  border: solid 2px #664825;
+  border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
 }
 .mamservices .text5 {

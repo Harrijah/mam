@@ -7,10 +7,29 @@
         </p>
     </div>
 </div>
+   
+<div id="svgContainer"  class="svg-container">
+    <svg id="svgPath1">
+        <path d="" fill="transparent" stroke-width="1" id="path1" />
+    </svg>
+    
+    <svg id="svgPath2">
+        <path d="" fill="transparent" stroke-width="1" id="path2" />
+    </svg>
+    
+    <svg id="svgPath3">
+        <path d="" fill="transparent" stroke-width="1" id="path3" />
+    </svg>
+    
+    <svg id="svgPath4">
+        <path d="" fill="transparent" stroke-width="1" id="path4" />
+    </svg>
+</div>
+
 
 <div class="mamservices">
     <div class="photo1">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
+        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours"  id="photo1">
     </div>
     <div class="text1">
         <h2>L'alimentation</h2>
@@ -18,6 +37,7 @@
             Une alimentation saine et équilibrée, respectant l'âge et la maturité des enfants. Nous ferons appel à un prestataire de qualité, de la région, et qui n'utilise que des produits locaux et saisons et de nature biologique.
         </p>
     </div>
+
 
     <div class="text2">
         <h2>Nos activités</h2>
@@ -27,11 +47,11 @@
         </p>
     </div>
     <div class="photo2">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
+        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours"  id="photo2">
     </div>
 
     <div class="photo3">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
+        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo3">
     </div>
     <div class="text3">
         <h2>Le local</h2>
@@ -48,11 +68,11 @@
         </p>
     </div>
     <div class="photo4">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
+        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo4">
     </div>
     
     <div class="photo5">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours">
+        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo5">
     </div>
     <div class="text5">
         <h2>La place des parents</h2>

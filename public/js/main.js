@@ -3,9 +3,9 @@ window.addEventListener('scroll', () => {
     let scrollpos = window.scrollY;
     let scrollValue = (scrollpos + window.innerHeight) / document.body.offsetHeight;
 
-    console.log(scrollpos);
-    console.log(window.scrollY);
-    console.log(scrollValue);
+    // console.log(scrollpos);
+    // console.log(window.scrollY);
+    // console.log(scrollValue);
 
     if (scrollpos > 80) {
         menu.style.position = "fixed";

@@ -41,6 +41,7 @@
     <script type="text/javascript" src="<?php echo base_url('./style/js/jquery.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('./style/js/bootstrap.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('./js/main.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('./js/secondary.js') ?>"></script>
 
 </body>
 </html>
