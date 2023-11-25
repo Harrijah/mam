@@ -1,26 +1,22 @@
 const makeLine = () => {
+  let index = 0;
   var photo1 = document.getElementById("photo1");
   var photo2 = document.getElementById("photo2");
   var photo3 = document.getElementById("photo3");
   var photo4 = document.getElementById("photo4");
   var photo5 = document.getElementById("photo5");
 
-  var svgContainer = document.getElementById("svgContainer");
-
   var path1 = document.querySelector("#svgPath1 path");
   var path2 = document.querySelector("#svgPath2 path");
   var path3 = document.querySelector("#svgPath3 path");
   var path4 = document.querySelector("#svgPath4 path");
 
-  // if (!photo1 || !photo2 || !svgContainer) {
-  //     console.error('Éléments non trouvés. Vérifiez les ID dans le HTML.');
-  //     return;
-  // }
-
   // Coordonnées du départ et de l'arrivée par rapport à mamservices
   var mamservicesRect = document
     .querySelector(".mamservices")
     .getBoundingClientRect();
+
+  // dynamicleft = "240px";
 
   var photo1Rect = photo1.getBoundingClientRect();
   var photo2Rect = photo2.getBoundingClientRect();
@@ -33,6 +29,7 @@ const makeLine = () => {
   var startY1 = photo1Rect.top + photo1Rect.height / 2 - mamservicesRect.top;
 
   //  ************** Path1 end et Path 2 start
+
   var startX2 = photo2Rect.left + photo2Rect.width / 2 - mamservicesRect.left;
   var startY2 = photo2Rect.top + photo2Rect.height / 2 - mamservicesRect.top;
 
@@ -48,6 +45,7 @@ const makeLine = () => {
   var startX5 = photo5Rect.left + photo5Rect.width / 2 - mamservicesRect.left;
   var startY5 = photo5Rect.top + photo5Rect.height / 2 - mamservicesRect.top;
 
+  console.log(startX2);
 
   // Mettre à jour le chemin "Path 1"
   path1.setAttribute(
@@ -80,7 +78,7 @@ const makeLine = () => {
       startX3 +
       " " +
       startY3
-    );
+  );
   // Mettre à jour le chemin "Path 3"
   path3.setAttribute(
     "d",
@@ -113,62 +111,36 @@ const makeLine = () => {
       " " +
       startY5
   );
-  svgContainer.style.zIndex = 0;
-  path1.setAttribute("stroke", "#664825");
-  path2.setAttribute("stroke", "#664825");
-  path3.setAttribute("stroke", "#664825");
-  path4.setAttribute("stroke", "#664825");
+  path1.setAttribute("stroke", "#faefe3");
+  path2.setAttribute("stroke", "#faefe3");
+  path3.setAttribute("stroke", "#faefe3");
+  path4.setAttribute("stroke", "#faefe3");
+
+
+  const moveone = () => {
+    if (index == 0) {
+      setTimeout(() => {
+        photo2.style.left = "0px";
+        photo3.style.left = "0px";
+        photo4.style.left = "0px";
+        // makeLine();
+        index = 1;
+        moveone();
+      }, 5000);
+    } else if (index == 1) {
+      setTimeout(() => {
+        photo2.style.left = "-10px";
+        photo3.style.left = "10px";
+        photo4.style.left = "-10px";
+        // makeLine();
+        index = 0;
+        moveone();
+      }, 5000);
+    }
+  };
+  
+  moveone();
 };
 
 // Appeler la fonction au chargement de la page et en cas de redimensionnement de la fenêtre
 window.onload = window.onresize = makeLine;
-
-const animatePhoto2 = () => {
-    // Obtenez une valeur aléatoire pour les nouvelles positions
-    const currentX = parseFloat(document.getElementById("photo2").style.left) || 0;
-    const currentY = parseFloat(document.getElementById("photo2").style.top) || 0;
-  
-    // Facteur de ralentissement, ajustez selon vos préférences
-    const slowdownFactor = 0.5;
-  
-    const newX = currentX + (Math.random() - 0.5) * slowdownFactor;
-    const newY = currentY + (Math.random() - 0.5) * slowdownFactor;
-    
-    // Mettez à jour la position de la photo2
-    document.getElementById("photo2").style.left = newX + "px";
-    document.getElementById("photo2").style.top = newY + "px";
-  
-    // Appelez la fonction makeLine pour mettre à jour le chemin SVG
-    makeLine();
-  
-    // Planifiez la prochaine animation
-    requestAnimationFrame(animatePhoto2);
-  };
-  
-  // Appelez la fonction animatePhoto2 pour démarrer l'animation
-  animatePhoto2();
-  
-const animatePhoto3 = () => {
-    // Obtenez une valeur aléatoire pour les nouvelles positions
-    const currentX3 = parseFloat(document.getElementById("photo3").style.left) || 0;
-    const currentY3 = parseFloat(document.getElementById("photo3").style.top) || 0;
-  
-    // Facteur de ralentissement, ajustez selon vos préférences
-    const slowdownFactor = 0.5;
-  
-    const newX3 = currentX3 + (Math.random() - 0.5) * slowdownFactor;
-    const newY3 = currentY3 + (Math.random() - 0.5) * slowdownFactor;
-    
-    // Mettez à jour la position de la photo2
-    document.getElementById("photo3").style.left = newX3 + "px";
-    document.getElementById("photo3").style.top = newY3 + "px";
-  
-    // Appelez la fonction makeLine pour mettre à jour le chemin SVG
-    makeLine();
-  
-    // Planifiez la prochaine animation
-    requestAnimationFrame(animatePhoto3);
-  };
-  
-  // Appelez la fonction animatePhoto2 pour démarrer l'animation
-  animatePhoto3();

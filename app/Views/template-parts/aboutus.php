@@ -10,19 +10,19 @@
    
 <div id="svgContainer"  class="svg-container">
     <svg id="svgPath1">
-        <path d="" fill="transparent" stroke-width="1" id="path1" />
+        <path d="" fill="transparent" stroke-width="8" id="path1" />
     </svg>
     
     <svg id="svgPath2">
-        <path d="" fill="transparent" stroke-width="1" id="path2" />
+        <path d="" fill="transparent" stroke-width="8" id="path2" />
     </svg>
     
     <svg id="svgPath3">
-        <path d="" fill="transparent" stroke-width="1" id="path3" />
+        <path d="" fill="transparent" stroke-width="8" id="path3" />
     </svg>
     
     <svg id="svgPath4">
-        <path d="" fill="transparent" stroke-width="1" id="path4" />
+        <path d="" fill="transparent" stroke-width="8" id="path4" />
     </svg>
 </div>
 
