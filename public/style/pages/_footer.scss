@@ -23,14 +23,15 @@
             &::before {
               content: "";
               position: absolute;
-              top: 0;
+              top: -50px;
               left: -30px;
               width: 100px;
               height: 100px;
               background: url("../../images/logo.png") center/cover;
               background-repeat: no-repeat;
+              rotate: -35deg;
               z-index: 2;
-              animation: dodo 8s infinite linear;
+              animation: dodo 8s forwards;
             }
             &::after{
                 content:"Bien grandir, naturellement.";
@@ -42,20 +43,8 @@
                 transition: 5s;
             }
             @keyframes dodo{
-                0%{
-                    rotate: -35deg;
-                }
-                30%{
-                    rotate: -30deg;
-                }
-                60%{
-                    rotate: -35deg;
-                }
-                80%{
-                    rotate: -30deg;
-                }
-                100%{
-                    rotate: -35deg;
+                to 100%{
+                    rotate: 0deg;
                 }
             }
         }

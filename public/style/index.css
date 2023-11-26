@@ -614,14 +614,14 @@ h2 {
 .mamfooter .footercontainer #footcol01::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -50px;
   left: -30px;
   width: 100px;
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
   z-index: 2;
-  animation: dodo 8s infinite linear;
+  animation: dodo 8s forwards;
 }
 .mamfooter .footercontainer #footcol01::after {
   content: "Bien grandir, naturellement.";
@@ -801,11 +801,13 @@ h2 {
   margin: 0;
   padding: 5% 0;
   background: #ffecd6;
+  z-index: 0;
 }
 .textintro .textcontainer {
   width: 70%;
   text-align: center;
   margin: 0 auto;
+  z-index: 0;
 }
 .textintro .textcontainer h1 {
   margin: 0;
@@ -814,6 +816,7 @@ h2 {
 #svgContainer {
   width: 100%;
   overflow: hidden;
+  transition: 1s;
   z-index: 0;
 }
 #svgContainer #svgPath1, #svgContainer #svgPath2, #svgContainer #svgPath3, #svgContainer #svgPath4, #svgContainer #svgPath5 {
@@ -821,12 +824,14 @@ h2 {
   width: 100%;
   overflow: hidden;
   height: 300vh;
+  transition: 1s;
   z-index: 1;
 }
 
 .mamservices {
   position: relative;
   background: #ffecd6;
+  padding-top: 1200px;
   width: 100%;
   overflow: hidden;
   padding: 0 10%;
@@ -851,23 +856,89 @@ h2 {
   transition: 4s;
 }
 .mamservices .text1 {
-  width: 100%;
-  overflow: hidden;
   grid-area: t1;
+  width: 100%;
+  position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: #faefe3;
+  border: solid 1px #664825;
+  border-radius: 15px;
+  z-index: 2;
+}
+.mamservices .text1::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/logo.png") center/cover;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+.mamservices .text1 h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.mamservices .text1 h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .mamservices .text2 {
   grid-area: t2;
+  position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: #faefe3;
+  border: solid 1px #664825;
+  border-radius: 15px;
+  z-index: 2;
+}
+.mamservices .text2::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/logo.png") center/cover;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+.mamservices .text2 h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.mamservices .text2 h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .mamservices .photo2 {
   position: relative;
   grid-area: p2;
-  transition: 4s;
   z-index: 2;
 }
 .mamservices .photo2 img {
@@ -897,15 +968,83 @@ h2 {
 }
 .mamservices .text3 {
   grid-area: t3;
+  position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: #faefe3;
+  border: solid 1px #664825;
+  border-radius: 15px;
+  z-index: 2;
+}
+.mamservices .text3::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/logo.png") center/cover;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+.mamservices .text3 h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.mamservices .text3 h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .mamservices .text4 {
   grid-area: t4;
+  position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: #faefe3;
+  border: solid 1px #664825;
+  border-radius: 15px;
+  z-index: 2;
+}
+.mamservices .text4::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/logo.png") center/cover;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+.mamservices .text4 h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.mamservices .text4 h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .mamservices .photo4 {
   position: relative;
@@ -939,7 +1078,49 @@ h2 {
 }
 .mamservices .text5 {
   grid-area: t5;
+  position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: #faefe3;
+  border: solid 1px #664825;
+  border-radius: 15px;
+  z-index: 2;
+}
+.mamservices .text5::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/logo.png") center/cover;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+.mamservices .text5 h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.mamservices .text5 h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500vh;
 }/*# sourceMappingURL=index.css.map */

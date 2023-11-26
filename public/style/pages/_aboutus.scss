@@ -14,10 +14,13 @@
   margin: 0;
   padding: 5% 0;
   background: $color1;
+  // z-index: 1;
   .textcontainer {
+    position: relative;
     width: 70%;
     text-align: center;
     margin: 0 auto;
+    // z-index: 1;
     h1 {
       margin: 0;
     }
@@ -26,12 +29,14 @@
 #svgContainer{
   width: 100%;
   overflow: hidden;
+  transition: 1s;
   z-index: 0;
     #svgPath1, #svgPath2, #svgPath3, #svgPath4, #svgPath5{
         position: absolute;
         width: 100%;
         overflow: hidden;
         height: 300vh;
+        transition: 1s;
         z-index: 1;
     }
 }
@@ -39,9 +44,11 @@
 .mamservices {
   position: relative;
   background: $color1;
+  padding-top: 1200px;
   width: 100%;
   overflow: hidden;
   padding: 0 10%;
+  z-index: 3;
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 50% 50%;
@@ -53,6 +60,7 @@
     "p5 t5";
   .photo1 {
     position: relative;
+    height: auto;
     grid-area: p1;
     z-index: 2;
     img {
@@ -60,19 +68,24 @@
     }
   }
   .text1 {
-    width: 100%;
-    overflow: hidden;
     grid-area: t1;
+    width: 100%;
     @include textaboutus;
+    h2{
+      @include lescss;
+    }
   }
   .text2 {
     grid-area: t2;
     @include textaboutus;
+    h2{
+      @include lescss;
+    }
   }
   .photo2 {
     position: relative;
+    height: 100%;
     grid-area: p2;
-    transition: 4s;
     z-index: 2;
     img {
       @include imageaboutus;
@@ -89,10 +102,16 @@
   .text3 {
     grid-area: t3;
     @include textaboutus;
+    h2{
+      @include lescss;
+    }
   }
   .text4 {
     grid-area: t4;
     @include textaboutus;
+    h2{
+      @include lescss;
+    }
   }
   .photo4 {
     position: relative;
@@ -113,6 +132,18 @@
   .text5 {
     grid-area: t5;
     @include textaboutus;
+    h2{
+      @include lescss;
+    }
   }
 
+}
+
+
+.animation-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500vh;
 }

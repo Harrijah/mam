@@ -25,10 +25,12 @@
         <path d="" fill="transparent" stroke-width="8" id="path4" />
     </svg>
 </div>
+<div class="animation-container">
+    <canvas id="myCanvas"></canvas>
+</div>
 
-
-<div class="mamservices">
-    <div class="photo1">
+<div class="mamservices" id="mamservices">
+    <div class="photo1" id="photo1container">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours"  id="photo1">
     </div>
     <div class="text1">
@@ -46,11 +48,11 @@
             Diverses activités sont proposées quotidiennement pour favoriser le bon développement de l'enfant, son épanouissement et les interactions sociales. Afin de proposer des expériences nouvelles et variées aux enfants accueillis, nous établissons de nombreux partenariats. Des ateliers et sorties pédagogiques sont ainsi mis en place tout au long de l'année.
         </p>
     </div>
-    <div class="photo2">
+    <div class="photo2" id="photo2container">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours"  id="photo2">
     </div>
 
-    <div class="photo3">
+    <div class="photo3" id="photo3container">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo3">
     </div>
     <div class="text3">
@@ -67,11 +69,11 @@
             Pour préserver la santé et la sécurité des enfants, nous nous équipons de tout le nécessaire. La MAM est aménagée selon les besoins des enfants, tout est adapté à leur âge, les jouets, les meubles, les sanitaires....
         </p>
     </div>
-    <div class="photo4">
+    <div class="photo4" id="photo4container">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo4">
     </div>
     
-    <div class="photo5">
+    <div class="photo5" id="photo5container">
         <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo5">
     </div>
     <div class="text5">

@@ -87,6 +87,8 @@ $color10: #ffecd6c0;
 @mixin imageaboutus{
   position: relative;
   display: block;
+  top: 50%;
+  transform: translateY(-50%);
   margin: auto;
   height: 250px;
   border-radius: 100%;
@@ -95,9 +97,39 @@ $color10: #ffecd6c0;
   transition: 4s;
 }
 @mixin textaboutus{
+  position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: $color9;
+  border: solid 1px $color4;
+  border-radius: 15px;
+  z-index: 2;
+  &::before{
+    content: "";
+    position: relative;
+    top: -50px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background: url("../../images/logo.png") center/cover;
+    background-repeat: no-repeat;
+    z-index: 4;
+
+  }
+}
+@mixin lescss{
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+  &::after{
+    @include afterparam(100px, 5px, $color2);
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 h2{
