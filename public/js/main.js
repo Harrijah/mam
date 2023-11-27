@@ -20,12 +20,11 @@ window.addEventListener('scroll', () => {
     }
 
     if (part1) {
-        
         if (scrollValue > 0.40 && scrollValue < 0.54) {
             part1.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
         } else {
             part1.style.setProperty('--defaultpath', "5px");
-        }   
+        }
     }
     if (part2) {
         

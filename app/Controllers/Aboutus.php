@@ -5,8 +5,11 @@
     {
         public function aboutus ()
         {
+            $uri = service('uri');
+            $lien = $uri->getSegment(1);
             $data = [
                 'pagetitle' => 'A propos de Tiazaza',
+                'maclasse' => $lien,
             ];
 
             return view('./template-parts/header', $data)

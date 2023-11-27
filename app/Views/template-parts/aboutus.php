@@ -1,4 +1,9 @@
-<div class="aboutus"></div>
+<div class="aboutus">
+    <div class="titre">
+        <em><p>"Bien grandir, naturellement."</p></em>
+    </div>
+    <div class="vide"></div>
+</div>
 <div class="textintro">
     <div class="textcontainer">
         <h1>A propos de la MAM Tiaza</h1>
@@ -25,13 +30,11 @@
         <path d="" fill="transparent" stroke-width="8" id="path4" />
     </svg>
 </div>
-<div class="animation-container">
-    <canvas id="myCanvas"></canvas>
-</div>
+
 
 <div class="mamservices" id="mamservices">
     <div class="photo1" id="photo1container">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours"  id="photo1">
+        <img src="<?php echo base_url('./images/aliment.jpg'); ?>" alt="nours"  id="photo1">
     </div>
     <div class="text1">
         <h2>L'alimentation</h2>
@@ -49,11 +52,11 @@
         </p>
     </div>
     <div class="photo2" id="photo2container">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours"  id="photo2">
+        <img src="<?php echo base_url('./images/act3.jpg'); ?>" alt="nours"  id="photo2">
     </div>
 
     <div class="photo3" id="photo3container">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo3">
+        <img src="<?php echo base_url('./images/local2.jpg'); ?>" alt="nours" id="photo3">
     </div>
     <div class="text3">
         <h2>Le local</h2>
@@ -70,11 +73,11 @@
         </p>
     </div>
     <div class="photo4" id="photo4container">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo4">
+        <img src="<?php echo base_url('./images/couche3.jpg'); ?>" alt="nours" id="photo4">
     </div>
     
     <div class="photo5" id="photo5container">
-        <img src="<?php echo base_url('./images/family.jpg'); ?>" alt="nours" id="photo5">
+        <img src="<?php echo base_url('./images/parents.jpg'); ?>" alt="nours" id="photo5">
     </div>
     <div class="text5">
         <h2>La place des parents</h2>

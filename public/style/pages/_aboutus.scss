@@ -1,11 +1,31 @@
 .aboutus {
   position: relative;
-  background: url('../../images/pexels.jpg') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(#ffecd630, #ffecd630), url("../../images/pexels.jpg") center/cover;
   background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
   height: 350px;
   margin: 0;
+  .titre{
+    width: 50%;
+    p{
+      // font-family: Butterfly-kids;
+      font-size: 7rem;
+      font-weight: 800; 
+      line-height: 70px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      // background: #ffecd630;
+      // text-align: center;
+      // padding: 20px;
+    }
+  }
+  .vide{
+    width: 50%;
+  }
 }
 .textintro {
   position: relative;
@@ -14,31 +34,31 @@
   margin: 0;
   padding: 5% 0;
   background: $color1;
-  // z-index: 1;
   .textcontainer {
     position: relative;
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    // z-index: 1;
     h1 {
-      margin: 0;
+      @include lescss;
     }
   }
 }
-#svgContainer{
+#svgContainer {
   width: 100%;
   overflow: hidden;
   transition: 1s;
-  z-index: 0;
-    #svgPath1, #svgPath2, #svgPath3, #svgPath4, #svgPath5{
-        position: absolute;
-        width: 100%;
-        overflow: hidden;
-        height: 300vh;
-        transition: 1s;
-        z-index: 1;
-    }
+  #svgPath1,
+  #svgPath2,
+  #svgPath3,
+  #svgPath4 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 300vh;
+    transition: 1s;
+    z-index: 1;
+  }
 }
 
 .mamservices {
@@ -46,9 +66,8 @@
   background: $color1;
   padding-top: 1200px;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 0 10%;
-  z-index: 3;
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 50% 50%;
@@ -60,90 +79,92 @@
     "p5 t5";
   .photo1 {
     position: relative;
-    height: auto;
+    place-self: center;
+    z-index: 1;
     grid-area: p1;
-    z-index: 2;
     img {
       @include imageaboutus;
+      border-radius: var(--defaultpath);
     }
   }
   .text1 {
     grid-area: t1;
-    width: 100%;
+    z-index: 2;
     @include textaboutus;
-    h2{
+    h2 {
       @include lescss;
     }
   }
   .text2 {
     grid-area: t2;
+    z-index: 3;
     @include textaboutus;
-    h2{
+    h2 {
       @include lescss;
     }
   }
   .photo2 {
     position: relative;
-    height: 100%;
+    place-self: center;
     grid-area: p2;
     z-index: 2;
     img {
       @include imageaboutus;
+      border-radius: var(--defaultpath);
     }
   }
   .photo3 {
     position: relative;
+    place-self: center;
     grid-area: p3;
     z-index: 2;
     img {
       @include imageaboutus;
+      border-radius: var(--defaultpath);
     }
   }
   .text3 {
     grid-area: t3;
+    z-index: 2;
     @include textaboutus;
-    h2{
+    h2 {
       @include lescss;
     }
   }
   .text4 {
     grid-area: t4;
+    z-index: 3;
     @include textaboutus;
-    h2{
+    h2 {
       @include lescss;
     }
   }
   .photo4 {
     position: relative;
+    place-self: center;
     grid-area: p4;
     z-index: 2;
     img {
       @include imageaboutus;
+      border-radius: var(--defaultpath);
     }
   }
   .photo5 {
     position: relative;
+    place-self: center;
     grid-area: p5;
     z-index: 2;
     img {
       @include imageaboutus;
+      border-radius: var(--defaultpath);
     }
   }
   .text5 {
     grid-area: t5;
+    z-index: 2;
     @include textaboutus;
-    h2{
+    h2 {
       @include lescss;
     }
   }
-
-}
-
-
-.animation-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 500vh;
 }

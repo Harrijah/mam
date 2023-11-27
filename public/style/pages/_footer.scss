@@ -29,9 +29,14 @@
               height: 100px;
               background: url("../../images/logo.png") center/cover;
               background-repeat: no-repeat;
-              rotate: -35deg;
+              transform: rotate(-35deg);
               z-index: 2;
               animation: dodo 8s forwards;
+              @keyframes dodo{
+                  to {
+                      transform: rotate(0deg);
+                  }
+              }
             }
             &::after{
                 content:"Bien grandir, naturellement.";
@@ -41,11 +46,6 @@
                 font-size: 2rem;
                 opacity: var(--defaultopacity);
                 transition: 5s;
-            }
-            @keyframes dodo{
-                to 100%{
-                    rotate: 0deg;
-                }
             }
         }
         .footcol02{

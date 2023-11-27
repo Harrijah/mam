@@ -1,5 +1,5 @@
 /* ************** Variables ********** */
-:root{
+:root {
   --defaultpath: 5px;
   --defaultscale: 0;
   --defaultopacity: 0;
@@ -9,9 +9,9 @@ $color2: #ccb59b;
 $color3: #997a56;
 $color4: #664825;
 $color5: #331f08;
-$color6: #3D8A6C;
-$color7: #8CAFA2;
-$color8: #E7E7E7;
+$color6: #3d8a6c;
+$color7: #8cafa2;
+$color8: #e7e7e7;
 $color9: #faefe3;
 $color10: #ffecd6c0;
 
@@ -25,11 +25,11 @@ $color10: #ffecd6c0;
 }
 @font-face {
   font-family: dandelion;
-  src: url('../../font/Dandelion.otf');
+  src: url("../../font/Dandelion.otf");
 }
 @font-face {
   font-family: mali;
-  src: url('../../font/Mali-Regular.ttf');
+  src: url("../../font/Mali-Regular.ttf");
 }
 * {
   margin: 0;
@@ -37,33 +37,34 @@ $color10: #ffecd6c0;
   box-sizing: border-box;
   font-family: Delius Swash Caps;
   color: $color4;
-  &::selection{
+  &::selection {
     background-color: $color4;
     color: $color1;
   }
+
 }
-@mixin standardbanner{
+@mixin standardbanner {
   width: 100%;
   background: $color1;
   margin: auto;
   padding: 1% 10%;
 }
-@mixin divideflex{
+@mixin divideflex {
   position: relative;
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
 }
-@mixin defaultspacing{
+@mixin defaultspacing {
   width: 100%;
   padding: 0 10%;
   background: $color1;
 }
-@mixin defaultpadding{
+@mixin defaultpadding {
   padding: 0 25px;
 }
-@mixin afterparam($width, $height, $color){
+@mixin afterparam($width, $height, $color) {
   content: "";
   position: absolute;
   width: $width;
@@ -71,7 +72,7 @@ $color10: #ffecd6c0;
   background-color: $color;
   border-radius: 10px;
 }
-@mixin defaultinput{
+@mixin defaultinput {
   display: block;
   min-width: 250px;
   width: 80%;
@@ -84,47 +85,45 @@ $color10: #ffecd6c0;
   background-color: whitesmoke;
 }
 
-@mixin imageaboutus{
+@mixin imageaboutus {
   position: relative;
   display: block;
-  top: 50%;
-  transform: translateY(-50%);
+  // top: 50%;
+  // transform: translateY(-50%);
   margin: auto;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   border: solid 1px $color4;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
 }
-@mixin textaboutus{
+@mixin textaboutus {
   position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
-  margin: 20px 0;
+  margin: 35px 0;
   padding: 10px;
   background: $color9;
   border: solid 1px $color4;
   border-radius: 15px;
-  z-index: 2;
-  &::before{
+  &::before {
     content: "";
-    position: relative;
+    position: absolute;
     top: -50px;
     left: -30px;
     width: 100px;
     height: 100px;
     background: url("../../images/logo.png") center/cover;
     background-repeat: no-repeat;
-    z-index: 4;
-
+    // z-index: 5;
   }
 }
-@mixin lescss{
+@mixin lescss {
   text-align: center;
   margin-bottom: 35px;
   position: relative;
-  &::after{
+  &::after {
     @include afterparam(100px, 5px, $color2);
     top: 105%;
     left: 50%;
@@ -132,19 +131,19 @@ $color10: #ffecd6c0;
   }
 }
 
-h2{
+h2 {
   position: relative;
   font-family: mali;
   font-size: 4rem;
 }
 
-.carousel-control{
+.carousel-control {
   border-radius: 25px;
 }
-.carousel-caption{
+.carousel-caption {
   background: rgba(0, 0, 0, 0.29);
   border-radius: 5px;
-  p{
+  p {
     color: $color2;
   }
 }

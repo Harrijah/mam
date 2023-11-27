@@ -7,8 +7,11 @@ class Accueil extends BaseController
 {
     public function accueil ()
     {
+        $uri = service('uri');
+        $lien = $uri->getSegment(1);
         $data = [
             'pagetitle' => 'Accueil',
+            'maclasse' => $lien,
         ];
 
 

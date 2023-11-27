@@ -7,8 +7,11 @@ class Contact extends BaseController
 {
     public function contact ()
     {
+        $uri = service('uri');
+        $lien = $uri->getSegment(1);
         $data = [
-            'pagetitle' => 'Contact'
+            'pagetitle' => 'Contact',
+            'maclasse' => $lien,
         ];
 
         return view('./template-parts/header', $data)

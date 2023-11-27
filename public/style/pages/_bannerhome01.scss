@@ -71,19 +71,19 @@
     }
     p{
       position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 127px;
-        top: 28%;
-        left: -20%;
-        background: url("../../images/abc.png") center;
-        background-repeat: no-repeat;
-        filter: drop-shadow(
-          -5px 3px 15px rgba(0, 0, 0, 0.3)
-        );
-      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   width: 50px;
+      //   height: 127px;
+      //   top: 28%;
+      //   left: -20%;
+      //   background: url("../../images/abc.png") center;
+      //   background-repeat: no-repeat;
+      //   filter: drop-shadow(
+      //     -5px 3px 15px rgba(0, 0, 0, 0.3)
+      //   );
+      // }
     }
   }
   .mamcontainer {

@@ -62,7 +62,7 @@ h2 {
   padding: 0 10%;
   background: #ccb59b;
   transition: 1s;
-  z-index: 3;
+  z-index: 4;
 }
 #menu .adress {
   display: inline-block;
@@ -97,6 +97,9 @@ h2 {
   display: inline-block;
   list-style: none;
   margin: 10px 15px;
+}
+#menu nav ul li .highlight {
+  color: #ffecd6;
 }
 #menu nav ul li a {
   text-decoration: none;
@@ -171,7 +174,7 @@ h2 {
 .normalcontainer h2 span {
   font-family: mali;
   font-size: 4rem;
-  color: #3D8A6C;
+  color: #3d8a6c;
 }
 .normalcontainer h2::after {
   content: "";
@@ -394,7 +397,7 @@ h2 {
   left: 50%;
   width: 50px;
   height: 5px;
-  background-color: #8CAFA2;
+  background-color: #8cafa2;
   border-radius: 10px;
   transform: translateX(-50%);
 }
@@ -442,7 +445,7 @@ h2 {
 .banner01 p span {
   font-family: mali;
   font-size: 3rem;
-  color: #3D8A6C;
+  color: #3d8a6c;
 }
 .banner01 img {
   display: block;
@@ -485,17 +488,6 @@ h2 {
 }
 .teamcontainer .ourteam p {
   position: relative;
-}
-.teamcontainer .ourteam p::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 127px;
-  top: 28%;
-  left: -20%;
-  background: url("../../images/abc.png") center;
-  background-repeat: no-repeat;
-  filter: drop-shadow(-5px 3px 15px rgba(0, 0, 0, 0.3));
 }
 .teamcontainer .mamcontainer {
   position: relative;
@@ -620,8 +612,14 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+  transform: rotate(-35deg);
   z-index: 2;
   animation: dodo 8s forwards;
+}
+@keyframes dodo {
+  to {
+    transform: rotate(0deg);
+  }
 }
 .mamfooter .footercontainer #footcol01::after {
   content: "Bien grandir, naturellement.";
@@ -631,23 +629,6 @@ h2 {
   font-size: 2rem;
   opacity: var(--defaultopacity);
   transition: 5s;
-}
-@keyframes dodo {
-  0% {
-    rotate: -35deg;
-  }
-  30% {
-    rotate: -30deg;
-  }
-  60% {
-    rotate: -35deg;
-  }
-  80% {
-    rotate: -30deg;
-  }
-  100% {
-    rotate: -35deg;
-  }
 }
 .mamfooter .footercontainer .footcol02 {
   position: relative;
@@ -786,12 +767,28 @@ h2 {
 
 .aboutus {
   position: relative;
-  background: url("../../images/pexels.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(rgba(255, 236, 214, 0.1882352941), rgba(255, 236, 214, 0.1882352941)), url("../../images/pexels.jpg") center/cover;
   background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
   height: 350px;
   margin: 0;
+}
+.aboutus .titre {
+  width: 50%;
+}
+.aboutus .titre p {
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 70px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.aboutus .vide {
+  width: 50%;
 }
 
 .textintro {
@@ -801,25 +798,39 @@ h2 {
   margin: 0;
   padding: 5% 0;
   background: #ffecd6;
-  z-index: 0;
 }
 .textintro .textcontainer {
+  position: relative;
   width: 70%;
   text-align: center;
   margin: 0 auto;
-  z-index: 0;
 }
 .textintro .textcontainer h1 {
-  margin: 0;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+.textintro .textcontainer h1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  background-color: #ccb59b;
+  border-radius: 10px;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #svgContainer {
   width: 100%;
   overflow: hidden;
   transition: 1s;
-  z-index: 0;
 }
-#svgContainer #svgPath1, #svgContainer #svgPath2, #svgContainer #svgPath3, #svgContainer #svgPath4, #svgContainer #svgPath5 {
+#svgContainer #svgPath1,
+#svgContainer #svgPath2,
+#svgContainer #svgPath3,
+#svgContainer #svgPath4 {
   position: absolute;
   width: 100%;
   overflow: hidden;
@@ -833,7 +844,6 @@ h2 {
   background: #ffecd6;
   padding-top: 1200px;
   width: 100%;
-  overflow: hidden;
   padding: 0 10%;
   display: grid;
   grid-template-rows: auto auto auto auto auto;
@@ -842,32 +852,33 @@ h2 {
 }
 .mamservices .photo1 {
   position: relative;
+  place-self: center;
+  z-index: 1;
   grid-area: p1;
-  z-index: 2;
 }
 .mamservices .photo1 img {
   position: relative;
   display: block;
   margin: auto;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
+  border-radius: var(--defaultpath);
 }
 .mamservices .text1 {
   grid-area: t1;
-  width: 100%;
+  z-index: 2;
   position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
-  margin: 20px 0;
+  margin: 35px 0;
   padding: 10px;
   background: #faefe3;
   border: solid 1px #664825;
   border-radius: 15px;
-  z-index: 2;
 }
 .mamservices .text1::before {
   content: "";
@@ -878,7 +889,6 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
-  z-index: 4;
 }
 .mamservices .text1 h2 {
   text-align: center;
@@ -898,16 +908,16 @@ h2 {
 }
 .mamservices .text2 {
   grid-area: t2;
+  z-index: 3;
   position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
-  margin: 20px 0;
+  margin: 35px 0;
   padding: 10px;
   background: #faefe3;
   border: solid 1px #664825;
   border-radius: 15px;
-  z-index: 2;
 }
 .mamservices .text2::before {
   content: "";
@@ -918,7 +928,6 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
-  z-index: 4;
 }
 .mamservices .text2 h2 {
   text-align: center;
@@ -938,6 +947,7 @@ h2 {
 }
 .mamservices .photo2 {
   position: relative;
+  place-self: center;
   grid-area: p2;
   z-index: 2;
 }
@@ -945,14 +955,16 @@ h2 {
   position: relative;
   display: block;
   margin: auto;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
+  border-radius: var(--defaultpath);
 }
 .mamservices .photo3 {
   position: relative;
+  place-self: center;
   grid-area: p3;
   z-index: 2;
 }
@@ -960,24 +972,25 @@ h2 {
   position: relative;
   display: block;
   margin: auto;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
+  border-radius: var(--defaultpath);
 }
 .mamservices .text3 {
   grid-area: t3;
+  z-index: 2;
   position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
-  margin: 20px 0;
+  margin: 35px 0;
   padding: 10px;
   background: #faefe3;
   border: solid 1px #664825;
   border-radius: 15px;
-  z-index: 2;
 }
 .mamservices .text3::before {
   content: "";
@@ -988,7 +1001,6 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
-  z-index: 4;
 }
 .mamservices .text3 h2 {
   text-align: center;
@@ -1008,16 +1020,16 @@ h2 {
 }
 .mamservices .text4 {
   grid-area: t4;
+  z-index: 3;
   position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
-  margin: 20px 0;
+  margin: 35px 0;
   padding: 10px;
   background: #faefe3;
   border: solid 1px #664825;
   border-radius: 15px;
-  z-index: 2;
 }
 .mamservices .text4::before {
   content: "";
@@ -1028,7 +1040,6 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
-  z-index: 4;
 }
 .mamservices .text4 h2 {
   text-align: center;
@@ -1048,6 +1059,7 @@ h2 {
 }
 .mamservices .photo4 {
   position: relative;
+  place-self: center;
   grid-area: p4;
   z-index: 2;
 }
@@ -1055,14 +1067,16 @@ h2 {
   position: relative;
   display: block;
   margin: auto;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
+  border-radius: var(--defaultpath);
 }
 .mamservices .photo5 {
   position: relative;
+  place-self: center;
   grid-area: p5;
   z-index: 2;
 }
@@ -1070,24 +1084,25 @@ h2 {
   position: relative;
   display: block;
   margin: auto;
-  height: 250px;
+  height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
+  border-radius: var(--defaultpath);
 }
 .mamservices .text5 {
   grid-area: t5;
+  z-index: 2;
   position: relative;
   width: 85%;
   text-align: center;
   place-self: center;
-  margin: 20px 0;
+  margin: 35px 0;
   padding: 10px;
   background: #faefe3;
   border: solid 1px #664825;
   border-radius: 15px;
-  z-index: 2;
 }
 .mamservices .text5::before {
   content: "";
@@ -1098,7 +1113,6 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
-  z-index: 4;
 }
 .mamservices .text5 h2 {
   text-align: center;
@@ -1115,12 +1129,4 @@ h2 {
   top: 105%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.animation-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 500vh;
 }/*# sourceMappingURL=index.css.map */
