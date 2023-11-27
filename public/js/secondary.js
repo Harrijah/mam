@@ -171,8 +171,8 @@ window.addEventListener("scroll", () => {
 
   if (photo1container) {
 
-      if (scrollValue02 > 0.28 && scrollValue02 < 0.34) {
-        photo1.style.transform = "translateX(10px)";
+      if (scrollValue02 > 0.28 && scrollValue02 < 0.40) {
+        photo1.style.transform = "translateX(5px)";
         photo1.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
       } else {
         photo1.style.transform = "";
@@ -182,8 +182,8 @@ window.addEventListener("scroll", () => {
 
   if (photo2container) {
 
-      if (scrollValue02 > 0.36 && scrollValue02 < 0.47) {
-        photo2.style.transform = "translateX(-10px)";
+      if (scrollValue02 > 0.39 && scrollValue02 < 0.55) {
+        photo2.style.transform = "translateX(-5px)";
         photo2.style.setProperty('--defaultpath', "100%");
       } else {
         photo2.style.transform = "";
@@ -193,8 +193,8 @@ window.addEventListener("scroll", () => {
 
   if (photo3container) {
 
-      if (scrollValue02 > 0.48 && scrollValue02 < 0.56) {
-        photo3.style.transform = "translateX(10px)";
+      if (scrollValue02 > 0.55 && scrollValue02 < 0.70) {
+        photo3.style.transform = "translateX(5px)";
         photo3.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
       } else {
         photo3.style.transform = "";
@@ -204,8 +204,8 @@ window.addEventListener("scroll", () => {
 
   if (photo4container) {
 
-      if (scrollValue02 > 0.57 && scrollValue02 < 0.65) {
-        photo4.style.transform = "translateX(-10px)";
+      if (scrollValue02 > 0.64 && scrollValue02 < 0.80) {
+        photo4.style.transform = "translateX(-5px)";
         photo4.style.setProperty('--defaultpath', "100%");
       } else {
         photo4.style.transform = "";
@@ -215,8 +215,8 @@ window.addEventListener("scroll", () => {
 
   if (photo5container) {
 
-      if (scrollValue02 > 0.65 && scrollValue02 < 0.73) {
-        photo5.style.transform = "translateX(10px)";
+      if (scrollValue02 > 0.74 && scrollValue02 < 0.88) {
+        photo5.style.transform = "translateX(5px)";
         photo5.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
       } else {
         photo5.style.transform = "";

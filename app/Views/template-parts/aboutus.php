@@ -34,7 +34,7 @@
 
 <div class="mamservices" id="mamservices">
     <div class="photo1" id="photo1container">
-        <img src="<?php echo base_url('./images/aliment.jpg'); ?>" alt="nours"  id="photo1">
+        <img src="<?php echo base_url('./images/alimentation.jpg'); ?>" alt="nours"  id="photo1">
     </div>
     <div class="text1">
         <h2>L'alimentation</h2>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="photo3" id="photo3container">
-        <img src="<?php echo base_url('./images/local2.jpg'); ?>" alt="nours" id="photo3">
+        <img src="<?php echo base_url('./images/local4.jpg'); ?>" alt="nours" id="photo3">
     </div>
     <div class="text3">
         <h2>Le local</h2>
@@ -73,7 +73,7 @@
         </p>
     </div>
     <div class="photo4" id="photo4container">
-        <img src="<?php echo base_url('./images/couche3.jpg'); ?>" alt="nours" id="photo4">
+        <img src="<?php echo base_url('./images/bebe.jpg'); ?>" alt="nours" id="photo4">
     </div>
     
     <div class="photo5" id="photo5container">
@@ -87,22 +87,3 @@
     </div>
 </div>
 
-<div class="banner02">
-    <h2>Réserver une place</h2>
-    <div class="mapform">
-        <div class="googlemap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1928.1352188142384!2d1.512325115358315!3d43.607819944187135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd677a6fc3e7%3A0x1c996cc1c0ab0553!2s101%20Av.%20des%20Mourlingues%2C%2031130%20Balma%2C%20France!5e0!3m2!1sfr!2smg!4v1700145910337!5m2!1sfr!2smg" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="homeform">
-            <form action="#" method="post">
-                <input type="text" name="" id="" placeholder="Votre nom"> <br>
-                <input type="text" name="" id="" placeholder="Le nom de votre enfant"> <br>
-                Du <input type="date" name="" id=""> <br>
-                au <input type="date" name="" id="">
-                <input type="email" name="" id="" placeholder="Votremail@mail.com">
-                <textarea name="" id="" cols="30" rows="3" placeholder="Votre message, ici."></textarea>
-                <input type="submit" value="Réserver">
-            </form>
-        </div>
-    </div>
-</div>

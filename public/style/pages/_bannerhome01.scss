@@ -100,7 +100,7 @@
           height: auto;
           // overflow: hidden;
           // max-height: 350px;
-          border-radius: 25px;
+          border-radius: 10px;
         }
         p {
           position: relative;
@@ -111,9 +111,9 @@
   }
 }
 .banner02 {
+  position: relative;
   @include standardbanner;
   padding-bottom: 50px;
-
   h2 {
     text-align: center;
     margin-bottom: 35px;
@@ -125,35 +125,27 @@
       transform: translateX(-50%);
     }
   }
-  .mapform {
-    @include divideflex;
-    height: auto;
-    background-color: $color9;
-    padding: 25px;
-    border-radius: 15px;
-    border: solid 1px $color4;
-    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
-    .googlemap {
-      width: 60%;
-      iframe {
-        width: 95%;
-        border: solid 3px $color4;
-        border-radius: 10px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-      }
-    }
-    .homeform {
-      width: 40%;
-      input,
-      textarea {
-        @include defaultinput;
-      }
-      input[type="date"]{
-        width: 75%;
-      }
-      input[type="submit"] {
-        background: $color2;
-      }
+  p{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  button{
+    position: relative;
+    margin: 20px auto 0;
+    @include defaultinput;
+    width: 25%;
+    color: $color1;
+    border: solid 1px $color8;
+    background: $color2;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    &:hover{
+      color: $color4;
+      background: $color1; 
+      border: solid 1px $color4;
+      left: 5px;
     }
   }
+
 }

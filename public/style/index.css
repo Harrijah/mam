@@ -500,7 +500,7 @@ h2 {
   position: relative;
   width: 100%;
   height: auto;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 .teamcontainer .mamcontainer #myCarousel .carousel-inner p {
   position: relative;
@@ -508,6 +508,7 @@ h2 {
 }
 
 .banner02 {
+  position: relative;
   width: 100%;
   background: #ffecd6;
   margin: auto;
@@ -530,33 +531,43 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
-.banner02 .mapform {
+.banner02 p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.banner02 button {
   position: relative;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  background-color: #faefe3;
-  padding: 25px;
-  border-radius: 15px;
+  margin: 20px auto 0;
+  display: block;
+  min-width: 250px;
+  width: 80%;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
   border: solid 1px #664825;
-  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 25%;
+  color: #ffecd6;
+  border: solid 1px #e7e7e7;
+  background: #ccb59b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 1s;
 }
-.banner02 .mapform .googlemap {
-  width: 60%;
+.banner02 button:hover {
+  color: #664825;
+  background: #ffecd6;
+  border: solid 1px #664825;
+  left: 5px;
 }
-.banner02 .mapform .googlemap iframe {
-  width: 95%;
-  border: solid 3px #664825;
-  border-radius: 10px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-.banner02 .mapform .homeform {
+
+#mymodal .modal-content .modal-body .homeform form {
   width: 40%;
 }
-.banner02 .mapform .homeform input,
-.banner02 .mapform .homeform textarea {
+#mymodal .modal-content .modal-body .homeform form input,
+#mymodal .modal-content .modal-body .homeform form textarea {
   display: block;
   min-width: 250px;
   width: 80%;
@@ -568,10 +579,10 @@ h2 {
   border-radius: 20px;
   background-color: whitesmoke;
 }
-.banner02 .mapform .homeform input[type=date] {
+#mymodal .modal-content .modal-body .homeform form input[type=date] {
   width: 75%;
 }
-.banner02 .mapform .homeform input[type=submit] {
+#mymodal .modal-content .modal-body .homeform form input[type=submit] {
   background: #ccb59b;
 }
 
@@ -590,6 +601,32 @@ h2 {
   justify-content: center;
   height: 100%;
   padding: 4% 5%;
+}
+.mamfooter .footercontainer .mapform {
+  position: relative;
+  width: 40%;
+}
+.mamfooter .footercontainer .mapform h3 {
+  position: relative;
+}
+.mamfooter .footercontainer .mapform h3::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 120%;
+  left: 0;
+}
+.mamfooter .footercontainer .mapform .googlemap {
+  width: 100%;
+}
+.mamfooter .footercontainer .mapform .googlemap iframe {
+  width: 95%;
+  border: solid 3px #664825;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .mamfooter .footercontainer #footcol01 {
   position: relative;

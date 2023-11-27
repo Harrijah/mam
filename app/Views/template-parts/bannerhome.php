@@ -51,21 +51,14 @@
 </div>
 
 <div class="banner02">
-    <h2>Réserver une place</h2>
-    <div class="mapform">
-        <div class="googlemap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1928.1352188142384!2d1.512325115358315!3d43.607819944187135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd677a6fc3e7%3A0x1c996cc1c0ab0553!2s101%20Av.%20des%20Mourlingues%2C%2031130%20Balma%2C%20France!5e0!3m2!1sfr!2smg!4v1700145910337!5m2!1sfr!2smg" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="homeform">
-            <form action="#" method="post">
-                <input type="text" name="" id="" placeholder="Votre nom"> <br>
-                <input type="text" name="" id="" placeholder="Le nom de votre enfant"> <br>
-                Du <input type="date" name="" id=""> <br>
-                au <input type="date" name="" id="">
-                <input type="email" name="" id="" placeholder="Votremail@mail.com">
-                <textarea name="" id="" cols="30" rows="3" placeholder="Votre message, ici."></textarea>
-                <input type="submit" value="Réserver">
-            </form>
-        </div>
-    </div>
+    <h2>Pré-inscription</h2>
+    <p>
+        Nous serions ravis de vous accueillir à la Maison d'Assistants Maternels Tiazaza et de prendre soin de votre précieux petit bout. Pour entamer le processus, nous vous prions de bien vouloir remplir la fiche de pré-inscription disponible sur le lien ci-dessous.
+    <br><br>
+        Une fois que nous aurons examiné les disponibilités et obtenu l'approbation de la Responsable, nous vous contacterons pour convenir d'un premier rendez-vous. Nous sommes impatients de faire votre connaissance et de discuter des détails pour assurer le meilleur environnement possible pour votre enfant au sein de notre établissement. 
+    </p>
+    <button id="modalbutton">Remplir la fiche</button>
+
+
+
 </div>
