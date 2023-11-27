@@ -293,9 +293,9 @@ h2 {
   margin: 25px;
   padding: 2%;
   border: solid 1px #664825;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #faefe3;
-  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .normalcontainer .pictocontainer .pictobox h3 {
   display: block;

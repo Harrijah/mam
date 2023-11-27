@@ -6,9 +6,9 @@
 </div>
 <div class="textintro">
     <div class="textcontainer">
-        <h1>A propos de la MAM Tiaza</h1>
+        <h1>A propos de la MAM Tiazaza</h1>
         <p>
-            Bienvenue dans notre espace dédié à l'épanouissement et au bien-être des enfants. Chez nous, l'alimentation occupe une place centrale, avec un engagement envers une nourriture saine et équilibrée provenant de producteurs locaux, respectant la saisonnalité et les normes biologiques. Notre approche pédagogique vise à favoriser le développement, l'autonomie et le bonheur des enfants à travers des activités ludiques et la motricité libre. Installés dans une maison individuelle proche des axes majeurs, nous offrons un environnement sécurisé et stimulant avec une salle d'éveil, des chambres, un jardin adapté, et des équipements dédiés à la santé et à la sécurité des enfants. Nous encourageons la participation active des parents dans la vie de notre structure, reconnaissant leur rôle essentiel en tant que premiers éducateurs. Rejoignez-nous pour créer ensemble un lien de confiance et de respect mutuel.
+        La Maison D'Assistants Maternels Tiazaza est un espace dédié à l'épanouissement et au bien-être des enfants, mettant l'alimentation saine au centre de son engagement. Notre approche pédagogique favorise le développement, l'autonomie et le bonheur des enfants à travers un programme sur-mesure et des activités ludiques. Installés dans un cadre agréable et adapté, nous offrons un environnement stimulant avec des équipements dédiés à la santé et à la sécurité des enfants.
         </p>
     </div>
 </div>
