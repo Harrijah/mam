@@ -1,25 +1,179 @@
 #mymodal {
-    .modal-content {
-      .modal-body {
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.6);
+  .modal-content {
+    width: 70%;
+    margin: 100px auto 0;
+    background: $color1;
+    .modal-header {
+      .entete {
+        position: relative;
+        text-align: center;
+        &::before {
+          position: absolute;
+          content: "";
+          top: -25px;
+          left: -150px;
+          width: 100px;
+          height: 100px;
+          background: url("../../images/logo.png") center/cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .modal-body {
+      padding: 50px 10%;
+      .fichetitre {
+        text-align: center;
+      }
+      .bodycontainer {
+        margin: 0 auto;
+        // background-color: red;
         .homeform {
-          form{
-  
-              width: 40%;
-              input,
-              textarea {
-                  @include defaultinput;
+          margin: 0 auto;
+          // background-color: blue;
+          form {
+            position: relative;
+            table {
+              display: block;
+              padding: 20px;
+              background: $color9;
+              thead {
+                tr {
+                  margin-bottom: 15px;
+                  .daycolumn{
+                    width: 15%;
+                  }
+                  .entrycolumn{
+                    width: 35%;
+                  }
+                  .leavecolumn{
+                    width: 35%;
+                  }
+                }
+                  td {
+                    text-align: center;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
               }
-              input[type="date"] {
-                  width: 75%;
+              tbody{
+                tr{
+                  .day{
+                    font-weight: bold;
+                  }
+                  .colonne01{
+                    width: 15%;
+                  }
+                  .colonne02{
+                    width: 50%;
+                  }
+                  .colonne03{
+                    width: 35%;
+                  }
+                  td{
+                    span{
+                      margin: 15px;
+                    }
+                  }
+                }
               }
-              input[type="submit"] {
-                  background: $color2;
-              } 
+              border: solid 1px $color4;
+              //     td{
+              //         padding: 10px 10px;
+              //     }
+            }
+            //   width: 40%;
+            input, select {
+              min-width: 50%;
+              // width: 80%;
+              max-width: 100%;
+              min-height: 40px;
+              margin-bottom: 10px;
+              padding: 10px;
+              border: solid 1px $color4;
+              // border-radius: 10px;
+              background-color: whitesmoke;
+            }
+            .topinput{
+              min-width: 15%;
+              width: 200px;
+              max-width: 80%; 
+            }
+            .parents{
+              width: 100%;
+            }
+            .phone{
+              width: 25%;
+            }
+            input[type="submit"] {
+              position: relative;
+              margin: 20px auto 0;
+              @include defaultinput;
+              width: 25%;
+              color: $color1;
+              border: solid 1px $color8;
+              background: $color2;
+              box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+              transition: 1s;
+              &:hover {
+                color: $color4;
+                background: $color1;
+                border: solid 1px $color4;
+                left: 5px;
+              }
+            }
+            .topinput{
+              width: 250px;
+            }
+           #select, select{
+              min-width: 10%;
+              // width: 80%;
+              max-width: 20%;
+              min-height: 40px;
+              margin-bottom: 10px;
+              padding: 10px;
+              border: solid 1px $color4;
+              // border-radius: 10px;
+              background-color: whitesmoke;
+            }
+            //   input[type="date"] {
+            //       width: 75%;
+            //   }
+            //   input[type="submit"] {
+            //       background: $color2;
+            //   }
           }
         }
       }
-    } 
+    }
+    .modal-footer {
+      button {
+        position: relative;
+        margin: 20px auto 0;
+        padding: 10px;
+        border: solid 1px $color4;
+        border-radius: 20px;
+        // @include defaultinput;
+        // text-align: right;
+        width: 10%;
+        color: $color1;
+        border: solid 1px $color8;
+        background: $color2;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        transition: 1s;
+        &:hover {
+          color: $color4;
+          background: $color1;
+          border: solid 1px $color4;
+          left: 5px;
+        }
+      }
+    }
   }
+}
 
 .mamfooter {
   position: relative;

@@ -1,27 +1,113 @@
 
     <div class="modal" id="mymodal">
         <div class="modal-content">
-            <span class="clode span-right">&times;</span>
+            <!-- <span class="close span-right" id="close">&times;</span> -->
             <div class="modal-header">
-                <h3>Fiche de pré-inscription</h3>
+                <div class="entete">
+                    <h3>Fiche de pré-inscription - MAM Tiazaza</h3>
+                </div>
             </div>
             <div class="modal-body">
-                <h4>MAM Tiazaza</h4>
-                <div class="homeform">
-                    <form action="#" method="post">
-                        <input type="text" name="" id="" placeholder="Votre nom"> <br>
-                        <input type="text" name="" id="" placeholder="Le nom de votre enfant"> <br>
-                        Du <input type="date" name="" id=""> <br>
-                        au <input type="date" name="" id="">
-                        <input type="email" name="" id="" placeholder="Votremail@mail.com">
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Votre message, ici."></textarea>
-                        <input type="submit" value="Réserver">
-                    </form>
+                <div class="bodycontainer">
+                    <div class="homeform">
+                        <form action="#" method="post">
+                            <span>Nom de l'enfant : </span> <input type="text" name="" id="" class="topinput">
+                            <span>Age : </span> 
+                            <input type="number" name="" id="select"> 
+                            <select name="" id="">
+                                <option value="mois">mois</option>
+                                <option value="mois">an</option>
+                            </select>
+                            <br>
+                            <span>Date de début d'accueil souhaitée : </span> <input type="date" name="" id="" class="topinput"> <br>
+                            <span>Nombre d'heures d'accueil prévues par semaine : </span>
+                            <input type="number" name="" id="" placeholder="" class="topinput"> 
+                            <span>heures/semaine.</span><br>
+                            <span style="text-decoration:underline;">Planning prévisionnel (à titre informatif) : </span><br><br>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class="daycolumn"><span>Jour</span></td>
+                                        <td class="entrycolumn"><span>Heure d'arrivée</span></td>
+                                        <td class="leavecolumn"><span>Heure de départ</span></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="day"><span>Lundi</span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day"><span>Mardi</span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day"><span>Mercredi</span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day"><span>Jeudi</span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day"><span>Vendredi</span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                        <td><span><input type="datetime" name="" id=""></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br><br>
+
+                            <span style="text-decoration:underline;">Coordonnées des parents : </span><br>
+
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="colonne01"><span>Père :</span></td>
+                                        <td class="colonne02"><input type="text" placeholder="Mr" class="parents"></td>
+                                        <td class="colonne03"><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
+                           
+                                    </tr>
+                                    <tr>
+                                        <td><span>Email : </span></td>
+                                        <td><input type="email" name="" id="" class="parents"></td>
+                                        <td></td><br>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Profession : </span></td>
+                                        <td><input type="text" class="parents"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Mère : </span></td>
+                                        <td><input type="text" placeholder="Mme" class="parents"></td>
+                                        <td><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Email : </span></td>
+                                        <td><input type="email" name="" id="" class="parents"></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Profession : </span></td>
+                                        <td><input type="text" class="parents"></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
                 </div>
 
             </div>
             <div class="modal-footer">
-                <p>Merci pour votre attention.</p>
+                <button id="closeme">Fermer</button>
             </div>
         </div>
     </div>
@@ -44,7 +130,7 @@
                 <ul>
                     <li><a href="">A propos de Tiazaza</a></li>
                     <li><a href="">Créer un compte</a></li>
-                    <li><a href="javascript:void()">Formulaire de pré-admission</a></li>
+                    <li><a href="javascript:void()" id="preadmission">Formulaire de pré-admission</a></li>
                     <li><a href="">Nous contacter</a></li>
                     <li><a href="https://www.facebook.com/mamtiazaza/"><i class="fab fa-facebook display-1 fontawe"></i></a></li>
                 </ul>

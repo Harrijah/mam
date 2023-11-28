@@ -563,11 +563,107 @@ h2 {
   left: 5px;
 }
 
-#mymodal .modal-content .modal-body .homeform form {
-  width: 40%;
+#mymodal {
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.6);
 }
-#mymodal .modal-content .modal-body .homeform form input,
-#mymodal .modal-content .modal-body .homeform form textarea {
+#mymodal .modal-content {
+  width: 70%;
+  margin: 100px auto 0;
+  background: #ffecd6;
+}
+#mymodal .modal-content .modal-header .entete {
+  position: relative;
+  text-align: center;
+}
+#mymodal .modal-content .modal-header .entete::before {
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: -150px;
+  width: 100px;
+  height: 100px;
+  background: url("../../images/logo.png") center/cover;
+  background-repeat: no-repeat;
+}
+#mymodal .modal-content .modal-body {
+  padding: 50px 10%;
+}
+#mymodal .modal-content .modal-body .fichetitre {
+  text-align: center;
+}
+#mymodal .modal-content .modal-body .bodycontainer {
+  margin: 0 auto;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform {
+  margin: 0 auto;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form {
+  position: relative;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table {
+  display: block;
+  padding: 20px;
+  background: #faefe3;
+  border: solid 1px #664825;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr {
+  margin-bottom: 15px;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr .daycolumn {
+  width: 15%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr .entrycolumn {
+  width: 35%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr .leavecolumn {
+  width: 35%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead td {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .day {
+  font-weight: bold;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .colonne01 {
+  width: 15%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .colonne02 {
+  width: 50%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .colonne03 {
+  width: 35%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr td span {
+  margin: 15px;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input, #mymodal .modal-content .modal-body .bodycontainer .homeform form select {
+  min-width: 50%;
+  max-width: 100%;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  background-color: whitesmoke;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .topinput {
+  min-width: 15%;
+  width: 200px;
+  max-width: 80%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .parents {
+  width: 100%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .phone {
+  width: 25%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit] {
+  position: relative;
+  margin: 20px auto 0;
   display: block;
   min-width: 250px;
   width: 80%;
@@ -578,12 +674,49 @@ h2 {
   border: solid 1px #664825;
   border-radius: 20px;
   background-color: whitesmoke;
-}
-#mymodal .modal-content .modal-body .homeform form input[type=date] {
-  width: 75%;
-}
-#mymodal .modal-content .modal-body .homeform form input[type=submit] {
+  width: 25%;
+  color: #ffecd6;
+  border: solid 1px #e7e7e7;
   background: #ccb59b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit]:hover {
+  color: #664825;
+  background: #ffecd6;
+  border: solid 1px #664825;
+  left: 5px;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .topinput {
+  width: 250px;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form #select, #mymodal .modal-content .modal-body .bodycontainer .homeform form select {
+  min-width: 10%;
+  max-width: 20%;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  background-color: whitesmoke;
+}
+#mymodal .modal-content .modal-footer button {
+  position: relative;
+  margin: 20px auto 0;
+  padding: 10px;
+  border: solid 1px #664825;
+  border-radius: 20px;
+  width: 10%;
+  color: #ffecd6;
+  border: solid 1px #e7e7e7;
+  background: #ccb59b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+#mymodal .modal-content .modal-footer button:hover {
+  color: #664825;
+  background: #ffecd6;
+  border: solid 1px #664825;
+  left: 5px;
 }
 
 .mamfooter {
