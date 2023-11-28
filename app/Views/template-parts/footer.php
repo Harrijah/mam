@@ -64,10 +64,11 @@
 
                             <span style="text-decoration:underline;">Coordonnées des parents : </span><br>
 
+                            <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Père</span>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="colonne01"><span>Père :</span></td>
+                                        <td class="colonne01"><span>Mr </span></td>
                                         <td class="colonne02"><input type="text" placeholder="Mr" class="parents"></td>
                                         <td class="colonne03"><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
                            
@@ -82,8 +83,13 @@
                                         <td><input type="text" class="parents"></td>
                                         <td></td>
                                     </tr>
+                                </tbody>
+                            </table>
+                            <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Mère</span>
+                            <table>
+                                <tbody>
                                     <tr>
-                                        <td><span>Mère : </span></td>
+                                        <td><span>Mme </span></td>
                                         <td><input type="text" placeholder="Mme" class="parents"></td>
                                         <td><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
                                     </tr>
