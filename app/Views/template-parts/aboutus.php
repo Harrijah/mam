@@ -5,7 +5,7 @@
     <div class="vide"></div>
 </div>
 <div class="textintro">
-    <div class="textcontainer">
+    <div id="textcontainer" class="textcontainer">
         <h1>A propos de la MAM Tiazaza</h1>
         <p>
         La Maison D'Assistants Maternels Tiazaza est un espace dédié à l'épanouissement et au bien-être des enfants, mettant l'alimentation saine au centre de son engagement. Notre approche pédagogique favorise le développement, l'autonomie et le bonheur des enfants à travers un programme sur-mesure et des activités ludiques. Installés dans un cadre agréable et adapté, nous offrons un environnement stimulant avec des équipements dédiés à la santé et à la sécurité des enfants.

@@ -1,17 +1,21 @@
 
-svgPath1.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
-svgPath2.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
-svgPath3.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
-svgPath4.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
-svgPath5.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
-console.log(document.body.offsetHeight);
+
 const makeLine = () => {
+  // let madiv = document.getElementById("textcontainer");
+
+console.log(textcontainer.clientHeight);
+svgPath1.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
+svgPath2.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
+svgPath3.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
+svgPath4.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
+svgPath5.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
+
   var photo1 = document.getElementById("photo1");
   var photo2 = document.getElementById("photo2");
   var photo3 = document.getElementById("photo3");
   var photo4 = document.getElementById("photo4");
   var photo5 = document.getElementById("photo5");
-  var photo6 = document.getElementById("photo6");
+  var photo6 = document.getElementById("photo6"); 
 
   var path1 = document.querySelector("#svgPath1 path");
   var path2 = document.querySelector("#svgPath2 path");
