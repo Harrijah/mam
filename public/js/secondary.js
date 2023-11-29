@@ -3,7 +3,7 @@
 const makeLine = () => {
   // let madiv = document.getElementById("textcontainer");
 
-console.log(textcontainer.clientHeight);
+// console.log(textcontainer.clientHeight);
 svgPath1.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
 svgPath2.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');
 svgPath3.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - textcontainer.clientHeight)+'px');

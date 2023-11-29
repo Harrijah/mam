@@ -13,6 +13,9 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  @media screen and (max-width : 1050px){
+    display: block;
+  }
 
   .ppltitle {
     grid-area: mt;
@@ -22,9 +25,15 @@
       position: relative;
       padding: 15px 0;
       left: 0;
+      @media screen and (max-width : 1050px){
+        padding: 5px 0;
+      }
       img {
         position: relative;
         height: 250px;
+        @media screen and (max-width : 1050px){
+          height: 150px;
+        }
       }
       h1 {
         font-family: mali;
@@ -41,6 +50,9 @@
   .pplimage {
     grid-area: mi;
     position: relative;
+    @media screen and (max-width : 1050px){
+      display: none;
+    }
   }
 }
 // *********** section 01
@@ -124,6 +136,15 @@
     position: relative;
     display: flex;
     margin: 25px 10%;
+    @media screen and (max-width : 1000px){
+      margin: 25px 5%;
+    }
+    @media screen and (max-width : 800px){
+      margin: 25px 2%;
+    }
+    @media screen and (max-width : 600px){
+      display: block;
+    }
     #pereenfant {
       position: relative;
       width: 50%;
@@ -131,6 +152,14 @@
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      @media screen and (max-width : 740px) and (min-width: 600px){
+        width: 40%;
+        margin: auto;
+      }
+      @media screen and (max-width : 600px){
+        width: 100%;
+        margin: auto;
+      }
 
       img {
         height: 100%;
@@ -155,6 +184,14 @@
     .textpart {
       position: relative;
       width: 50%;
+      @media screen and (max-width : 740px){
+        width: 60%;
+        margin: auto;
+      }
+      @media screen and (max-width : 600px){
+        width: 100%;
+        margin: 20px auto;
+      }
       @include defaultpadding;
     }
   }
@@ -162,8 +199,11 @@
   // *********** Picto section
   .pictocontainer {
     @include divideflex;
-    margin: auto;
     margin-bottom: 25px;
+    @media screen and (max-width : 610px){
+      display: block;
+      margin: 10px auto;
+    }
     // border: solid 2px $color2;
     // border-radius: 15px;
     .pictobox {
@@ -180,6 +220,23 @@
       border-radius: 5px;
       background-color: $color9;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      @media screen and (max-width : 900px){
+        min-width: 150px;
+        max-width: 400px;
+        width: 20%;
+        margin: 15px;
+      }
+      @media screen and (max-width : 610px){
+        display: block;
+        min-width: 250px;
+        max-width: 400px;
+        width: 20%;
+        margin: 20px auto;
+      }
+      // @media screen and (max-width : 672px){
+      //   display: block;
+      //   margin: 15px auto;
+      // }
       h3 {
         display: block;
         text-align: center;
@@ -189,6 +246,12 @@
         font-weight: bolder;
         color: $color4;
         margin-bottom: 20px;
+        @media screen and (max-width : 900px){
+          font-size: 2rem;
+        }
+        @media screen and (max-width : 610px){
+          font-size: 4rem;
+        }
         &::after {
           content: "";
           position: absolute;
@@ -199,10 +262,22 @@
           background-color: $color2;
           border-radius: 10px;
           transform: translateX(-50%);
+          @media screen and (max-width : 900px){
+            top: 25px;
+          }
+          @media screen and (max-width : 610px){
+            top: 45px;
+          }
         }
       }
       img {
         height: 70px;
+        @media screen and (max-width : 900px){
+          width: 70%;
+        }
+        @media screen and (max-width : 610px){
+          height: 110px;
+        }
       }
     }
     //
@@ -210,13 +285,18 @@
 
   // *************** Notre objectif
   .ourobjective {
-    @include divideflex;
-    align-items: center;
+    // @include divideflex;
+    // align-items: center;
     min-width: 400px;
     width: 50%;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    @media screen and (max-width : 600px){ 
+      min-width: 200px;
+      width: 100%;
+      max-width: 500px;
+    }
     #part1 {
       position: relative;
       &::after {
@@ -224,31 +304,38 @@
         position: absolute;
         top: 70%;
         left: 110%;
-        width: 300px;
-        height: 300px;
-        background: url("../../images/kid.jpg");
+        width: 23vw;
+        height: 23vw;
+        background: url("../../images/kid.jpg") center/cover;
         box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
         border-radius: var(--defaultpath);
         transition: 2s;
         z-index: 2;
+        @media screen and (max-width : 925px){ 
+          display: none;
+        }
       }
     }
     #part2 {
       position: relative;
+      transition: 2s;
       &::before {
         content: "";
         position: absolute;
         top: 150px;
         left: -70%;
         scale: var(--defaultscale);
-        width: 300px;
-        height: 300px;
-        background: url("../../images/family.jpg");
+        width: 23vw;
+        height: 23vw;
+        background: url("../../images/family.jpg") center/cover;
         // box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
         background-repeat: no-repeat;
         border: solid 6px $color2;
         border-radius: 100%;
         transition: 1s;
+        @media screen and (max-width : 925px){ 
+          display: none;
+        }
       }
     }
 

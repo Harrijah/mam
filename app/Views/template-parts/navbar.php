@@ -8,5 +8,10 @@
             <li><a href="<?php echo base_url('/aboutus') ?>" class="<?php echo ($maclasse == 'aboutus') ? 'highlight' : ''; ?>">A propos de nous</a></li>
             <li><a href="<?php echo base_url('/contact') ?>" class="<?php echo ($maclasse == 'contact') ? 'highlight' : ''; ?>">Contact</a></li>
         </ul>
+        <div id="mobilemenu">
+            <li><a href="<?php echo base_url('/') ?>" class="<?php echo ($maclasse == '') ? 'highlight' : ''; ?>">Accueil</a></li>
+            <li><a href="<?php echo base_url('/aboutus') ?>" class="<?php echo ($maclasse == 'aboutus') ? 'highlight' : ''; ?>">A propos de nous</a></li>
+            <li><a href="<?php echo base_url('/contact') ?>" class="<?php echo ($maclasse == 'contact') ? 'highlight' : ''; ?>">Contact</a></li>
+        </div>
     </nav>
 </div>

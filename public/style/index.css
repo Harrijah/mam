@@ -65,24 +65,37 @@ h2 {
   transition: 1s;
   z-index: 4;
 }
-#menu .adress {
-  display: inline-block;
-  margin-left: 10%;
-  padding: 5px 20px;
-  -webkit-clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
-          clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
-  background: #997a56;
-}
-#menu .adress span {
-  color: #ffecd6;
-}
-#menu .adress span i {
-  z-index: 3;
-}
 #menu nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#menu nav #mobilemenu {
+  display: none;
+  transition: 1s;
+}
+#menu nav #mobilemenu li {
+  display: block;
+  list-style: none;
+  margin: 10px 5px;
+}
+#menu nav #mobilemenu li .highlight {
+  color: #ffecd6;
+}
+#menu nav #mobilemenu li a {
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+  color: #664825;
+}
+#menu nav #mobilemenu li a:hover {
+  color: #ffecd6;
+  text-decoration: none;
+}
+@media screen and (max-width: 610px) {
+  #menu nav #mobilemenu {
+    display: block;
+  }
 }
 #menu nav .logo {
   width: 70px;
@@ -93,6 +106,12 @@ h2 {
 }
 #menu nav ul {
   vertical-align: middle;
+  transition: 1s;
+}
+@media screen and (max-width: 610px) {
+  #menu nav ul {
+    display: none;
+  }
 }
 #menu nav ul li {
   display: inline-block;
@@ -129,6 +148,16 @@ h2 {
   background-position: top;
   background-size: cover;
 }
+@media screen and (max-width: 900px) {
+  .fullwidth {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .fullwidth {
+    display: block;
+  }
+}
 .fullwidth .ppltitle {
   grid-area: mt;
   position: relative;
@@ -138,9 +167,19 @@ h2 {
   padding: 15px 0;
   left: 0;
 }
+@media screen and (max-width: 1050px) {
+  .fullwidth .ppltitle .titles {
+    padding: 5px 0;
+  }
+}
 .fullwidth .ppltitle .titles img {
   position: relative;
   height: 250px;
+}
+@media screen and (max-width: 1050px) {
+  .fullwidth .ppltitle .titles img {
+    height: 150px;
+  }
 }
 .fullwidth .ppltitle .titles h1 {
   font-family: mali;
@@ -156,6 +195,11 @@ h2 {
   grid-area: mi;
   position: relative;
 }
+@media screen and (max-width: 1050px) {
+  .fullwidth .pplimage {
+    display: none;
+  }
+}
 
 .normalcontainer {
   width: 100%;
@@ -165,6 +209,11 @@ h2 {
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+@media screen and (max-width: 900px) {
+  .normalcontainer {
+    padding: 0 5%;
+  }
 }
 .normalcontainer h2 {
   position: relative;
@@ -244,6 +293,21 @@ h2 {
   display: flex;
   margin: 25px 10%;
 }
+@media screen and (max-width: 1000px) {
+  .normalcontainer .bandeau01 {
+    margin: 25px 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .normalcontainer .bandeau01 {
+    margin: 25px 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .normalcontainer .bandeau01 {
+    display: block;
+  }
+}
 .normalcontainer .bandeau01 #pereenfant {
   position: relative;
   width: 50%;
@@ -251,6 +315,18 @@ h2 {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 740px) and (min-width: 600px) {
+  .normalcontainer .bandeau01 #pereenfant {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .normalcontainer .bandeau01 #pereenfant {
+    width: 100%;
+    margin: auto;
+  }
 }
 .normalcontainer .bandeau01 #pereenfant img {
   height: 100%;
@@ -275,14 +351,32 @@ h2 {
   width: 50%;
   padding: 0 25px;
 }
+@media screen and (max-width: 740px) {
+  .normalcontainer .bandeau01 .textpart {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .normalcontainer .bandeau01 .textpart {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
 .normalcontainer .pictocontainer {
   position: relative;
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: auto;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 610px) {
+  .normalcontainer .pictocontainer {
+    display: block;
+    margin: 10px auto;
+  }
 }
 .normalcontainer .pictocontainer .pictobox {
   display: block;
@@ -298,6 +392,23 @@ h2 {
   background-color: #faefe3;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+@media screen and (max-width: 900px) {
+  .normalcontainer .pictocontainer .pictobox {
+    min-width: 150px;
+    max-width: 400px;
+    width: 20%;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .normalcontainer .pictocontainer .pictobox {
+    display: block;
+    min-width: 250px;
+    max-width: 400px;
+    width: 20%;
+    margin: 20px auto;
+  }
+}
 .normalcontainer .pictocontainer .pictobox h3 {
   display: block;
   text-align: center;
@@ -307,6 +418,16 @@ h2 {
   font-weight: bolder;
   color: #664825;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .normalcontainer .pictocontainer .pictobox h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  .normalcontainer .pictocontainer .pictobox h3 {
+    font-size: 4rem;
+  }
 }
 .normalcontainer .pictocontainer .pictobox h3::after {
   content: "";
@@ -319,21 +440,42 @@ h2 {
   border-radius: 10px;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 900px) {
+  .normalcontainer .pictocontainer .pictobox h3::after {
+    top: 25px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .normalcontainer .pictocontainer .pictobox h3::after {
+    top: 45px;
+  }
+}
 .normalcontainer .pictocontainer .pictobox img {
   height: 70px;
 }
+@media screen and (max-width: 900px) {
+  .normalcontainer .pictocontainer .pictobox img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .normalcontainer .pictocontainer .pictobox img {
+    height: 110px;
+  }
+}
 .normalcontainer .ourobjective {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 400px;
   width: 50%;
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .normalcontainer .ourobjective {
+    min-width: 200px;
+    width: 100%;
+    max-width: 500px;
+  }
 }
 .normalcontainer .ourobjective #part1 {
   position: relative;
@@ -343,16 +485,22 @@ h2 {
   position: absolute;
   top: 70%;
   left: 110%;
-  width: 300px;
-  height: 300px;
-  background: url("../../images/kid.jpg");
+  width: 23vw;
+  height: 23vw;
+  background: url("../../images/kid.jpg") center/cover;
   box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
   border-radius: var(--defaultpath);
   transition: 2s;
   z-index: 2;
 }
+@media screen and (max-width: 925px) {
+  .normalcontainer .ourobjective #part1::after {
+    display: none;
+  }
+}
 .normalcontainer .ourobjective #part2 {
   position: relative;
+  transition: 2s;
 }
 .normalcontainer .ourobjective #part2::before {
   content: "";
@@ -360,13 +508,18 @@ h2 {
   top: 150px;
   left: -70%;
   scale: var(--defaultscale);
-  width: 300px;
-  height: 300px;
-  background: url("../../images/family.jpg");
+  width: 23vw;
+  height: 23vw;
+  background: url("../../images/family.jpg") center/cover;
   background-repeat: no-repeat;
   border: solid 6px #ccb59b;
   border-radius: 100%;
   transition: 1s;
+}
+@media screen and (max-width: 925px) {
+  .normalcontainer .ourobjective #part2::before {
+    display: none;
+  }
 }
 .normalcontainer .ourobjective h2 {
   margin-bottom: 15px;
@@ -443,15 +596,38 @@ h2 {
   font-weight: bolder;
   color: #faefe3;
 }
+@media screen and (max-width: 775px) {
+  .banner01 p {
+    width: 90%;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .banner01 p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner01 p {
+    width: 97%;
+    font-size: 2rem;
+  }
+}
 .banner01 p span {
   font-family: mali;
   font-size: 3rem;
   color: #3d8a6c;
 }
-.banner01 img {
-  display: block;
-  max-width: 150px;
-  margin: auto;
+@media screen and (max-width: 775px) {
+  .banner01 p span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner01 p span {
+    width: 97%;
+    font-size: 2rem;
+  }
 }
 
 .teamcontainer {
@@ -461,9 +637,21 @@ h2 {
   padding: 1% 10%;
   position: relative;
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .teamcontainer {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 750px) {
+  .teamcontainer {
+    display: block;
+  }
 }
 .teamcontainer .ourteam {
   width: 50%;
@@ -471,11 +659,32 @@ h2 {
   padding: 25px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1100px) {
+  .teamcontainer .ourteam {
+    width: 50%;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .teamcontainer .ourteam {
+    width: 90%;
+  }
+}
 .teamcontainer .ourteam h2 {
   font-family: mali;
   font-size: 4rem;
   position: relative;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .teamcontainer .ourteam h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .teamcontainer .ourteam h2 {
+    font-size: 4rem;
+  }
 }
 .teamcontainer .ourteam h2::after {
   content: "";
@@ -497,10 +706,25 @@ h2 {
   min-height: 400px;
   z-index: 1;
 }
+@media screen and (max-width: 1100px) {
+  .teamcontainer .mamcontainer {
+    width: 50%;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .teamcontainer .mamcontainer {
+    width: 80%;
+    margin: auto;
+    min-height: 200px;
+  }
+}
 .teamcontainer .mamcontainer #myCarousel .carousel-inner img {
   position: relative;
   width: 100%;
   height: auto;
+  margin: auto;
+  align-items: center;
   border-radius: 10px;
 }
 .teamcontainer .mamcontainer #myCarousel .carousel-inner p {
@@ -521,6 +745,11 @@ h2 {
   margin-bottom: 35px;
   position: relative;
 }
+@media screen and (max-width: 350px) {
+  .banner02 h2 {
+    font-size: 2rem;
+  }
+}
 .banner02 h2::after {
   content: "";
   position: absolute;
@@ -537,12 +766,16 @@ h2 {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 450px) {
+  .banner02 p {
+    width: 95%;
+  }
+}
 .banner02 button {
   position: relative;
   margin: 20px auto 0;
   display: block;
-  min-width: 250px;
-  width: 80%;
+  min-width: 150px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -556,6 +789,11 @@ h2 {
   background: #ccb59b;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   transition: 1s;
+}
+@media screen and (max-width: 750px) {
+  .banner02 button {
+    width: 20%;
+  }
 }
 .banner02 button:hover {
   color: #664825;
@@ -630,8 +868,7 @@ h2 {
   position: relative;
   margin: 20px auto 0;
   display: block;
-  min-width: 250px;
-  width: 80%;
+  min-width: 150px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -736,15 +973,35 @@ h2 {
 .mamfooter .footercontainer {
   position: relative;
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
+  align-items: flex-start;
   height: 100%;
   padding: 4% 5%;
+}
+@media screen and (max-width: 1000px) {
+  .mamfooter .footercontainer {
+    width: 95%;
+    padding: 2% 2%;
+  }
+}
+@media screen and (max-width: 875px) {
+  .mamfooter .footercontainer {
+    display: block;
+    padding: 4% 0;
+    vertical-align: top;
+  }
 }
 .mamfooter .footercontainer .mapform {
   position: relative;
   width: 40%;
+}
+@media screen and (max-width: 875px) {
+  .mamfooter .footercontainer .mapform {
+    width: 100%;
+  }
 }
 .mamfooter .footercontainer .mapform h3 {
   position: relative;
@@ -768,50 +1025,29 @@ h2 {
   border-radius: 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-.mamfooter .footercontainer #footcol01 {
-  position: relative;
-  width: 40%;
-  height: 100%;
-}
-.mamfooter .footercontainer #footcol01 img {
-  position: relative;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  transition: 2s;
-}
-.mamfooter .footercontainer #footcol01::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: -30px;
-  width: 100px;
-  height: 100px;
-  background: url("../../images/logo.png") center/cover;
-  background-repeat: no-repeat;
-  transform: rotate(-35deg);
-  z-index: 2;
-  animation: dodo 8s forwards;
-}
-@keyframes dodo {
-  to {
-    transform: rotate(0deg);
+@media screen and (max-width: 875px) {
+  .mamfooter .footercontainer .mapform .googlemap iframe {
+    width: 100%;
   }
-}
-.mamfooter .footercontainer #footcol01::after {
-  content: "Bien grandir, naturellement.";
-  position: absolute;
-  top: 100%;
-  left: 100px;
-  font-size: 2rem;
-  opacity: var(--defaultopacity);
-  transition: 5s;
 }
 .mamfooter .footercontainer .footcol02 {
   position: relative;
   width: 25%;
   padding-left: 25px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 875px) {
+  .mamfooter .footercontainer .footcol02 {
+    display: inline-block;
+    width: 45%;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 550px) {
+  .mamfooter .footercontainer .footcol02 {
+    display: block;
+    width: 95%;
+  }
 }
 .mamfooter .footercontainer .footcol02 h3 {
   position: relative;
@@ -847,6 +1083,19 @@ h2 {
 }
 .mamfooter .footercontainer .footcol03 {
   width: 25%;
+}
+@media screen and (max-width: 875px) {
+  .mamfooter .footercontainer .footcol03 {
+    display: inline-block;
+    width: 45%;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 550px) {
+  .mamfooter .footercontainer .footcol03 {
+    display: block;
+    width: 95%;
+  }
 }
 .mamfooter .footercontainer .footcol03 h3 {
   position: relative;
@@ -912,8 +1161,7 @@ h2 {
 }
 #contactback .formcontainer .formform form input[type=text], #contactback .formcontainer .formform form input[type=email] {
   display: block;
-  min-width: 250px;
-  width: 80%;
+  min-width: 150px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -931,8 +1179,7 @@ h2 {
 }
 #contactback .formcontainer .formform form textarea {
   display: block;
-  min-width: 250px;
-  width: 80%;
+  min-width: 150px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;

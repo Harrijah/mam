@@ -53,14 +53,18 @@ $color10: #ffecd6c0;
 @mixin divideflex {
   position: relative;
   width: 100%;
-  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 @mixin defaultspacing {
   width: 100%;
   padding: 0 10%;
   background: $color1;
+  @media screen and (max-width : 900px){
+    padding: 0 5%;
+  }
 }
 @mixin defaultpadding {
   padding: 0 25px;
@@ -75,8 +79,8 @@ $color10: #ffecd6c0;
 }
 @mixin defaultinput {
   display: block;
-  min-width: 250px;
-  width: 80%;
+  min-width: 150px;
+  // width: 80%;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;

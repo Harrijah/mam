@@ -1,4 +1,4 @@
-#menu{
+#menu {
   position: relative;
   width: 100%;
   top: 0;
@@ -6,54 +6,72 @@
   background: $color2;
   transition: 1s;
   z-index: 4;
-  .adress{
-    display: inline-block;
-    margin-left: 10%;
-    padding: 5px 20px;
-    clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
-    background: $color3;
-    span{
-      color: $color1;
-      i{
-        z-index: 3;
-      }
-    }
-  }
   nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    
-      .logo {
-        width: 70px;
-        padding: 5px;
-    
-        img {
-          width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #mobilemenu{
+      display: none;
+      transition: 1s;
+      li {
+        display: block;
+        list-style: none;
+        margin: 10px 5px;
+
+        .highlight {
+          color: $color1;
+        }
+
+        a {
+          text-decoration: none;
+          padding: 10px 5px;
+          font-size: 1.5rem;
+          color: $color4;
+          &:hover {
+            color: $color1;
+            text-decoration: none;
+          }
         }
       }
-      ul {
-        vertical-align: middle;
-        li {
-          display: inline-block;
-          list-style: none;
-          margin: 10px 15px;
-          
-          .highlight {
+      @media screen and (max-width: 610px) {
+        display: block;
+      }
+    }
+
+    .logo {
+      width: 70px;
+      padding: 5px;
+
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      vertical-align: middle;
+      transition: 1s;
+      @media screen and (max-width: 610px) {
+        display: none;
+      }
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 15px;
+
+        .highlight {
+          color: $color1;
+        }
+
+        a {
+          text-decoration: none;
+          padding: 10px 15px;
+          font-size: 1.5rem;
+          color: $color4;
+          &:hover {
             color: $color1;
-          }
-    
-          a {
             text-decoration: none;
-            padding: 10px 15px;
-            font-size: 1.5rem;
-            color: $color4;
-            &:hover {
-              color: $color1;
-              text-decoration: none;
-            }
           }
         }
       }
     }
   }
+}
