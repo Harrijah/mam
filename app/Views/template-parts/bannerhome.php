@@ -55,7 +55,7 @@
     <p>
         Nous serions ravis de vous accueillir à la Maison d'Assistants Maternels Tiazaza et de prendre soin de votre précieux petit bout. Pour entamer le processus, nous vous prions de bien vouloir remplir la fiche de pré-inscription disponible sur le lien ci-dessous.
     <br><br>
-        Une fois que nous aurons examiné les disponibilités et obtenu l'approbation de la Responsable, nous vous contacterons pour convenir d'un premier rendez-vous. Nous sommes impatients de faire votre connaissance et de discuter des détails pour assurer le meilleur environnement possible pour votre enfant au sein de notre établissement. 
+        Une fois que nous aurons examiné les disponibilités, nous vous contacterons pour convenir d'un premier rendez-vous. Nous sommes impatients de faire votre connaissance et de discuter des détails pour assurer le meilleur environnement possible pour votre enfant au sein de notre établissement. 
     </p>
     <button id="modalbutton">Remplir la fiche</button>
 

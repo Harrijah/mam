@@ -10,20 +10,24 @@
             <div class="modal-body">
                 <div class="bodycontainer">
                     <div class="homeform">
-                        <form action="#" method="post">
-                            <span>Nom de l'enfant : </span> <input type="text" name="" id="" class="topinput">
+                        <form action="#" method="post" id="myform">
+                            <span style="text-decoration:underline;">A propos de l'enfant : </span><br><br>
+                            <span>Nom de l'enfant : </span> 
+                            <input type="text" name="" id="childname" class=""><br>
                             <span>Age : </span> 
                             <input type="number" name="" id="select"> 
                             <select name="" id="">
                                 <option value="mois">mois</option>
                                 <option value="mois">an</option>
-                            </select>
-                            <br>
-                            <span>Date de début d'accueil souhaitée : </span> <input type="date" name="" id="" class="topinput"> <br>
+                            </select> 
+                            <span>ou Date Prévue d'Accouchement : </span>
+                            <input type="date" name="" id="topinput02"><br><br>
+                            <span style="text-decoration:underline;">Planning prévisionnel (à titre informatif) : </span><br><br>
+                            <span>Date de début d'accueil souhaitée : </span> 
+                            <input type="date" name="" id="" class=""> <br>
                             <span>Nombre d'heures d'accueil prévues par semaine : </span>
                             <input type="number" name="" id="" placeholder="" class="topinput"> 
                             <span>heures/semaine.</span><br>
-                            <span style="text-decoration:underline;">Planning prévisionnel (à titre informatif) : </span><br><br>
                             <table>
                                 <thead>
                                     <tr>
@@ -68,8 +72,8 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td class="colonne01"><span>Mr </span></td>
-                                        <td class="colonne02"><input type="text" placeholder="Mr" class="parents"></td>
+                                        <td class="colonne01"><span>Nom </span></td>
+                                        <td class="colonne02"><input type="text" class="parents"></td>
                                         <td class="colonne03"><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
                            
                                     </tr>
@@ -85,13 +89,15 @@
                                     </tr>
                                 </tbody>
                             </table>
+
                             <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Mère</span>
+                            
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td><span>Mme </span></td>
-                                        <td><input type="text" placeholder="Mme" class="parents"></td>
-                                        <td><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
+                                        <td class="colonne01"><span>Nom </span></td>
+                                        <td class="colonne02"><input type="text" class="parents"></td>
+                                        <td class="colonne03"><span> Tel : </span><input type="text" name="" id="" class="phone"></td>
                                     </tr>
                                     <tr>
                                         <td><span>Email : </span></td>
@@ -118,8 +124,7 @@
         </div>
     </div>
 
-    
-    
+
     <div class="mamfooter">
         <div class="footercontainer">
             <!-- <div class="footcol01" id="footcol01"> -->
@@ -152,7 +157,7 @@
                         </ul>
                     </li>
                     <li><b>Mail</b> : mamtiazaza[at]gmail.com</li>
-                    <li><b>Téléphone</b> : 07  81 25 56 40</li>
+                    <li><b>Téléphone</b> : 07 81 25 56 40 / 06 15 56 46 61 / 07 70 80 33 10</li>
                 </ul>
 
             </div>

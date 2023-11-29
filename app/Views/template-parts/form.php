@@ -22,8 +22,6 @@
                 <input type="email" name="email" id="email">
                 <label for="telephone">Votre téléphone</label>
                 <input type="text" name="telephone" id="telephone">
-                <label for="enfant">Je souhaite réserver pour mon enfant</label>
-                <input type="checkbox" name="enfant" id="">
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message, ici"></textarea>
                 <input type="submit" value="Envoyer">
             </form>

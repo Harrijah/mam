@@ -591,9 +591,6 @@ h2 {
 #mymodal .modal-content .modal-body {
   padding: 50px 10%;
 }
-#mymodal .modal-content .modal-body .fichetitre {
-  text-align: center;
-}
 #mymodal .modal-content .modal-body .bodycontainer {
   margin: 0 auto;
 }
@@ -602,6 +599,67 @@ h2 {
 }
 #mymodal .modal-content .modal-body .bodycontainer .homeform form {
   position: relative;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input,
+#mymodal .modal-content .modal-body .bodycontainer .homeform form select {
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  background-color: whitesmoke;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form #childname {
+  width: 73%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=date] {
+  width: 150px;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .topinput {
+  min-width: 15%;
+  width: 200px;
+  max-width: 80%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .parents {
+  width: 100%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .phone {
+  width: 25%;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit] {
+  position: relative;
+  margin: 20px auto 0;
+  display: block;
+  min-width: 250px;
+  width: 80%;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 25%;
+  color: #ffecd6;
+  border: solid 1px #e7e7e7;
+  background: #ccb59b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit]:hover {
+  color: #664825;
+  background: #ffecd6;
+  border: solid 1px #664825;
+  left: 5px;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form #select,
+#mymodal .modal-content .modal-body .bodycontainer .homeform form select {
+  min-width: 10%;
+  max-width: 20%;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  background-color: whitesmoke;
 }
 #mymodal .modal-content .modal-body .bodycontainer .homeform form table {
   display: block;
@@ -641,63 +699,10 @@ h2 {
 #mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr td span {
   margin: 15px;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form input, #mymodal .modal-content .modal-body .bodycontainer .homeform form select {
+#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr td input {
   min-width: 50%;
-  max-width: 100%;
-  min-height: 40px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: solid 1px #664825;
-  background-color: whitesmoke;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form .topinput {
-  min-width: 15%;
-  width: 200px;
-  max-width: 80%;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form .parents {
-  width: 100%;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form .phone {
-  width: 25%;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit] {
-  position: relative;
-  margin: 20px auto 0;
-  display: block;
-  min-width: 250px;
   width: 80%;
-  max-width: 400px;
-  min-height: 40px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: solid 1px #664825;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  width: 25%;
-  color: #ffecd6;
-  border: solid 1px #e7e7e7;
-  background: #ccb59b;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  transition: 1s;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit]:hover {
-  color: #664825;
-  background: #ffecd6;
-  border: solid 1px #664825;
-  left: 5px;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form .topinput {
-  width: 250px;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form #select, #mymodal .modal-content .modal-body .bodycontainer .homeform form select {
-  min-width: 10%;
-  max-width: 20%;
-  min-height: 40px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: solid 1px #664825;
-  background-color: whitesmoke;
+  max-width: 100%;
 }
 #mymodal .modal-content .modal-footer button {
   position: relative;
