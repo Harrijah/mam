@@ -18,9 +18,6 @@
       font-weight: 800; 
       line-height: 70px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      // background: #ffecd630;
-      // text-align: center;
-      // padding: 20px;
     }
   }
   .vide{
@@ -51,11 +48,12 @@
   #svgPath1,
   #svgPath2,
   #svgPath3,
-  #svgPath4 {
+  #svgPath4,
+  #svgPath5 {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    height: 300vh;
+    height: var(--svgpathheighgt);
     transition: 1s;
     z-index: 1;
   }
@@ -76,7 +74,8 @@
     "t2 p2"
     "p3 t3"
     "t4 p4"
-    "p5 t5";
+    "p5 t5"
+    "t6 p6";
   .photo1 {
     position: relative;
     place-self: center;
@@ -165,6 +164,24 @@
     @include textaboutus;
     h2 {
       @include lescss;
+    }
+  }
+  .text6 {
+    grid-area: t6;
+    z-index: 2;
+    @include textaboutus;
+    h2 {
+      @include lescss;
+    }
+  }
+  .photo6 {
+    position: relative;
+    place-self: center;
+    grid-area: p6;
+    z-index: 1;
+    img {
+      @include imageaboutus;
+      border-radius: var(--defaultpath);
     }
   }
 }

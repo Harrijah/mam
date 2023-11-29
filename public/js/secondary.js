@@ -1,14 +1,24 @@
+
+svgPath1.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
+svgPath2.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
+svgPath3.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
+svgPath4.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
+svgPath5.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - window.innerHeight - 200)+'px');
+console.log(document.body.offsetHeight);
 const makeLine = () => {
   var photo1 = document.getElementById("photo1");
   var photo2 = document.getElementById("photo2");
   var photo3 = document.getElementById("photo3");
   var photo4 = document.getElementById("photo4");
   var photo5 = document.getElementById("photo5");
+  var photo6 = document.getElementById("photo6");
 
   var path1 = document.querySelector("#svgPath1 path");
   var path2 = document.querySelector("#svgPath2 path");
   var path3 = document.querySelector("#svgPath3 path");
   var path4 = document.querySelector("#svgPath4 path");
+  var path5 = document.querySelector("#svgPath5 path");
+
 
   var mamservicesRect = document
     .querySelector(".mamservices")
@@ -53,6 +63,14 @@ const makeLine = () => {
   var startY5 =
     photo5.getBoundingClientRect().top +
     photo5.getBoundingClientRect().height / 2 -
+    mamservicesRect.top;
+  var startX6 =
+    photo6.getBoundingClientRect().left +
+    photo6.getBoundingClientRect().width / 2 -
+    mamservicesRect.left;
+  var startY6 =
+    photo6.getBoundingClientRect().top +
+    photo6.getBoundingClientRect().height / 2 -
     mamservicesRect.top;
 
   // photo1container.addEventListener("mouseover", (e) => {
@@ -143,6 +161,12 @@ const makeLine = () => {
         (startY4 + startY5) / 2
       } ${startX5} ${startY5}`
     );
+    path5.setAttribute(
+      "d",
+      `M${startX5} ${startY5} Q${(startX5 + startX6) / 2} ${
+        (startY5 + startY6) / 2
+      } ${startX6} ${startY6}`
+    );
   });
   //     moveone();
   //   }, 5000);
@@ -155,6 +179,8 @@ const makeLine = () => {
   // path3.style.transition = "4s";
   path4.setAttribute("stroke", "#faefe3");
   // path4.style.transition = "4s";
+  path5.setAttribute("stroke", "#faefe3");
+  // path5.setAttribute("z-index", 100);
 };
 
 // moveone();
@@ -167,62 +193,74 @@ window.addEventListener("scroll", () => {
   let scrollpos02 = window.scrollY;
   let scrollValue02 =
     (scrollpos02 + window.innerHeight) / document.body.offsetHeight;
-  console.log(scrollValue02);
+  // console.log(scrollValue02);
 
   if (photo1container) {
-
-      if (scrollValue02 > 0.28 && scrollValue02 < 0.40) {
-        photo1.style.transform = "translateX(5px)";
-        photo1.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
-      } else {
-        photo1.style.transform = "";
-        photo1.style.setProperty('--defaultpath', "5px");
-      }
+    if (scrollValue02 > 0.28 && scrollValue02 < 0.4) {
+      photo1.style.transform = "translateX(5px)";
+      photo1.style.setProperty(
+        "--defaultpath",
+        "76% 24% 90% 10% / 20% 85% 15% 80%"
+      );
+    } else {
+      photo1.style.transform = "";
+      photo1.style.setProperty("--defaultpath", "5px");
+    }
   }
 
   if (photo2container) {
-
-      if (scrollValue02 > 0.39 && scrollValue02 < 0.55) {
-        photo2.style.transform = "translateX(-5px)";
-        photo2.style.setProperty('--defaultpath', "100%");
-      } else {
-        photo2.style.transform = "";
-        photo2.style.setProperty('--defaultpath', "5%");
-      }
+    if (scrollValue02 > 0.39 && scrollValue02 < 0.55) {
+      photo2.style.transform = "translateX(-5px)";
+      photo2.style.setProperty("--defaultpath", "100%");
+    } else {
+      photo2.style.transform = "";
+      photo2.style.setProperty("--defaultpath", "5%");
+    }
   }
 
   if (photo3container) {
-
-      if (scrollValue02 > 0.55 && scrollValue02 < 0.70) {
-        photo3.style.transform = "translateX(5px)";
-        photo3.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
-      } else {
-        photo3.style.transform = "";
-        photo3.style.setProperty('--defaultpath', "5px");
-      }
+    if (scrollValue02 > 0.50 && scrollValue02 < 0.61) {
+      photo3.style.transform = "translateX(5px)";
+      photo3.style.setProperty(
+        "--defaultpath",
+        "76% 24% 90% 10% / 20% 85% 15% 80%"
+      );
+    } else {
+      photo3.style.transform = "";
+      photo3.style.setProperty("--defaultpath", "5px");
+    }
   }
 
   if (photo4container) {
-
-      if (scrollValue02 > 0.64 && scrollValue02 < 0.80) {
-        photo4.style.transform = "translateX(-5px)";
-        photo4.style.setProperty('--defaultpath', "100%");
-      } else {
-        photo4.style.transform = "";
-        photo4.style.setProperty('--defaultpath', "5%");
-      }
+    if (scrollValue02 > 0.58 && scrollValue02 < 0.65) {
+      photo4.style.transform = "translateX(-5px)";
+      photo4.style.setProperty("--defaultpath", "100%");
+    } else {
+      photo4.style.transform = "";
+      photo4.style.setProperty("--defaultpath", "5%");
+    }
   }
 
   if (photo5container) {
-
-      if (scrollValue02 > 0.74 && scrollValue02 < 0.88) {
-        photo5.style.transform = "translateX(5px)";
-        photo5.style.setProperty('--defaultpath', "76% 24% 90% 10% / 20% 85% 15% 80%");
-      } else {
-        photo5.style.transform = "";
-        photo5.style.setProperty('--defaultpath', "5px");
-      }
+    if (scrollValue02 > 0.65 && scrollValue02 < 0.77) {
+      photo5.style.transform = "translateX(5px)";
+      photo5.style.setProperty(
+        "--defaultpath",
+        "76% 24% 90% 10% / 20% 85% 15% 80%"
+      );
+    } else {
+      photo5.style.transform = "";
+      photo5.style.setProperty("--defaultpath", "5px");
+    }
   }
-
-
+  
+  if (photo6container) {
+    if (scrollValue02 > 0.77 && scrollValue02 < 0.88) {
+      photo6.style.transform = "translateX(-5px)";
+      photo6.style.setProperty("--defaultpath", "100%");
+    } else {
+      photo6.style.transform = "";
+      photo6.style.setProperty("--defaultpath", "5%");
+    }
+  }
 });

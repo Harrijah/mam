@@ -19,8 +19,8 @@
                             <select name="" id="">
                                 <option value="mois">mois</option>
                                 <option value="mois">an</option>
-                            </select> 
-                            <span>ou Date Prévue d'Accouchement : </span>
+                            </select><br>
+                            <span>Date Prévue d'Accouchement (si l'enfant n'est pas encore né) : </span>
                             <input type="date" name="" id="topinput02"><br><br>
                             <span style="text-decoration:underline;">Planning prévisionnel (à titre informatif) : </span><br><br>
                             <span>Date de début d'accueil souhaitée : </span> 
@@ -67,8 +67,9 @@
                             <br><br>
 
                             <span style="text-decoration:underline;">Coordonnées des parents : </span><br>
-
                             <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Père</span>
+
+
                             <table>
                                 <tbody>
                                     <tr>
@@ -90,7 +91,7 @@
                                 </tbody>
                             </table>
 
-                            <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Mère</span>
+                            <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Mère</span><br>
                             
                             <table>
                                 <tbody>

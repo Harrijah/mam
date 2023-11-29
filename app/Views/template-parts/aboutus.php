@@ -29,6 +29,9 @@
     <svg id="svgPath4">
         <path d="" fill="transparent" stroke-width="8" id="path4" />
     </svg>
+    <svg id="svgPath5">
+        <path d="" fill="transparent" stroke-width="8" id="path5" />
+    </svg>
 </div>
 
 
@@ -84,6 +87,16 @@
         <p>
             Les parents premiers éducateurs de leurs enfants, sont encouragés à participer activement à la vie de la MAM. Ils contribuent à la réalisation du projet d'accueil, prennent part aux ateliers, sorties ou fêtes. Toutes les familles sont accueillies à la MAM, nous créons avec elles un lien de confiance et de respect mutuel.
         </p>
+    </div>
+    <div class="text6">
+        <h2>Le projet environnemental</h2>
+        <p>
+            La M.A.M. s'inscrit dans une logique de développement durable. En accord avec la politique de la ville, nous mettons en place des actions concrètes afin de réduire notre empreinte écologique : tri des déchets, compostage, création d'un petit potager, sensibilisation des parents. <br>
+            Nous favorisons une alimentation à base de produits locaux et de saisons, la plupart d'origine biologique.
+        </p>
+    </div>
+    <div class="photo6" id="photo6container">
+        <img src="<?php echo base_url('./images/garden.jpg'); ?>" alt="nours" id="photo6">
     </div>
 </div>
 
