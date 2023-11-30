@@ -1411,7 +1411,7 @@ h2 {
 .mamservices .photo1 img {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   margin: auto;
   height: auto;
   max-height: 300px;
@@ -1576,7 +1576,7 @@ h2 {
 .mamservices .photo2 img {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   margin: auto;
   height: auto;
   max-height: 300px;
@@ -1601,7 +1601,7 @@ h2 {
 .mamservices .photo3 img {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   margin: auto;
   height: auto;
   max-height: 300px;
@@ -1766,7 +1766,7 @@ h2 {
 .mamservices .photo4 img {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   margin: auto;
   height: auto;
   max-height: 300px;
@@ -1791,7 +1791,7 @@ h2 {
 .mamservices .photo5 img {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   margin: auto;
   height: auto;
   max-height: 300px;
@@ -1956,7 +1956,7 @@ h2 {
 .mamservices .photo6 img {
   position: relative;
   display: block;
-  width: 100%;
+  width: auto;
   margin: auto;
   height: auto;
   max-height: 300px;
