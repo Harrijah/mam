@@ -129,7 +129,7 @@
     <div class="mamfooter">
         <div class="footercontainer">
             <!-- <div class="footcol01" id="footcol01"> -->
-                <div class="mapform">
+                <div class="mapform"> 
                     <h3>Nous trouver</h3>
                     <div class="googlemap">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1928.1352188142384!2d1.512325115358315!3d43.607819944187135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd677a6fc3e7%3A0x1c996cc1c0ab0553!2s101%20Av.%20des%20Mourlingues%2C%2031130%20Balma%2C%20France!5e0!3m2!1sfr!2smg!4v1700145910337!5m2!1sfr!2smg" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -140,10 +140,10 @@
             <div class="footcol02">
                 <h3>Liens utiles</h3>
                 <ul>
-                    <li><a href="">A propos de Tiazaza</a></li>
-                    <li><a href="">Créer un compte</a></li>
+                    <li><a href="<?php echo base_url('/aboutus'); ?>">A propos de Tiazaza</a></li>
+                    <!-- <li><a href="">Créer un compte</a></li> -->
                     <li><a href="javascript:void()" id="preadmission">Formulaire de pré-admission</a></li>
-                    <li><a href="">Nous contacter</a></li>
+                    <li><a href="<?php echo base_url('/contact'); ?>">Nous contacter</a></li>
                     <li><a href="https://www.facebook.com/mamtiazaza/"><i class="fab fa-facebook display-1 fontawe"></i></a></li>
                 </ul>
             </div>

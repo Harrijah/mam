@@ -193,78 +193,78 @@ svgPath5.style.setProperty('--svgpathheighgt', (document.body.offsetHeight - win
 // Appeler la fonction au chargement de la page et en cas de redimensionnement de la fenêtre
 window.onload = window.onresize = makeLine;
 
-window.addEventListener("scroll", () => {
-  let scrollpos02 = window.scrollY;
-  let scrollValue02 =
-    (scrollpos02 + window.innerHeight) / document.body.offsetHeight;
-  // console.log(scrollValue02);
+// window.addEventListener("scroll", () => {
+//   let scrollpos02 = window.scrollY;
+//   let scrollValue02 =
+//     (scrollpos02 + window.innerHeight) / document.body.offsetHeight;
+//   // console.log(scrollValue02);
 
-  if (photo1container) {
-    if (scrollValue02 > 0.28 && scrollValue02 < 0.4) {
-      photo1.style.transform = "translateX(5px)";
-      photo1.style.setProperty(
-        "--defaultpath",
-        "76% 24% 90% 10% / 20% 85% 15% 80%"
-      );
-    } else {
-      photo1.style.transform = "";
-      photo1.style.setProperty("--defaultpath", "5px");
-    }
-  }
+//   if (photo1container) {
+//     if (scrollValue02 > 0.28 && scrollValue02 < 0.4) {
+//       photo1.style.transform = "translateX(5px)";
+//       photo1.style.setProperty(
+//         "--defaultpath",
+//         "76% 24% 90% 10% / 20% 85% 15% 80%"
+//       );
+//     } else {
+//       photo1.style.transform = "";
+//       photo1.style.setProperty("--defaultpath", "5px");
+//     }
+//   }
 
-  if (photo2container) {
-    if (scrollValue02 > 0.39 && scrollValue02 < 0.55) {
-      photo2.style.transform = "translateX(-5px)";
-      photo2.style.setProperty("--defaultpath", "100%");
-    } else {
-      photo2.style.transform = "";
-      photo2.style.setProperty("--defaultpath", "5%");
-    }
-  }
+//   if (photo2container) {
+//     if (scrollValue02 > 0.39 && scrollValue02 < 0.55) {
+//       photo2.style.transform = "translateX(-5px)";
+//       photo2.style.setProperty("--defaultpath", "100%");
+//     } else {
+//       photo2.style.transform = "";
+//       photo2.style.setProperty("--defaultpath", "5%");
+//     }
+//   }
 
-  if (photo3container) {
-    if (scrollValue02 > 0.50 && scrollValue02 < 0.61) {
-      photo3.style.transform = "translateX(5px)";
-      photo3.style.setProperty(
-        "--defaultpath",
-        "76% 24% 90% 10% / 20% 85% 15% 80%"
-      );
-    } else {
-      photo3.style.transform = "";
-      photo3.style.setProperty("--defaultpath", "5px");
-    }
-  }
+//   if (photo3container) {
+//     if (scrollValue02 > 0.50 && scrollValue02 < 0.61) {
+//       photo3.style.transform = "translateX(5px)";
+//       photo3.style.setProperty(
+//         "--defaultpath",
+//         "76% 24% 90% 10% / 20% 85% 15% 80%"
+//       );
+//     } else {
+//       photo3.style.transform = "";
+//       photo3.style.setProperty("--defaultpath", "5px");
+//     }
+//   }
 
-  if (photo4container) {
-    if (scrollValue02 > 0.58 && scrollValue02 < 0.65) {
-      photo4.style.transform = "translateX(-5px)";
-      photo4.style.setProperty("--defaultpath", "100%");
-    } else {
-      photo4.style.transform = "";
-      photo4.style.setProperty("--defaultpath", "5%");
-    }
-  }
+//   if (photo4container) {
+//     if (scrollValue02 > 0.58 && scrollValue02 < 0.65) {
+//       photo4.style.transform = "translateX(-5px)";
+//       photo4.style.setProperty("--defaultpath", "100%");
+//     } else {
+//       photo4.style.transform = "";
+//       photo4.style.setProperty("--defaultpath", "5%");
+//     }
+//   }
 
-  if (photo5container) {
-    if (scrollValue02 > 0.65 && scrollValue02 < 0.77) {
-      photo5.style.transform = "translateX(5px)";
-      photo5.style.setProperty(
-        "--defaultpath",
-        "76% 24% 90% 10% / 20% 85% 15% 80%"
-      );
-    } else {
-      photo5.style.transform = "";
-      photo5.style.setProperty("--defaultpath", "5px");
-    }
-  }
+//   if (photo5container) {
+//     if (scrollValue02 > 0.65 && scrollValue02 < 0.77) {
+//       photo5.style.transform = "translateX(5px)";
+//       photo5.style.setProperty(
+//         "--defaultpath",
+//         "76% 24% 90% 10% / 20% 85% 15% 80%"
+//       );
+//     } else {
+//       photo5.style.transform = "";
+//       photo5.style.setProperty("--defaultpath", "5px");
+//     }
+//   }
   
-  if (photo6container) {
-    if (scrollValue02 > 0.77 && scrollValue02 < 0.88) {
-      photo6.style.transform = "translateX(-5px)";
-      photo6.style.setProperty("--defaultpath", "100%");
-    } else {
-      photo6.style.transform = "";
-      photo6.style.setProperty("--defaultpath", "5%");
-    }
-  }
-});
+//   if (photo6container) {
+//     if (scrollValue02 > 0.77 && scrollValue02 < 0.88) {
+//       photo6.style.transform = "translateX(-5px)";
+//       photo6.style.setProperty("--defaultpath", "100%");
+//     } else {
+//       photo6.style.transform = "";
+//       photo6.style.setProperty("--defaultpath", "5%");
+//     }
+//   }
+// });
