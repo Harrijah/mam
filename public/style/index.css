@@ -1421,6 +1421,12 @@ h2 {
   transition: 4s;
   border-radius: var(--defaultpath);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .photo1 img {
+    width: auto;
+    height: auto;
+  }
+}
 .mamservices .text1 {
   grid-area: t1;
   z-index: 2;
@@ -1580,6 +1586,12 @@ h2 {
   transition: 4s;
   border-radius: var(--defaultpath);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .photo2 img {
+    width: auto;
+    height: auto;
+  }
+}
 .mamservices .photo3 {
   position: relative;
   place-self: center;
@@ -1598,6 +1610,12 @@ h2 {
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
   border-radius: var(--defaultpath);
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .photo3 img {
+    width: auto;
+    height: auto;
+  }
 }
 .mamservices .text3 {
   grid-area: t3;
@@ -1758,6 +1776,12 @@ h2 {
   transition: 4s;
   border-radius: var(--defaultpath);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .photo4 img {
+    width: auto;
+    height: auto;
+  }
+}
 .mamservices .photo5 {
   position: relative;
   place-self: center;
@@ -1776,6 +1800,12 @@ h2 {
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
   border-radius: var(--defaultpath);
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .photo5 img {
+    width: auto;
+    height: auto;
+  }
 }
 .mamservices .text5 {
   grid-area: t5;
@@ -1935,4 +1965,10 @@ h2 {
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
   transition: 4s;
   border-radius: var(--defaultpath);
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .photo6 img {
+    width: auto;
+    height: auto;
+  }
 }/*# sourceMappingURL=index.css.map */
