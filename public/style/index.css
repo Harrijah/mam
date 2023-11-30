@@ -70,33 +70,6 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
-#menu nav #mobilemenu {
-  display: none;
-  transition: 1s;
-}
-#menu nav #mobilemenu li {
-  display: block;
-  list-style: none;
-  margin: 10px 5px;
-}
-#menu nav #mobilemenu li .highlight {
-  color: #ffecd6;
-}
-#menu nav #mobilemenu li a {
-  text-decoration: none;
-  padding: 10px 5px;
-  font-size: 1.5rem;
-  color: #664825;
-}
-#menu nav #mobilemenu li a:hover {
-  color: #ffecd6;
-  text-decoration: none;
-}
-@media screen and (max-width: 610px) {
-  #menu nav #mobilemenu {
-    display: block;
-  }
-}
 #menu nav .logo {
   width: 70px;
   padding: 5px;
@@ -119,9 +92,25 @@ h2 {
   margin: 10px 15px;
 }
 #menu nav ul li .highlight {
+  position: relative;
   color: #ffecd6;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+}
+#menu nav ul li .highlight::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #menu nav ul li a {
+  position: relative;
   text-decoration: none;
   padding: 10px 15px;
   font-size: 1.5rem;
@@ -130,6 +119,70 @@ h2 {
 #menu nav ul li a:hover {
   color: #ffecd6;
   text-decoration: none;
+}
+#menu nav ul li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#menu nav #mobilemenu {
+  display: none;
+  transition: 1s;
+}
+#menu nav #mobilemenu li {
+  display: block;
+  list-style: none;
+  margin: 10px 5px;
+}
+#menu nav #mobilemenu li .highlight {
+  position: relative;
+  color: #ffecd6;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+}
+#menu nav #mobilemenu li .highlight::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 30px;
+  left: 5px;
+}
+#menu nav #mobilemenu li a {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+  color: #664825;
+  transition: 1s;
+}
+#menu nav #mobilemenu li a:hover {
+  text-decoration: none;
+  color: #ffecd6;
+}
+#menu nav #mobilemenu li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #ffecd6;
+  border-radius: 10px;
+  top: 30px;
+  left: 5px;
+}
+@media screen and (max-width: 610px) {
+  #menu nav #mobilemenu {
+    display: block;
+  }
 }
 
 .fullwidth {
@@ -629,6 +682,13 @@ h2 {
     font-size: 2rem;
   }
 }
+.banner01 img {
+  display: block;
+  width: 30%;
+  max-width: 250px;
+  max-width: 150px;
+  margin: auto;
+}
 
 .teamcontainer {
   width: 100%;
@@ -775,7 +835,7 @@ h2 {
   position: relative;
   margin: 20px auto 0;
   display: block;
-  min-width: 150px;
+  min-width: 50px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -868,7 +928,7 @@ h2 {
   position: relative;
   margin: 20px auto 0;
   display: block;
-  min-width: 150px;
+  min-width: 50px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -1138,9 +1198,20 @@ h2 {
   border-radius: 5px;
   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 800px) {
+  #contactback .formcontainer {
+    display: block;
+  }
+}
 #contactback .formcontainer .formtext {
   width: 50%;
   padding: 0 5%;
+}
+@media screen and (max-width: 800px) {
+  #contactback .formcontainer .formtext {
+    width: 85%;
+    margin: auto;
+  }
 }
 #contactback .formcontainer .formtext h1 {
   color: #664825;
@@ -1154,14 +1225,37 @@ h2 {
 #contactback .formcontainer .formform {
   width: 50%;
 }
+@media screen and (max-width: 800px) {
+  #contactback .formcontainer .formform {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 660px) {
+  #contactback .formcontainer .formform {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #contactback .formcontainer .formform form {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 660px) {
+  #contactback .formcontainer .formform form {
+    width: 95%;
+  }
+}
 #contactback .formcontainer .formform form label {
   color: #664825;
-  display: inline-block;
   margin-top: 10px;
 }
 #contactback .formcontainer .formform form input[type=text], #contactback .formcontainer .formform form input[type=email] {
   display: block;
-  min-width: 150px;
+  min-width: 50px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -1169,17 +1263,17 @@ h2 {
   border: solid 1px #664825;
   border-radius: 20px;
   background-color: whitesmoke;
+  width: 70%;
 }
-#contactback .formcontainer .formform form input[type=checkbox] {
-  display: inline-block;
-}
-#contactback .formcontainer .formform form input[type=checkbox]:checked {
-  color: yellow;
-  padding: 10px;
+@media screen and (max-width: 700px) {
+  #contactback .formcontainer .formform form input[type=text], #contactback .formcontainer .formform form input[type=email] {
+    width: 85%;
+  }
 }
 #contactback .formcontainer .formform form textarea {
+  width: 70%;
   display: block;
-  min-width: 150px;
+  min-width: 50px;
   max-width: 400px;
   min-height: 40px;
   margin-bottom: 10px;
@@ -1187,6 +1281,16 @@ h2 {
   border: solid 1px #664825;
   border-radius: 20px;
   background-color: whitesmoke;
+}
+@media screen and (max-width: 800px) {
+  #contactback .formcontainer .formform form textarea {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contactback .formcontainer .formform form textarea {
+    width: 95%;
+  }
 }
 
 .aboutus {
@@ -1210,6 +1314,17 @@ h2 {
   font-weight: 800;
   line-height: 70px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1000px) {
+  .aboutus .titre p {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .aboutus .titre p {
+    width: 100%;
+    font-size: 3rem;
+  }
 }
 .aboutus .vide {
   width: 50%;
@@ -1245,6 +1360,11 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 640px) {
+  .textintro .textcontainer h1 {
+    font-size: 2rem;
+  }
+}
 
 #svgContainer {
   width: 100%;
@@ -1275,6 +1395,13 @@ h2 {
   grid-template-columns: 50% 50%;
   grid-template-areas: "p1 t1" "t2 p2" "p3 t3" "t4 p4" "p5 t5" "t6 p6";
 }
+@media screen and (max-width: 700px) {
+  .mamservices {
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "p1" "t1" "p2" "t2" "p3" "t3" "p4" "t4" "p5" "t5" "p6" "t6";
+  }
+}
 .mamservices .photo1 {
   position: relative;
   place-self: center;
@@ -1284,8 +1411,10 @@ h2 {
 .mamservices .photo1 img {
   position: relative;
   display: block;
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
@@ -1305,6 +1434,12 @@ h2 {
   border: solid 1px #664825;
   border-radius: 15px;
 }
+@media screen and (max-width: 700px) {
+  .mamservices .text1 {
+    width: 95%;
+    padding: 5px;
+  }
+}
 .mamservices .text1::before {
   content: "";
   position: absolute;
@@ -1314,6 +1449,20 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .text1::before {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mamservices .text1::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
 }
 .mamservices .text1 h2 {
   text-align: center;
@@ -1331,6 +1480,17 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .text1 h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mamservices .text1 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
 .mamservices .text2 {
   grid-area: t2;
   z-index: 3;
@@ -1344,6 +1504,12 @@ h2 {
   border: solid 1px #664825;
   border-radius: 15px;
 }
+@media screen and (max-width: 700px) {
+  .mamservices .text2 {
+    width: 95%;
+    padding: 5px;
+  }
+}
 .mamservices .text2::before {
   content: "";
   position: absolute;
@@ -1353,6 +1519,20 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .text2::before {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mamservices .text2::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
 }
 .mamservices .text2 h2 {
   text-align: center;
@@ -1370,6 +1550,17 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .text2 h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mamservices .text2 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
 .mamservices .photo2 {
   position: relative;
   place-self: center;
@@ -1379,8 +1570,10 @@ h2 {
 .mamservices .photo2 img {
   position: relative;
   display: block;
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
@@ -1396,8 +1589,10 @@ h2 {
 .mamservices .photo3 img {
   position: relative;
   display: block;
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
@@ -1417,6 +1612,12 @@ h2 {
   border: solid 1px #664825;
   border-radius: 15px;
 }
+@media screen and (max-width: 700px) {
+  .mamservices .text3 {
+    width: 95%;
+    padding: 5px;
+  }
+}
 .mamservices .text3::before {
   content: "";
   position: absolute;
@@ -1426,6 +1627,20 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .text3::before {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mamservices .text3::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
 }
 .mamservices .text3 h2 {
   text-align: center;
@@ -1443,6 +1658,17 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .text3 h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mamservices .text3 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
 .mamservices .text4 {
   grid-area: t4;
   z-index: 3;
@@ -1456,6 +1682,12 @@ h2 {
   border: solid 1px #664825;
   border-radius: 15px;
 }
+@media screen and (max-width: 700px) {
+  .mamservices .text4 {
+    width: 95%;
+    padding: 5px;
+  }
+}
 .mamservices .text4::before {
   content: "";
   position: absolute;
@@ -1465,6 +1697,20 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .text4::before {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mamservices .text4::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
 }
 .mamservices .text4 h2 {
   text-align: center;
@@ -1482,6 +1728,17 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .text4 h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mamservices .text4 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
 .mamservices .photo4 {
   position: relative;
   place-self: center;
@@ -1491,8 +1748,10 @@ h2 {
 .mamservices .photo4 img {
   position: relative;
   display: block;
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
@@ -1508,8 +1767,10 @@ h2 {
 .mamservices .photo5 img {
   position: relative;
   display: block;
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
@@ -1529,6 +1790,12 @@ h2 {
   border: solid 1px #664825;
   border-radius: 15px;
 }
+@media screen and (max-width: 700px) {
+  .mamservices .text5 {
+    width: 95%;
+    padding: 5px;
+  }
+}
 .mamservices .text5::before {
   content: "";
   position: absolute;
@@ -1538,6 +1805,20 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .text5::before {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mamservices .text5::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
 }
 .mamservices .text5 h2 {
   text-align: center;
@@ -1555,6 +1836,17 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .text5 h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mamservices .text5 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
 .mamservices .text6 {
   grid-area: t6;
   z-index: 2;
@@ -1568,6 +1860,12 @@ h2 {
   border: solid 1px #664825;
   border-radius: 15px;
 }
+@media screen and (max-width: 700px) {
+  .mamservices .text6 {
+    width: 95%;
+    padding: 5px;
+  }
+}
 .mamservices .text6::before {
   content: "";
   position: absolute;
@@ -1577,6 +1875,20 @@ h2 {
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .mamservices .text6::before {
+    width: 75px;
+    height: 75px;
+    top: -25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mamservices .text6::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
 }
 .mamservices .text6 h2 {
   text-align: center;
@@ -1594,6 +1906,17 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1000px) {
+  .mamservices .text6 h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mamservices .text6 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
 .mamservices .photo6 {
   position: relative;
   place-self: center;
@@ -1603,8 +1926,10 @@ h2 {
 .mamservices .photo6 img {
   position: relative;
   display: block;
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px #664825;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);

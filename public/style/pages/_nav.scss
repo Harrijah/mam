@@ -10,34 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    #mobilemenu{
-      display: none;
-      transition: 1s;
-      li {
-        display: block;
-        list-style: none;
-        margin: 10px 5px;
-
-        .highlight {
-          color: $color1;
-        }
-
-        a {
-          text-decoration: none;
-          padding: 10px 5px;
-          font-size: 1.5rem;
-          color: $color4;
-          &:hover {
-            color: $color1;
-            text-decoration: none;
-          }
-        }
-      }
-      @media screen and (max-width: 610px) {
-        display: block;
-      }
-    }
-
+    
+    // Menu page normeale
     .logo {
       width: 70px;
       padding: 5px;
@@ -58,20 +32,115 @@
         margin: 10px 15px;
 
         .highlight {
+          position: relative;
           color: $color1;
+          text-decoration: none;
+          padding: 10px 5px;
+          font-size: 1.5rem;
+          
+          &::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background-color: $color1;
+            border-radius: 10px;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
         }
 
         a {
+          position: relative;
           text-decoration: none;
           padding: 10px 15px;
           font-size: 1.5rem;
           color: $color4;
+          // transition: 2s;
           &:hover {
             color: $color1;
             text-decoration: none;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 50px;
+              height: 3px;
+              background-color: $color1;
+              border-radius: 10px;
+              top: 40px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
           }
         }
       }
     }
+    
+    
+    #mobilemenu {
+      display: none;
+      transition: 1s;
+      li {
+        display: block;
+        list-style: none;
+        margin: 10px 5px;
+
+        .highlight {
+          position: relative;
+          color: $color1;
+          text-decoration: none;
+          padding: 10px 5px;
+          font-size: 1.5rem;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background-color: $color1;
+            border-radius: 10px;
+            top: 30px;
+            left: 5px;
+          }
+        }
+
+        a {
+          position: relative;
+          text-decoration: none;
+          padding: 10px 5px;
+          font-size: 1.5rem;
+          color: $color4;
+          transition: 1s;
+          &:hover {
+            text-decoration: none;
+            color: $color1;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 50px;
+              height: 3px;
+              background-color: $color1;
+              border-radius: 10px;
+              top: 30px;
+              left: 5px;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 610px) {
+        display: block;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
   }
 }

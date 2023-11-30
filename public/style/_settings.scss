@@ -79,7 +79,7 @@ $color10: #ffecd6c0;
 }
 @mixin defaultinput {
   display: block;
-  min-width: 150px;
+  min-width: 50px;
   // width: 80%;
   max-width: 400px;
   min-height: 40px;
@@ -95,8 +95,10 @@ $color10: #ffecd6c0;
   display: block;
   // top: 50%;
   // transform: translateY(-50%);
+  width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   border-radius: 100%;
   border: solid 1px $color4;
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.29);
@@ -112,6 +114,10 @@ $color10: #ffecd6c0;
   background: $color9;
   border: solid 1px $color4;
   border-radius: 15px;
+  @media screen and (max-width : 700px){
+    width: 95%;
+    padding: 5px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -121,6 +127,16 @@ $color10: #ffecd6c0;
     height: 100px;
     background: url("../../images/logo.png") center/cover;
     background-repeat: no-repeat;
+    @media screen and (max-width : 1000px){
+      width: 75px;
+      height: 75px;
+      top: -25px;
+    }
+    @media screen and (max-width : 660px){
+      width: 50px;
+      height: 50px;
+      top: -25px;
+    }
     // z-index: 5;
   }
 }

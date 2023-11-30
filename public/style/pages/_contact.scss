@@ -18,9 +18,16 @@
         border: solid 1px $color4;
         border-radius: 5px;
         box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.2);
+        @media screen and (max-width : 800px){
+          display: block;
+        }
         .formtext{
             width: 50%;
             padding: 0 5%;
+            @media screen and (max-width : 800px){
+                width: 85%;
+                margin: auto;
+            }
 
             h1{
                 color: $color4;
@@ -34,24 +41,44 @@
         }
         .formform{
             width: 50%;
+            @media screen and (max-width : 800px){
+                display: block;
+                width: 85%;
+                margin: auto;
+            }
+            @media screen and (max-width : 660px){
+                width: 95%;
+            }
             form{
+                @media screen and (max-width : 800px){
+                    display: block;
+                    margin: auto;
+                    width: 80%;
+                }
+                @media screen and (max-width : 660px){
+                    width: 95%;
+                }
                 label{
                     color: $color4;
-                    display: inline-block;
                     margin-top: 10px;
+                    // display: inline-block;
                 }
                 input[type="text"], input[type="email"]{
                     @include defaultinput;
-                }
-                input[type="checkbox"]{
-                    display: inline-block;
-                    &:checked{
-                    color: yellow;
-                    padding: 10px;
+                    width: 70%;
+                    @media screen and (max-width : 700px){
+                        width: 85%;
                     }
                 }
                 textarea{
+                    width: 70%;
                     @include defaultinput;
+                    @media screen and (max-width : 800px){
+                        width: 85%;
+                    }
+                    @media screen and (max-width : 600px){
+                        width: 95%;
+                    }
                 }
             }
         }

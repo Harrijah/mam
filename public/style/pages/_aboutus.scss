@@ -18,6 +18,13 @@
       font-weight: 800; 
       line-height: 70px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      @media screen and (max-width: 1000px) {
+        font-size: 5rem;
+      }
+      @media screen and (max-width: 640px) {
+        width: 100%;
+        font-size: 3rem;
+      }
     }
   }
   .vide{
@@ -38,6 +45,9 @@
     margin: 0 auto;
     h1 {
       @include lescss;
+      @media screen and (max-width: 640px) {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -76,6 +86,23 @@
     "t4 p4"
     "p5 t5"
     "t6 p6";
+    @media screen and (max-width : 700px){
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "p1"
+        "t1"
+        "p2"
+        "t2"
+        "p3"
+        "t3"
+        "p4"
+        "t4"
+        "p5"
+        "t5"
+        "p6"
+        "t6";
+    }
   .photo1 {
     position: relative;
     place-self: center;
@@ -92,6 +119,13 @@
     @include textaboutus;
     h2 {
       @include lescss;
+      @media screen and (max-width : 1000px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width : 700px){
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
     }
   }
   .text2 {
@@ -100,6 +134,13 @@
     @include textaboutus;
     h2 {
       @include lescss;
+      @media screen and (max-width : 1000px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width : 700px){
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
     }
   }
   .photo2 {
@@ -128,6 +169,13 @@
     @include textaboutus;
     h2 {
       @include lescss;
+      @media screen and (max-width : 1000px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width : 700px){
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
     }
   }
   .text4 {
@@ -136,6 +184,13 @@
     @include textaboutus;
     h2 {
       @include lescss;
+      @media screen and (max-width : 1000px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width : 700px){
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
     }
   }
   .photo4 {
@@ -164,6 +219,13 @@
     @include textaboutus;
     h2 {
       @include lescss;
+      @media screen and (max-width : 1000px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width : 700px){
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
     }
   }
   .text6 {
@@ -172,6 +234,13 @@
     @include textaboutus;
     h2 {
       @include lescss;
+      @media screen and (max-width : 1000px){
+        font-size: 3rem;
+      }
+      @media screen and (max-width : 700px){
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
     }
   }
   .photo6 {
