@@ -44,3 +44,105 @@ window.addEventListener('scroll', () => {
     // }
 
 });
+
+
+myform.addEventListener('change', () => {
+    if (childname && childname.value.length < 10) {
+        childnameerror.textContent = "Le nom est trop court";
+        childnameerror.classList.add('alert', 'alert-danger');
+    } else {
+        childnameerror.textContent = "";
+        childnameerror.classList.remove('alert', 'alert-danger');
+        // childnameerror.class.remove('alert-danger');
+    }
+});
+ myform.addEventListener('submit', (e) => {
+    let nom = childname.value;
+    let age = select.value;
+    let datedebutaccueil = datedebutacc.value;
+    let heuresemaine = heureparsemaine.value;
+    let nomdelamere = nomdemere.value;
+    let teldelamere = nomdemere.value;
+    let maildelamere = nomdemere.value;
+    let profdelamere = nomdemere.value;
+     // validation du nom de l'enfant
+    if (nom) {
+        childnameerror.textContent = "";
+        childnameerror.classList.remove('alert', 'alert-danger');
+    } else {
+        e.preventDefault();
+        childnameerror.textContent = "Veuillez renseigner le nom de l'enfant";
+        childnameerror.classList.add('alert', 'alert-danger');
+    }
+    // validation de l'âge de l'enfant
+    if (age) {
+        childageerror.textContent = "";
+        childageerror.classList.remove('alert', 'alert-danger');
+    } else {
+        e.preventDefault();
+        childageerror.textContent = "Veuillez renseigner l\âge de l'enfant";
+        childageerror.classList.add('alert', 'alert-danger');
+     }
+     // validation de la date de début de l'accueil
+    if (datedebutaccueil) {
+        datedebuterror.textContent = "";
+        datedebuterror.classList.remove('alert', 'alert-danger');
+    } else {
+        e.preventDefault();
+        datedebuterror.textContent = "Veuillez renseigner la date de début de l\'accueil souhaitée";
+        datedebuterror.classList.add('alert', 'alert-danger');
+     }
+     // validation du volume d'heures par semaine
+    if (heuresemaine) {
+        heuresemaineerror.textContent = "";
+        heuresemaineerror.classList.remove('alert', 'alert-danger');
+    } else {
+        e.preventDefault();
+        heuresemaineerror.textContent = "Veuillez renseigner le volume d'heure d\'accueil hebdomadaire souhaité";
+        heuresemaineerror.classList.add('alert', 'alert-danger');
+     }
+     // validation du volume d'heures par semaine
+    if (nomdelamere) {
+        nomdemereerror.textContent = "";
+        nomdemereerror.classList.remove('alert', 'alert-danger');
+    } else {
+        e.preventDefault();
+        nomdemereerror.textContent = "Veuillez renseigner le nom de la mère de l'enfant.";
+        nomdemereerror.classList.add('alert', 'alert-danger');
+     }
+     // validation du tel de la mère
+    if (teldelamere) {
+        teldemereerror.textContent = "";
+        teldemereerror.classList.remove('alert', 'alert-danger');
+    } else {
+        e.preventDefault();
+        teldemereerror.textContent = "Veuillez renseigner le numéro de téléphone de la mère de l'enfant.";
+        teldemereerror.classList.add('alert', 'alert-danger');
+     }
+     // validation du mail de la mère
+     if (maildelamere) {
+         maildemereerror.textContent = "";
+         maildemereerror.classList.remove('alert', 'alert-danger');
+     } else {
+         e.preventDefault();
+         maildemereerror.textContent = "Veuillez renseigner l'adresse email de la mère de l'enfant.";
+         maildemereerror.classList.add('alert', 'alert-danger');
+      }
+      // validation de la profession de la mère
+     if (profdelamere) {
+         profdemereerror.textContent = "";
+         profdemereerror.classList.remove('alert', 'alert-danger');
+     } else {
+         e.preventDefault();
+         profdemereerror.textContent = "Veuillez renseigner la profession de la mère de l'enfant.";
+         profdemereerror.classList.add('alert', 'alert-danger');
+      }
+
+
+
+
+
+ });
+
+
+

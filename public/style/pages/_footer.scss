@@ -5,6 +5,9 @@
   background: rgba(0, 0, 0, 0.6);
   .modal-content {
     width: 70%;
+    @media screen and (max-width : 600px){
+      width: 90%;
+    }
     margin: 100px auto 0;
     background: $color1;
     .modal-header {
@@ -15,11 +18,18 @@
           position: absolute;
           content: "";
           top: -25px;
-          left: -150px;
+          left: -30%;
           width: 100px;
           height: 100px;
           background: url("../../images/logo.png") center/cover;
           background-repeat: no-repeat;
+          @media screen and (max-width : 1000px){
+            top: -65px;
+            left: 40%;
+            width: 70px;
+            height: 70px;
+            rtansform : translateX(-40%)
+          }
         }
       }
     }
@@ -43,6 +53,9 @@
             }
             #childname {
               width: 73%;
+              @media screen and (max-width : 730px) {
+                width: 100%;
+              }
             }
             input[type="date"] {
               width: 150px;
@@ -58,11 +71,13 @@
             .phone {
               width: 25%;
             }
-            input[type="submit"] {
+            input[type="submit"], #validateform, #closeme {
               position: relative;
               margin: 20px auto 0;
               @include defaultinput;
+              min-width: 100px;
               width: 25%;
+              max-width: 200px;
               color: $color1;
               border: solid 1px $color8;
               background: $color2;
@@ -84,68 +99,389 @@
               padding: 10px;
               border: solid 1px $color4;
               background-color: whitesmoke;
+              @media screen and (max-width : 730px) {
+                min-width: 75px;
+              }
             }
-
-            table {
-              display: block;
+            .mygrid {
+              position: relative;
               padding: 20px;
               background: $color9;
-              thead {
-                tr {
-                  margin-bottom: 15px;
-                  .daycolumn {
-                    width: 15%;
-                  }
-                  .entrycolumn {
-                    width: 35%;
-                  }
-                  .leavecolumn {
-                    width: 35%;
+              border: solid 1px $color4;
+                @media screen and (min-width : 630px){
+                  display: grid;
+                  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+                  grid-template-columns: auto auto auto;
+                  grid-template-areas:
+                    "jour arrivee depart"
+                    "lundi lundiarr lundidep"
+                    "mardi mardiarr mardidep"
+                    "mercredi mercrediarr mercredidep"
+                    "jeudi jeudiarr jeudidep"
+                    "vendredi vendrediarr vendredidep"
+                    ;
+                  .vide01, .vide02, .vide03, .vide04, .vide05, .hideme01, .hideme02, .hideme03, .hideme04, .hideme05, .hideme06, .hideme07, .hideme08, .hideme09, .hideme10{
+                    display: none;
                   }
                 }
-                td {
-                  text-align: center;
+                @media screen and (max-width : 630px){
+                  display: grid;
+                  grid-template-rows: auto auto auto auto auto;
+                  grid-template-columns: auto auto;
+                  grid-template-areas: 
+                  "lundi lundi"
+                  "hideme01 lundiarr"
+                  "hideme02 lundidep"
+                  "mardi mardi"
+                  "hideme03 mardiarr"
+                  "hideme04 mardidep"
+                  "mercredi mercredi"
+                  "hideme05 mercrediarr"
+                  "hideme06 mercredidep"
+                  "jeudi jeudi"
+                  "hideme07 jeudiarr"
+                  "hideme08 jeudidep"
+                  "vendredi vendredi"
+                  "hideme09 vendrediarr"
+                  "hideme10 vendredidep"
+                  ;
+                .monjour, .monarrivee, .mondepart{
+                  display: none;
+                }
+                .lundi, .mardi, .mercredi, .jeudi, .vendredi{
                   font-weight: bold;
                   text-decoration: underline;
                 }
+                .hideme01, .hideme02, .hideme03, .hideme04, .hideme05, .hideme06, .hideme07, .hideme08, .hideme09, .hideme10{
+                  padding-top: 10px;
+                  text-align: center;
+                }
+                  
+                }
+              
+                .monjour {
+                  grid-area: jour;
+                  font-weight: bold;
+                  text-decoration: underline;
+                }
+                .monarrivee {
+                  grid-area: arrivee;
+                  font-weight: bold;
+                  text-decoration: underline;
+                }
+                .mondepart {
+                  grid-area: depart;
+                  font-weight: bold;
+                  text-decoration: underline;
+                }
+                .lundi {
+                  grid-area: lundi;
+                }
+                .mardi {
+                  grid-area: mardi;
+                }
+                .mercredi {
+                  grid-area: mercredi;
+                }
+                .jeudi {
+                  grid-area: jeudi;
+                }
+                .vendredi {
+                  grid-area: vendredi;
+                }
+                .hideme01{
+                  grid-area: hideme01;
+                }
+                .hideme02{
+                  grid-area: hideme02;
+                }
+                .hideme03{
+                  grid-area: hideme03;
+                }
+                .hideme04{
+                  grid-area: hideme04;
+                }
+                .hideme05{
+                  grid-area: hideme05;
+                }
+                .hideme06{
+                  grid-area: hideme06;
+                }
+                .hideme07{
+                  grid-area: hideme07;
+                }
+                .hideme08{
+                  grid-area: hideme08;
+                }
+                .hideme09{
+                  grid-area: hideme09;
+                }
+                .hideme10{
+                  grid-area: hideme10;
+                }
+                .vide01{
+                  grid-area: vide01;
+                }
+                .vide02{
+                  grid-area: vide02;
+                }
+                .vide03{
+                  grid-area: vide03;
+                }
+                .vide04{
+                  grid-area: vide04;
+                }
+                .vide05{
+                  grid-area: vide05;
+                }
+
+                #lundiarrivee{
+                  grid-area: lundiarr;
+                  // min-width: 50px;
+                  // max-width: 100px;
+                  // text-align: center;
+                }
+                #lundidepart{
+                  grid-area: lundidep;
+                  // min-width: 50px;
+                  // max-width: 100px;
+                  // text-align: center;
+                }
+                #mardiarrivee{
+                  grid-area: mardiarr;
+                }
+                #mardidepart{
+                  grid-area: mardidep;
+                }
+                #mercrediarrivee{
+                  grid-area: mercrediarr;
+                }
+                #mercredidepart{
+                  grid-area: mercredidep;
+                }
+                #jeudiarrivee{
+                  grid-area: jeudiarr;
+                }
+                #jeudidepart{
+                  grid-area: jeudidep;
+                }
+                #vendrediarrivee{
+                  grid-area: vendrediarr;
+                }
+                #vendredidepart{
+                  grid-area: vendredidep;
+                }
+            }
+
+            // table {
+            //   display: block;
+            //   padding: 20px;
+            //   background: $color9;
+            //   thead {
+            //     tr {
+            //       margin-bottom: 15px;
+            //       .daycolumn {
+            //         width: 15%;
+            //       }
+            //       .entrycolumn {
+            //         width: 35%;
+            //       }
+            //       .leavecolumn {
+            //         width: 35%;
+            //       }
+            //     }
+            //     td {
+            //       text-align: center;
+            //       font-weight: bold;
+            //       text-decoration: underline;
+            //       // @media screen and (max-width:665px){
+            //       //   display: block;
+            //       //   width: 50%;
+            //       //   background: blue;
+            //       // }
+            //     }
+            //   }
+            //   tbody {
+            //     tr {
+            //       .day {
+            //         font-weight: bold;
+            //       }
+            //       .colonne01 {
+            //         width: 15%;
+            //       }
+            //       .colonne02 {
+            //         width: 50%;
+            //       }
+            //       .colonne03 {
+            //         width: 35%;
+            //       }
+            //       td {
+            //         span {
+            //           margin: 15px;
+            //         }
+            //         input {
+            //           min-width: 50%;
+            //           width: 80%;
+            //           max-width: 100%;
+            //         }
+            //       }
+            //     }
+            //   }
+            //   border: solid 1px $color4;
+            //   //     td{
+            //   //         padding: 10px 10px;
+            //   //     }
+            // }
+            .myfather{
+              position: relative;
+              padding: 20px;
+              background: $color9;
+              border: solid 1px $color4;
+              input{
+                width: 100%;
               }
-              tbody {
-                tr {
-                  .day {
-                    font-weight: bold;
-                  }
-                  .colonne01 {
-                    width: 15%;
-                  }
-                  .colonne02 {
-                    width: 50%;
-                  }
-                  .colonne03 {
-                    width: 35%;
-                  }
-                  td {
-                    span {
-                      margin: 15px;
-                    }
-                    input {
-                      min-width: 50%;
-                      width: 80%;
-                      max-width: 100%;
-                    }
-                  }
+              @media screen and (min-width : 500px) {
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                grid-template-columns: 15% 85%;
+                grid-template-areas: 
+                "dadname nomdupere"
+                "dadtel teldupere"
+                "dadmail maildupere"
+                "dadprof profdupere"
+                ;
+                #teldupere{
+                  width: 50%;
                 }
               }
+              @media screen and (max-width : 500px) {
+                display: grid;
+                grid-template-rows: auto auto auto auto auto auto auto auto;
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "dadname"
+                "nomdupere"
+                "dadtel"
+                "teldupere"
+                "dadmail"
+                "maildupere"
+                "dadprof"
+                "profdupere"
+                ;
+              }
+              .dadname{
+                grid-area: dadname;
+              }
+              .dadtel{
+                grid-area: dadtel;
+              }
+              .dadmail{
+                grid-area: dadmail;
+              }
+              .dadprof{
+                grid-area: dadprof;
+              }
+              #nomdupere{
+                grid-area: nomdupere;
+              }
+              #teldupere{
+                grid-area: teldupere;
+              }
+              #maildupere{
+                grid-area: maildupere;
+              }
+              #profdupere{
+                grid-area: profdupere;
+              }
+            }
+            .mymother{
+              position: relative;
+              padding: 20px;
+              background: $color9;
               border: solid 1px $color4;
-              //     td{
-              //         padding: 10px 10px;
-              //     }
+              input{
+                width: 100%;
+              }
+              @media screen and (min-width : 500px) {
+                display: grid;
+                grid-template-rows: auto auto auto auto auto auto auto auto;
+                grid-template-columns: 15% 85%;
+                grid-template-areas: 
+                "momname nomdemere"
+                "nomdemereerror nomdemereerror"
+                "momtel teldemere"
+                "teldemereerror teldemereerror"
+                "mommail maildemere"
+                "maildemereerror maildemereerror"
+                "momprof profdemere"
+                "profdemereerror profdemereerror"
+                ;
+                #teldemere{
+                  width: 50%;
+                }
+              }
+              @media screen and (max-width : 500px) {
+                display: grid;
+                grid-template-rows: auto auto auto auto auto auto auto auto;
+                grid-template-columns: auto;
+                grid-template-areas: 
+                "momname"
+                "nomdemere"
+                "nomdemereerror"
+                "momtel"
+                "teldemere"
+                "teldemereerror"
+                "mommail"
+                "maildemere"
+                "maildemereerror"
+                "momprof"
+                "profdemere"
+                "profdemereerror"
+                ;
+              }
+              .momname{
+                grid-area: momname;
+              }
+              .momtel{
+                grid-area: momtel;
+              }
+              .mommail{
+                grid-area: mommail;
+              }
+              .momprof{
+                grid-area: momprof;
+              }
+              #nomdemere{
+                grid-area: nomdemere;
+              }
+              #teldemere{
+                grid-area: teldemere;
+              }
+              #maildemere{
+                grid-area: maildemere;
+              }
+              #profdemere{
+                grid-area: profdemere;
+              }
+              #nomdemereerror{
+                grid-area: nomdemereerror;
+              }
+              #teldemereerror{
+                grid-area: teldemereerror;
+              }
+              #maildemereerror{
+                grid-area: maildemereerror;
+              }
+              #profdemereerror{
+                grid-area: profdemereerror;
+              }
             }
           }
         }
       }
     }
     .modal-footer {
-      button {
+      #validateform, #closeme {
         position: relative;
         margin: 20px auto 0;
         padding: 10px;
@@ -153,7 +489,9 @@
         border-radius: 20px;
         // @include defaultinput;
         // text-align: right;
+        max-width: 200px;
         width: 10%;
+        min-width: 100px;
         color: $color1;
         border: solid 1px $color8;
         background: $color2;
@@ -226,7 +564,6 @@
         }
       }
     }
-
 
     .footcol02 {
       position: relative;

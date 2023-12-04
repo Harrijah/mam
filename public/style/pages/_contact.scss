@@ -80,6 +80,22 @@
                         width: 95%;
                     }
                 }
+                button[type=submit]{
+                    position: relative;
+                    @include defaultinput;
+                    width: 150px;
+                    transition: 1s;
+                    &:hover{
+                        color: whitesmoke;
+                        border: solid 1px whitesmoke;
+                        background-color: $color4;
+                        left: 5px;
+                    }
+                    @media screen and (max-width : 600px){
+                        width: 95%;
+                    }
+
+                }
             }
         }
     }

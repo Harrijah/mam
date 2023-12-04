@@ -37,17 +37,27 @@
           text-decoration: none;
           padding: 10px 5px;
           font-size: 1.5rem;
+          transition: 1s;
           
           &::after {
             position: absolute;
             content: "";
-            width: 50px;
+            width: 0;
             height: 3px;
             background-color: $color1;
             border-radius: 10px;
             top: 40px;
             left: 50%;
             transform: translateX(-50%);
+            animation: 1s trait forwards;
+          }
+          @keyframes trait {
+            0%{
+              width: 0;
+            }
+            100%{
+              width: 50px;
+            }
           }
         }
 
@@ -64,13 +74,22 @@
             &::after {
               position: absolute;
               content: "";
-              width: 50px;
+              width: 0;
               height: 3px;
               background-color: $color1;
               border-radius: 10px;
               top: 40px;
               left: 50%;
               transform: translateX(-50%);
+              animation: 1s trait forwards;
+            }
+          }
+          @keyframes trait {
+            0%{
+              width: 0;
+            }
+            100%{
+              width: 50px;
             }
           }
         }
@@ -92,6 +111,7 @@
           text-decoration: none;
           padding: 10px 5px;
           font-size: 1.5rem;
+          transition: 1s;
           &::after {
             position: absolute;
             content: "";
@@ -101,6 +121,15 @@
             border-radius: 10px;
             top: 30px;
             left: 5px;
+            animation: 1s trait forwards;
+          }
+          @keyframes trait {
+            0%{
+              width: 0;
+            }
+            100%{
+              width: 50px;
+            }
           }
         }
 

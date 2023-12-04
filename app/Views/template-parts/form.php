@@ -13,17 +13,32 @@
             </ul>
         </div>
         <div class="formform">
-            <form action="#" method="post">
+
+            <form action="<?php echo base_url('/sendcontact'); ?>" method="post"  enctype="form-data">
                 <label for="nom">Votre nom</label>
-                <input type="text" name="nom" id="nom">
+                <input type="text" name="nom" id="nom"  value="<?php if(isset($nom)) echo ($nom) ?>">
+                <?php if(isset($validation) && $validation->getError('nom')): ?>
+                    <div class="alert alert-danger"><?= $validation->getError('nom') ?></div>
+                <?php endif; ?>
+                
                 <label for="prenom">Votre prénom</label>
-                <input type="text" name="prenom" id="prenom">
+                <input type="text" name="prenom" id="prenom" value="<?php if(isset($prenom)) echo ($prenom) ?>">
+                <?php if(isset($errors['prenom'])) echo '<div class="alert alert-danger">' . $errors['prenom'] . '</div>'; ?>
+                
                 <label for="email">Votre email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value="<?php if(isset($email)) echo ($email) ?>">
+                <?php if(isset($errors['email'])) echo '<div class="alert alert-danger">' . $errors['email'] . '</div>'; ?>
+                
                 <label for="telephone">Votre téléphone</label>
-                <input type="text" name="telephone" id="telephone">
+                <input type="text" name="telephone" id="telephone" value="<?php if(isset($telephone)) echo ($telephone) ?>">
+                <?php if(isset($errors['telephone'])) echo '<div class="alert alert-danger">' . $errors['telephone'] . '</div>'; ?>
+                
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message, ici"></textarea>
-                <input type="submit" value="Envoyer">
+                <?php if(isset($errors['message'])) echo '<div class="alert alert-danger">' . $errors['message'] . '</div>'; ?>
+                
+                <button type="submit">Envoyer</button>
+
+                
             </form>
         </div>
 

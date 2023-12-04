@@ -97,17 +97,27 @@ h2 {
   text-decoration: none;
   padding: 10px 5px;
   font-size: 1.5rem;
+  transition: 1s;
 }
 #menu nav ul li .highlight::after {
   position: absolute;
   content: "";
-  width: 50px;
+  width: 0;
   height: 3px;
   background-color: #ffecd6;
   border-radius: 10px;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
+  animation: 1s trait forwards;
+}
+@keyframes trait {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50px;
+  }
 }
 #menu nav ul li a {
   position: relative;
@@ -123,13 +133,22 @@ h2 {
 #menu nav ul li a:hover::after {
   position: absolute;
   content: "";
-  width: 50px;
+  width: 0;
   height: 3px;
   background-color: #ffecd6;
   border-radius: 10px;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
+  animation: 1s trait forwards;
+}
+@keyframes trait {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50px;
+  }
 }
 #menu nav #mobilemenu {
   display: none;
@@ -146,6 +165,7 @@ h2 {
   text-decoration: none;
   padding: 10px 5px;
   font-size: 1.5rem;
+  transition: 1s;
 }
 #menu nav #mobilemenu li .highlight::after {
   position: absolute;
@@ -156,6 +176,15 @@ h2 {
   border-radius: 10px;
   top: 30px;
   left: 5px;
+  animation: 1s trait forwards;
+}
+@keyframes trait {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50px;
+  }
 }
 #menu nav #mobilemenu li a {
   position: relative;
@@ -840,9 +869,11 @@ h2 {
   margin-bottom: 10px;
   padding: 10px;
   border: solid 1px #664825;
-  border-radius: 20px;
   background-color: whitesmoke;
+  border-radius: 20px;
+  min-width: 150px;
   width: 25%;
+  max-width: 250px;
   color: #ffecd6;
   border: solid 1px #e7e7e7;
   background: #ccb59b;
@@ -872,6 +903,11 @@ h2 {
   margin: 100px auto 0;
   background: #ffecd6;
 }
+@media screen and (max-width: 600px) {
+  #mymodal .modal-content {
+    width: 90%;
+  }
+}
 #mymodal .modal-content .modal-header .entete {
   position: relative;
   text-align: center;
@@ -880,11 +916,20 @@ h2 {
   position: absolute;
   content: "";
   top: -25px;
-  left: -150px;
+  left: -30%;
   width: 100px;
   height: 100px;
   background: url("../../images/logo.png") center/cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  #mymodal .modal-content .modal-header .entete::before {
+    top: -65px;
+    left: 40%;
+    width: 70px;
+    height: 70px;
+    rtansform: translateX(-40%);
+  }
 }
 #mymodal .modal-content .modal-body {
   padding: 50px 10%;
@@ -909,6 +954,11 @@ h2 {
 #mymodal .modal-content .modal-body .bodycontainer .homeform form #childname {
   width: 73%;
 }
+@media screen and (max-width: 730px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form #childname {
+    width: 100%;
+  }
+}
 #mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=date] {
   width: 150px;
 }
@@ -923,7 +973,7 @@ h2 {
 #mymodal .modal-content .modal-body .bodycontainer .homeform form .phone {
   width: 25%;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit] {
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit], #mymodal .modal-content .modal-body .bodycontainer .homeform form #validateform, #mymodal .modal-content .modal-body .bodycontainer .homeform form #closeme {
   position: relative;
   margin: 20px auto 0;
   display: block;
@@ -933,16 +983,18 @@ h2 {
   margin-bottom: 10px;
   padding: 10px;
   border: solid 1px #664825;
-  border-radius: 20px;
   background-color: whitesmoke;
+  border-radius: 20px;
+  min-width: 100px;
   width: 25%;
+  max-width: 200px;
   color: #ffecd6;
   border: solid 1px #e7e7e7;
   background: #ccb59b;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   transition: 1s;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit]:hover {
+#mymodal .modal-content .modal-body .bodycontainer .homeform form input[type=submit]:hover, #mymodal .modal-content .modal-body .bodycontainer .homeform form #validateform:hover, #mymodal .modal-content .modal-body .bodycontainer .homeform form #closeme:hover {
   color: #664825;
   background: #ffecd6;
   border: solid 1px #664825;
@@ -958,63 +1010,285 @@ h2 {
   border: solid 1px #664825;
   background-color: whitesmoke;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table {
-  display: block;
+@media screen and (max-width: 730px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form #select,
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form select {
+    min-width: 75px;
+  }
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid {
+  position: relative;
   padding: 20px;
   background: #faefe3;
   border: solid 1px #664825;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr {
-  margin-bottom: 15px;
+@media screen and (min-width: 630px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "jour arrivee depart" "lundi lundiarr lundidep" "mardi mardiarr mardidep" "mercredi mercrediarr mercredidep" "jeudi jeudiarr jeudidep" "vendredi vendrediarr vendredidep";
+  }
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide01, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide02, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide03, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide04, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide05, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme01, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme02, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme03, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme04, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme05, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme06, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme07, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme08, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme09, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme10 {
+    display: none;
+  }
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr .daycolumn {
-  width: 15%;
+@media screen and (max-width: 630px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "lundi lundi" "hideme01 lundiarr" "hideme02 lundidep" "mardi mardi" "hideme03 mardiarr" "hideme04 mardidep" "mercredi mercredi" "hideme05 mercrediarr" "hideme06 mercredidep" "jeudi jeudi" "hideme07 jeudiarr" "hideme08 jeudidep" "vendredi vendredi" "hideme09 vendrediarr" "hideme10 vendredidep";
+  }
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .monjour, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .monarrivee, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .mondepart {
+    display: none;
+  }
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .lundi, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .mardi, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .mercredi, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .jeudi, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vendredi {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme01, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme02, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme03, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme04, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme05, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme06, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme07, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme08, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme09, #mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme10 {
+    padding-top: 10px;
+    text-align: center;
+  }
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr .entrycolumn {
-  width: 35%;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead tr .leavecolumn {
-  width: 35%;
-}
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table thead td {
-  text-align: center;
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .monjour {
+  grid-area: jour;
   font-weight: bold;
   text-decoration: underline;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .day {
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .monarrivee {
+  grid-area: arrivee;
   font-weight: bold;
+  text-decoration: underline;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .colonne01 {
-  width: 15%;
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .mondepart {
+  grid-area: depart;
+  font-weight: bold;
+  text-decoration: underline;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .colonne02 {
-  width: 50%;
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .lundi {
+  grid-area: lundi;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr .colonne03 {
-  width: 35%;
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .mardi {
+  grid-area: mardi;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr td span {
-  margin: 15px;
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .mercredi {
+  grid-area: mercredi;
 }
-#mymodal .modal-content .modal-body .bodycontainer .homeform form table tbody tr td input {
-  min-width: 50%;
-  width: 80%;
-  max-width: 100%;
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .jeudi {
+  grid-area: jeudi;
 }
-#mymodal .modal-content .modal-footer button {
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vendredi {
+  grid-area: vendredi;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme01 {
+  grid-area: hideme01;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme02 {
+  grid-area: hideme02;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme03 {
+  grid-area: hideme03;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme04 {
+  grid-area: hideme04;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme05 {
+  grid-area: hideme05;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme06 {
+  grid-area: hideme06;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme07 {
+  grid-area: hideme07;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme08 {
+  grid-area: hideme08;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme09 {
+  grid-area: hideme09;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .hideme10 {
+  grid-area: hideme10;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide01 {
+  grid-area: vide01;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide02 {
+  grid-area: vide02;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide03 {
+  grid-area: vide03;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide04 {
+  grid-area: vide04;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid .vide05 {
+  grid-area: vide05;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #lundiarrivee {
+  grid-area: lundiarr;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #lundidepart {
+  grid-area: lundidep;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #mardiarrivee {
+  grid-area: mardiarr;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #mardidepart {
+  grid-area: mardidep;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #mercrediarrivee {
+  grid-area: mercrediarr;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #mercredidepart {
+  grid-area: mercredidep;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #jeudiarrivee {
+  grid-area: jeudiarr;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #jeudidepart {
+  grid-area: jeudidep;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #vendrediarrivee {
+  grid-area: vendrediarr;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mygrid #vendredidepart {
+  grid-area: vendredidep;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather {
+  position: relative;
+  padding: 20px;
+  background: #faefe3;
+  border: solid 1px #664825;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather input {
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: "dadname nomdupere" "dadtel teldupere" "dadmail maildupere" "dadprof profdupere";
+  }
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather #teldupere {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "dadname" "nomdupere" "dadtel" "teldupere" "dadmail" "maildupere" "dadprof" "profdupere";
+  }
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather .dadname {
+  grid-area: dadname;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather .dadtel {
+  grid-area: dadtel;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather .dadmail {
+  grid-area: dadmail;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather .dadprof {
+  grid-area: dadprof;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather #nomdupere {
+  grid-area: nomdupere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather #teldupere {
+  grid-area: teldupere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather #maildupere {
+  grid-area: maildupere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .myfather #profdupere {
+  grid-area: profdupere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother {
+  position: relative;
+  padding: 20px;
+  background: #faefe3;
+  border: solid 1px #664825;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother input {
+  width: 100%;
+}
+@media screen and (min-width: 500px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: "momname nomdemere" "nomdemereerror nomdemereerror" "momtel teldemere" "teldemereerror teldemereerror" "mommail maildemere" "maildemereerror maildemereerror" "momprof profdemere" "profdemereerror profdemereerror";
+  }
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #teldemere {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "momname" "nomdemere" "nomdemereerror" "momtel" "teldemere" "teldemereerror" "mommail" "maildemere" "maildemereerror" "momprof" "profdemere" "profdemereerror";
+  }
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother .momname {
+  grid-area: momname;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother .momtel {
+  grid-area: momtel;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother .mommail {
+  grid-area: mommail;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother .momprof {
+  grid-area: momprof;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #nomdemere {
+  grid-area: nomdemere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #teldemere {
+  grid-area: teldemere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #maildemere {
+  grid-area: maildemere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #profdemere {
+  grid-area: profdemere;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #nomdemereerror {
+  grid-area: nomdemereerror;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #teldemereerror {
+  grid-area: teldemereerror;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #maildemereerror {
+  grid-area: maildemereerror;
+}
+#mymodal .modal-content .modal-body .bodycontainer .homeform form .mymother #profdemereerror {
+  grid-area: profdemereerror;
+}
+#mymodal .modal-content .modal-footer #validateform, #mymodal .modal-content .modal-footer #closeme {
   position: relative;
   margin: 20px auto 0;
   padding: 10px;
   border: solid 1px #664825;
   border-radius: 20px;
+  max-width: 200px;
   width: 10%;
+  min-width: 100px;
   color: #ffecd6;
   border: solid 1px #e7e7e7;
   background: #ccb59b;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   transition: 1s;
 }
-#mymodal .modal-content .modal-footer button:hover {
+#mymodal .modal-content .modal-footer #validateform:hover, #mymodal .modal-content .modal-footer #closeme:hover {
   color: #664825;
   background: #ffecd6;
   border: solid 1px #664825;
@@ -1260,8 +1534,8 @@ h2 {
   margin-bottom: 10px;
   padding: 10px;
   border: solid 1px #664825;
-  border-radius: 20px;
   background-color: whitesmoke;
+  border-radius: 20px;
   width: 70%;
 }
 @media screen and (max-width: 700px) {
@@ -1278,8 +1552,8 @@ h2 {
   margin-bottom: 10px;
   padding: 10px;
   border: solid 1px #664825;
-  border-radius: 20px;
   background-color: whitesmoke;
+  border-radius: 20px;
 }
 @media screen and (max-width: 800px) {
   #contactback .formcontainer .formform form textarea {
@@ -1288,6 +1562,31 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   #contactback .formcontainer .formform form textarea {
+    width: 95%;
+  }
+}
+#contactback .formcontainer .formform form button[type=submit] {
+  position: relative;
+  display: block;
+  min-width: 50px;
+  max-width: 400px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px #664825;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 150px;
+  transition: 1s;
+}
+#contactback .formcontainer .formform form button[type=submit]:hover {
+  color: whitesmoke;
+  border: solid 1px whitesmoke;
+  background-color: #664825;
+  left: 5px;
+}
+@media screen and (max-width: 600px) {
+  #contactback .formcontainer .formform form button[type=submit] {
     width: 95%;
   }
 }
