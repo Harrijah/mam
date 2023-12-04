@@ -76,23 +76,24 @@ class Contact extends BaseController
                 $data = [
                     'validation' =>  $this->validator,
                     'errors' => $this->validator->getErrors(),
+                    'pagetitle' => 'Contact',    
                     'nom' => $nom,           
                     'prenom' => $prenom,           
                     'email' => $email,           
                     'telephone' => $telephone,           
                     'message' => $message,      
-                    'pagetitle' => 'Contact'     
                 ];
 
             } else {
                 $email->setFrom('noreply@test.axel.mg', 'Site web Tiazaza');
                 $email->setTo('andrianarivohari@gmail.com');
                 $email->setBCC('contact@axel.mg');
-                $email->setSubject('Nouveau message de '. $data['nom']);
+                $email->setSubject('Nouveau message de '. $data['nom'].' '. $data['prenom']);
                 $email->setMessage(
                     $data['message'] . 
                     'Message de '. $data['nom'] .' ' . $data['nom'] .  
-                    'Téléphone : '. $data['telephone']
+                    ' 
+                    Téléphone : '. $data['telephone']
                 );
                 $email->send();
                 $data['nom'] = "";
@@ -128,7 +129,6 @@ class Contact extends BaseController
                     $rules = [
                         'nom' => 'required',
                         'age' => 'required',
-                        'unite' => 'required',
                         'datedebut' => 'required',
                         'heuresemaine' => 'required',
                         'nomdemere' => 'required',
@@ -142,9 +142,6 @@ class Contact extends BaseController
                             'required' => 'Veuillez remplir ce champ.'
                         ],
                         'age' => [
-                            'required' => 'Veuillez remplir ce champ.'
-                        ],
-                        'unite' => [
                             'required' => 'Veuillez remplir ce champ.'
                         ],
                         'datedebut' => [
@@ -166,11 +163,18 @@ class Contact extends BaseController
                 }
     
                 if (! $this->validate($rules, $errors)) {
+                    $nom = $this->request->getPost('nom');
+                    $age = $this->request->getPost('age');
+                    $datedebut = $this->request->getPost('datedebut');
+                    $heuresemaine = $this->request->getPost('heuresemaine');
+                    $nomdemere = $this->request->getPost('nomdemere');
+                    $teldemere = $this->request->getPost('teldemere');
+                    $profdemere = $this->request->getPost('profdemere'); 
                     $data = [
                         'validation' =>  $this->validator,
                         'errors' => $this->validator->getErrors(),
                         'pagetitle' => $lien,
-                        'maclasse' => $lien,                    
+                        'maclasse' => $lien,              
                     ];
                 } else {
                     $email->setFrom('noreply@test.axel.mg', 'Site web Tiazaza');
@@ -211,8 +215,8 @@ class Contact extends BaseController
                     );
                     $email->send();
                     // var_dump($data);
-                    return redirect()->to('/');
                 }
+                return redirect()->to('/');
 
     
             }

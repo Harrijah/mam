@@ -928,7 +928,7 @@ h2 {
     left: 40%;
     width: 70px;
     height: 70px;
-    rtansform: translateX(-40%);
+    transform: translateX(-40%);
   }
 }
 #mymodal .modal-content .modal-body {
@@ -1324,7 +1324,6 @@ h2 {
   .mamfooter .footercontainer {
     display: block;
     padding: 4% 0;
-    vertical-align: top;
   }
 }
 .mamfooter .footercontainer .mapform {

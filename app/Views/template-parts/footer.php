@@ -106,21 +106,9 @@
 
                                 <!-- // Father  -->
                                 <input type="text" name="nomdupere" id="nomdupere">
-                                    <?php if(isset($validation) && $validation->getError('nomdupere')): ?>
-                                        <div class="alert alert-danger"><?= $validation->getError('nomdupere') ?></div>
-                                    <?php endif; ?>
                                 <input type="text" name="teldupere" id="teldupere">
-                                    <?php if(isset($validation) && $validation->getError('teldupere')): ?>
-                                        <div class="alert alert-danger"><?= $validation->getError('teldupere') ?></div>
-                                    <?php endif; ?>
                                 <input type="text" name="maildupere" id="maildupere">
-                                    <?php if(isset($validation) && $validation->getError('maildupere')): ?>
-                                        <div class="alert alert-danger"><?= $validation->getError('maildupere') ?></div>
-                                    <?php endif; ?>
                                 <input type="text" name="profdupere" id="profdupere">
-                                    <?php if(isset($validation) && $validation->getError('profdupere')): ?>
-                                        <div class="alert alert-danger"><?= $validation->getError('profdupere') ?></div>
-                                    <?php endif; ?>
                             </div>
 
                             <span style="display:block; margin-top: 20px; text-decoration:underline; font-weight:bold;">Mère</span>
