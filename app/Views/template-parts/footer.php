@@ -46,7 +46,7 @@
 
                             <!-- // Heure par semaine -->
                             <span>Nombre d'heures d'accueil prévues par semaine : </span>*
-                            <input type="number" name="heuresemaine" id="heureparsemaine" placeholder="" class="topinput"> 
+                            <input type="number" name="heuresemaine" id="heureparsemaine" min="10" value="10" class="topinput"> 
                             <span>heures/semaine.</span><br>
                             <div id="heuresemaineerror" class=""></div>
 
