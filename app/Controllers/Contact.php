@@ -208,9 +208,7 @@ class Contact extends BaseController
                     );
                     $email->send();
                 }
-                return redirect()->to('/');
-
-    
+                return redirect()->to('');
             }
 
 
