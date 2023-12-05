@@ -162,14 +162,7 @@ class Contact extends BaseController
                     ];
                 }
     
-                if (! $this->validate($rules, $errors)) {
-                    $nom = $this->request->getPost('nom');
-                    $age = $this->request->getPost('age');
-                    $datedebut = $this->request->getPost('datedebut');
-                    $heuresemaine = $this->request->getPost('heuresemaine');
-                    $nomdemere = $this->request->getPost('nomdemere');
-                    $teldemere = $this->request->getPost('teldemere');
-                    $profdemere = $this->request->getPost('profdemere'); 
+                if (! $this->validate($rules, $errors)) { 
                     $data = [
                         'validation' =>  $this->validator,
                         'errors' => $this->validator->getErrors(),
@@ -214,7 +207,6 @@ class Contact extends BaseController
                         
                     );
                     $email->send();
-                    // var_dump($data);
                 }
                 return redirect()->to('/');
 

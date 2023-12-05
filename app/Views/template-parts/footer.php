@@ -19,7 +19,7 @@
 
                             <!-- // Age -->
                             <span>Age : </span>*
-                            <input type="number" name="age" id="select">
+                            <input type="number" name="age" id="select" min="0" value="0">
                                 <?php //if(isset($validation) && $validation->getError('age')): ?>
                                     <!-- <div class="alert alert-danger"><?php // echo $validation->getError('age'); ?></div> -->
                                 <?php //endif; ?>

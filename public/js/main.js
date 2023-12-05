@@ -77,6 +77,7 @@ window.addEventListener('scroll', () => {
             childnameerror.classList.add('alert', 'alert-danger');
         }
         // validation de l'âge de l'enfant
+        const ageValue = parseInt(age.value);
         if (age) {
             childageerror.textContent = "";
             childageerror.classList.remove('alert', 'alert-danger');
