@@ -173,7 +173,7 @@ class Contact extends BaseController
                     $email->setFrom('noreply@test.axel.mg', 'Site web Tiazaza');
                     $email->setTo('andrianarivohari@gmail.com');
                     $email->setBCC('contact@axel.mg');
-                    $email->setSubject('Nouvelle inscription');
+                    $email->setSubject('Nouvelle inscription : '. $data["nom"]);
                     $email->setMessage(
                     "A propos de l'enfant :
 
